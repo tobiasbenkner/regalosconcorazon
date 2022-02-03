@@ -1,0 +1,95 @@
+<style>
+    .list-image {
+        object-fit: fit;
+        border: 1px solid black;
+    }
+
+    .list-no-style {
+        list-style: none;
+    }
+
+    .li-center {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .mb-10 {
+        margin-bottom: 10px;
+    }
+
+</style>
+
+<div class="page-width">
+
+    <ul class="list-no-style">
+        {% for block in section.blocks %}
+            {%- assign collection = collections[block.settings.collection] -%}
+
+            <li>
+                <div class="mb-10"><h1>{{ block.settings.title }}</h1></div>
+
+                <ul class="list-no-style mb-10">
+                    {% for product in collections[collection.handle].products %}
+                        <li class="li-center mb-10">
+                            <img src="{{ product.images[0].src | image_url: width: 500 }}" width="150" height="150"
+                                 class="list-image"/>
+                            &nbsp; {{ product.title }}
+                            {% if section.settings.price %}
+                                <br/>
+                                &nbsp; {{ product.variants[0].price | money }}
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+                <br/>
+            </li>
+
+        {%- endfor -%}
+    </ul>
+</div>
+
+
+{% schema %}
+{
+"name": "custom-collection-list",
+"settings": [
+{
+"type": "checkbox",
+"id": "price",
+"label": "Show price",
+"default": true
+}
+],
+"blocks": [
+{
+"type": "collection",
+"name": "Collection",
+"settings": [
+{
+"label": "Title",
+"id": "title",
+"type": "text",
+"default": "Title"
+},
+{
+"label": "Collection",
+"id": "collection",
+"type": "collection"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Custom Collection List"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

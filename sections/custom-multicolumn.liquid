@@ -1,0 +1,160 @@
+<style>
+    .cmm-background {
+        background-repeat: repeat;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    {% if section.settings.background_image %} background-image: url('{{ section.settings.background_image | img_url }}');
+    {% endif %}
+    }
+
+    .cmm-grid-container {
+        display: grid;
+        grid-template-columns: {{section.settings.grid_template_columns}};
+        grid-gap: {{section.settings.grid_gap}};
+    }
+
+    .cmm-grid-container-item {
+        background-color: rgba(255, 255, 255, 1);
+
+    {% if section.settings.has_border %} border: 1px solid gray;
+    {% endif %} text-align: center;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 990px) {
+        .cmm-grid-container {
+            grid-template-columns: {{section.settings.grid_template_columns_mobile}};
+        }
+    }
+</style>
+
+
+<div class="cmm-background">
+    <div class="page-width">
+        <div class="cmm-grid-container">
+
+            {%- for block in section.blocks -%}
+                <div class="cmm-grid-container-item">
+                    <img style="object-fit: cover; border-radius: 10px; height: {{ section.settings.image_height }};"
+                         src="{{ block.settings.image | img_url: '400x400' }}" width="100%"/>
+                    {% if block.settings.title %}
+                        <h2>{{ block.settings.title }}</h2>
+                    {% endif %}
+
+                    {% if block.settings.link %}
+
+                        <a href="{{ block.settings.link }}" style="margin-top: 20px; margin-bottom: 20px;"
+                           class="button button--secondary" {{ block.shopify_attributes }}>
+                            {{ block.settings.link_label | escape }}
+                        </a>
+                    {% endif %}
+
+                </div>
+
+
+
+            {%- endfor -%}
+
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+"name": "custom-multicolumn",
+"class": "spaced-section spaced-section--full-width",
+"tag": "section",
+"settings": [
+{
+"type": "image_picker",
+"id": "background_image",
+"label": "Background Image"
+},
+{
+"type": "text",
+"id": "image_height",
+"label": "Image Height",
+"default": "400px"
+},
+{
+"type": "text",
+"id": "grid_template_columns",
+"label": "columns",
+"default": "auto auto auto"
+},
+{
+"type": "text",
+"id": "grid_template_columns_mobile",
+"label": "columns mobile",
+"default": "auto auto"
+},
+{
+"type": "text",
+"id": "grid_gap",
+"label": "grid gap",
+"default": "20px"
+},
+{
+"type": "checkbox",
+"id": "has_border",
+"label": "Has Border"
+}
+],
+"blocks": [
+{
+"type": "column",
+"name": "t:sections.multicolumn.blocks.column.name",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "t:sections.multicolumn.blocks.column.settings.image.label"
+},
+{
+"type": "text",
+"id": "title",
+"default": "Column",
+"label": "t:sections.multicolumn.blocks.column.settings.title.label"
+},
+{
+"type": "richtext",
+"id": "text",
+"default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on
+    availability, style, or even provide a review.</p>",
+"label": "t:sections.multicolumn.blocks.column.settings.text.label"
+},
+{
+"type": "text",
+"id": "link_label",
+"label": "t:sections.multicolumn.blocks.column.settings.link_label.label"
+},
+{
+"type": "url",
+"id": "link",
+"label": "t:sections.multicolumn.blocks.column.settings.link.label"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Custom Multi Column",
+"blocks": [
+{
+"type": "column"
+},
+{
+"type": "column"
+},
+{
+"type": "column"
+}
+]
+}
+]
+}
+{% endschema %}

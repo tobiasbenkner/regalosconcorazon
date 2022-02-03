@@ -1,0 +1,17 @@
+/*font-family: 'Zen Kurenaido', sans-serif !important;*/
+
+.shadow {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.background-center {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,51 @@
+<div class="container-center background-center" style='height: {{ section.settings.height }}; background-image: url("{{ section.settings.background_image | img_url: '1200x1200' }}");'>
+    <h1 class="shadow" style="color: white">{{ section.settings.title }}</h1>
+</div>
+
+{% if section.settings.description %}
+  <div class="page-width" style="text-align: center">
+    {{ section.settings.description }}
+  </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "custom-banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
+	  {
+        "type": "text",
+        "id": "title",
+        "default": "Title",
+        "label": "Title"
+      },
+	  {
+        "type": "richtext",
+        "id": "description",
+        "default": "<p>Text...</p>",
+        "label": "Description"
+      },
+	  {
+        "type": "text",
+        "id": "height",
+        "default": "300px",
+        "label": "height"
+      }
+	],
+    "presets": [
+      {
+        "name": "Custom Banner"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
