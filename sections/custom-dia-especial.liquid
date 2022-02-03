@@ -1,180 +1,175 @@
 {%- assign index = 0 -%}
 {%- for block in section.blocks -%}
 
-    <div id="dia-{{ index }}" class="page-width invisible">
+<div id="dia-{{index}}" class="page-width invisible">
+  
+  <div class="custom-center border-radius background-image" style='margin-top: 60px; height: 300px; background-image: url("{{ block.settings.background_image | img_url: '1200x1200' }}");'>
+    <h1 class="shadow" style="color: white">{{ block.settings.title }}</h1>
+  </div>
+  
+  <div class="cde-grid-container">
 
-        <div class="custom-center border-radius background-image"
-             style='margin-top: 60px; height: 300px; background-image: url("{{ block.settings.background_image | img_url: '1200x1200' }}");'>
-            <h1 class="shadow" style="color: white">{{ block.settings.title }}</h1>
-        </div>
-
-        <div class="cde-grid-container">
-
-            <div class="cde-grid-item">
-                <img style="object-fit: cover; border-radius: 10px"
-                     src="{{ block.settings.photo_1 | img_url: '400x400' }}" width="100%"/>
-            </div>
-
-            <div class="cde-grid-item">
-                <img style="object-fit: cover; border-radius: 10px"
-                     src="{{ block.settings.photo_2 | img_url: '400x400' }}" width="100%"/>
-            </div>
-
-            <div class="cde-grid-item">
-                <img style="object-fit: cover; border-radius: 10px"
-                     src="{{ block.settings.photo_3 | img_url: '400x400' }}" width="100%"/>
-            </div>
-
-            <div class="cde-grid-item">
-                <img style="object-fit: cover; border-radius: 10px"
-                     src="{{ block.settings.photo_4 | img_url: '400x400' }}" width="100%"/>
-            </div>
-        </div>
+    <div class="cde-grid-item">
+      <img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_1 | img_url: '400x400' }}" width="100%" />
     </div>
+	
+    <div class="cde-grid-item">
+      <img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_2 | img_url: '400x400' }}" width="100%" />
+    </div>
+    
+    <div class="cde-grid-item">
+      <img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_3 | img_url: '400x400' }}" width="100%" />
+    </div>
+    
+    <div class="cde-grid-item">
+      <img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_4 | img_url: '400x400' }}" width="100%" />
+    </div>
+  </div>  
+</div>
 
-    {%- assign index = 0 | plus: 1 -%}
+{%- assign index = 0 | plus: 1 -%}
 {%- endfor -%}
 
 
 <script>
 
-    function displayDia() {
-
-        const entries = [];
-        {%- assign index = 0 -%}
-
-        {%- for block in section.blocks -%}
+  function displayDia() {
+    
+    const entries = [];
+  	{%- assign index = 0 -%}
+    
+  	{%- for block in section.blocks -%}
         entries.push({
-            start_date: "{{ block.settings.start_date }}",
-            end_date: "{{ block.settings.end_date }}",
-            index: "{{ index }}",
+          start_date: "{{block.settings.start_date}}",
+          end_date: "{{block.settings.end_date}}",
+          index: "{{index}}",
         });
-        {%- assign index = 0 | plus: 1 -%}
-        {%- endfor -%}
+  		{%- assign index = 0 | plus: 1 -%}
+    {%- endfor -%}
+  
+  	
+  	const currentDate = new Date().toISOString().substring(0, 10);
+  	const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
 
-
-        const currentDate = new Date().toISOString().substring(0, 10);
-        const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
-
-
-        if (dias.length === 0) {
-            return;
-        }
-
-        const dia = dias[0];
-        const element = document.getElementById("dia-" + dia.index);
-        element.classList.remove("invisible");
+  	
+    if(dias.length === 0) {
+      return;
     }
+    
+    const dia = dias[0];
+    const element = document.getElementById("dia-" + dia.index);
+  	element.classList.remove("invisible");
+  }
 
-    displayDia();
-
+  displayDia();
+  	
 </script>
 
 {% schema %}
-{
-"name": "custom-dia-especial",
-"blocks": [
-{
-"type": "day",
-"name": "Day",
-"settings": [
-{
-"type": "image_picker",
-"id": "background_image",
-"label": "Background Image"
-},
-{
-"type": "text",
-"id": "title",
-"label": "Title"
-},
-{
-"type": "text",
-"id": "start_date",
-"label": "Start Date",
-"default": "2022-01-01"
-},
-{
-"type": "text",
-"id": "end_date",
-"label": "End Date",
-"default": "2022-06-01"
-},
-{
-"type": "image_picker",
-"id": "photo_1",
-"label": "Photo 1"
-},
-{
-"type": "image_picker",
-"id": "photo_2",
-"label": "Photo 2"
-},
-{
-"type": "image_picker",
-"id": "photo_3",
-"label": "Photo 3"
-},
-{
-"type": "image_picker",
-"id": "photo_4",
-"label": "Photo 4"
-}
-]
-}
-]
-}
+  {
+    "name": "custom-dia-especial",
+	"blocks": [
+	    {
+          "type": "day",
+          "name": "Day",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "background_image",
+              "label": "Background Image"
+            },
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Title"
+            },
+			{
+              "type": "text",
+              "id": "start_date",
+              "label": "Start Date",
+			  "default": "2022-01-01"
+            },
+			{
+              "type": "text",
+              "id": "end_date",
+              "label": "End Date",
+			  "default": "2022-06-01"
+            },
+			{
+              "type": "image_picker",
+              "id": "photo_1",
+              "label": "Photo 1"
+            },
+			{
+              "type": "image_picker",
+              "id": "photo_2",
+              "label": "Photo 2"
+            },
+			{
+              "type": "image_picker",
+              "id": "photo_3",
+              "label": "Photo 3"
+            },
+			{
+              "type": "image_picker",
+              "id": "photo_4",
+              "label": "Photo 4"
+            }
+          ]
+    	}
+	]
+  }
 {% endschema %}
 
 {% stylesheet %}
 
 .invisible {
-display: none;
+	display: none;
 }
 
 .cde-grid-container {
-display: grid;
-grid-template-columns: auto auto auto auto;
-grid-gap: 20px;
-margin-top: 20px;
-margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+	margin-top: 20px;
+	margin-bottom: 60px;
 }
 
 .cde-grid-item {
-background-color: rgba(255, 255, 255, 1);
-border: 1px solid gray;
-text-align: center;
-font-size: 30px;
-padding: 10px;
-display: flex;
-border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 990px) {
-.cmm-grid-container {
-grid-template-columns: auto auto;
-}
+  .cmm-grid-container {
+  	grid-template-columns: auto auto;
+  }
 }
 
 
 .background-image {
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
 }
 .custom-center {
-display: flex;
-align-items: center;
-justify-content: center;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .border-radius {
-border-radius: 20px;
+	border-radius: 20px;
 }
 {% endstylesheet %}
 
 {% javascript %}
-
+	
 
 {% endjavascript %}

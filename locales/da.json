@@ -73,8 +73,7 @@
     "loading": "Indlæser...",
     "skip_to_product_info": "Gå til produktoplysninger",
     "total_reviews": "anmeldelser i alt",
-    "star_reviews_info": "{{ rating_value }} ud af {{ rating_max }} stjerner",
-    "collapsible_content_title": "Indhold, der kan skjules"
+    "star_reviews_info": "{{ rating_value }} ud af {{ rating_max }} stjerner"
   },
   "blogs": {
     "article": {

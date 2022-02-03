@@ -1,44 +1,44 @@
 <div style='display: flex; justify-content: {{ section.settings.position }}'>
-    <img src="{{ section.settings.background_image | img_url: '300x300' }}" />
+	<img src="{{ section.settings.background_image | img_url: '300x300' }}" />
 </div>
 
 
 {% schema %}
 {
-"name": "custom-image",
-"tag": "section",
-"class": "spaced-section spaced-section--full-width",
-"settings": [
-{
-"type": "image_picker",
-"id": "background_image",
-"label": "Background Image"
-},
-{
-"type": "select",
-"id": "position",
-"options": [
-{
-"value": "start",
-"label": "left"
-},
-{
-"value": "center",
-"label": "center"
-},
-{
-"value": "end",
-"label": "right"
-}
-],
-"default": "start",
-"label": "position"
-}
-],
-"presets": [
-{
-"name": "Custom Image"
-}
-]
+  "name": "custom-image",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
+	{
+	  "type": "image_picker",
+	  "id": "background_image",
+      "label": "Background Image"
+	},
+    {
+      "type": "select",
+      "id": "position",
+      "options": [
+		{
+          "value": "start",
+          "label": "left"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "end",
+          "label": "right"
+        }
+      ],
+      "default": "start",
+      "label": "position"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Image"
+    }
+  ]
 }
 {% endschema %}

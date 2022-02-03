@@ -74,8 +74,35 @@
       }
     },
     "styles": {
-      "name": "Simgeler",
+      "name": "Stiller",
       "settings": {
+        "sold_out_badge_color_scheme": {
+          "options__1": {
+            "label": "1. Arka plan"
+          },
+          "options__2": {
+            "label": "Ters"
+          },
+          "label": "Tükendi rozeti renk şeması"
+        },
+        "header__1": {
+          "content": "Rozetler"
+        },
+        "header__2": {
+          "content": "Dekoratif öğeler"
+        },
+        "sale_badge_color_scheme": {
+          "options__1": {
+            "label": "2. Arka plan"
+          },
+          "options__2": {
+            "label": "1. Vurgu"
+          },
+          "options__3": {
+            "label": "2. Vurgu"
+          },
+          "label": "İndirim rozeti renk şeması"
+        },
         "accent_icons": {
           "options__1": {
             "label": "1. Vurgu"
@@ -89,7 +116,7 @@
           "options__4": {
             "label": "Metin rengi"
           },
-          "label": "Renk"
+          "label": "Vurgu simgeleri"
         }
       }
     },
@@ -160,27 +187,18 @@
       "name": "Düzen",
       "settings": {
         "page_width": {
-          "label": "Sayfa genişliği"
-        },
-        "spacing_sections": {
-          "label": "Bölümler arasında dikey boşluk"
-        },
-        "header__grid": {
-          "content": "Izgara"
-        },
-        "paragraph__grid": {
-          "content": "Çoklu sütun düzeni içeren alanları etkiler."
-        },
-        "spacing_grid_horizontal": {
-          "label": "Yatay boşluk"
-        },
-        "spacing_grid_vertical": {
-          "label": "Dikey boşluk"
+          "label": "Maksimum genişlik",
+          "options__1": {
+            "label": "1200 piksel"
+          },
+          "options__2": {
+            "label": "1600 piksel"
+          }
         }
       }
     },
     "search_input": {
-      "name": "Arama davranışı",
+      "name": "Girdi ara",
       "settings": {
         "header": {
           "content": "Ürün önerileri"
@@ -197,162 +215,9 @@
           "info": "Ürün önerileri etkinleştirildiğinde görünür."
         }
       }
-    },
-    "global": {
-      "settings": {
-        "header__border": {
-          "content": "Kenarlık"
-        },
-        "header__shadow": {
-          "content": "Gölge"
-        },
-        "blur": {
-          "label": "Bulanıklık"
-        },
-        "corner_radius": {
-          "label": "Köşe yarıçapı"
-        },
-        "horizontal_offset": {
-          "label": "Yatay dengeleme"
-        },
-        "vertical_offset": {
-          "label": "Dikey dengeleme"
-        },
-        "thickness": {
-          "label": "Kalınlık"
-        },
-        "opacity": {
-          "label": "Opaklık"
-        },
-        "image_padding": {
-          "label": "Görsel dolgusu"
-        },
-        "text_alignment": {
-          "options__1": {
-            "label": "Sol"
-          },
-          "options__2": {
-            "label": "Orta"
-          },
-          "options__3": {
-            "label": "Sağ"
-          },
-          "label": "Metin hizalaması"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "1. Vurgu"
-          },
-          "options__2": {
-            "label": "2. Vurgu"
-          },
-          "options__3": {
-            "label": "1. Arka plan"
-          },
-          "options__4": {
-            "label": "2. Arka plan"
-          },
-          "options__5": {
-            "label": "Ters"
-          },
-          "label": "Renk şeması"
-        }
-      }
-    },
-    "cards": {
-      "name": "Kartlar",
-      "settings": {
-        "header__badge": {
-          "content": "Rozetler"
-        },
-        "style": {
-          "options__1": {
-            "label": "Standart"
-          },
-          "options__2": {
-            "label": "Kart"
-          },
-          "label": "Stil"
-        }
-      }
-    },
-    "badges": {
-      "name": "Rozetler",
-      "settings": {
-        "position": {
-          "options__1": {
-            "label": "Alt sol"
-          },
-          "options__2": {
-            "label": "Alt sağ"
-          },
-          "options__3": {
-            "label": "Üst sol"
-          },
-          "options__4": {
-            "label": "Üst sağ"
-          },
-          "label": "Ürün kartı konumu"
-        },
-        "sale_badge_color_scheme": {
-          "label": "İndirim rozeti renk şeması"
-        },
-        "sold_out_badge_color_scheme": {
-          "label": "Tükendi rozeti renk şeması"
-        }
-      }
-    },
-    "buttons": {
-      "name": "Düğmeler"
-    },
-    "variant_pills": {
-      "name": "Varyasyon seçenekleri"
-    },
-    "inputs": {
-      "name": "Girdiler"
-    },
-    "content_containers": {
-      "name": "İçerik kapsayıcıları"
-    },
-    "popups": {
-      "name": "Açılır menüler ve pencereler",
-      "paragraph": "Gezinme açılır menüleri, açılır pencere modları ve sepet açılır pencereleri gibi alanları etkiler."
-    },
-    "media": {
-      "name": "Medya"
-    },
-    "drawers": {
-      "name": "Çekmeceler"
     }
   },
   "sections": {
-    "all": {
-      "padding": {
-        "section_padding_heading": "Bölüm dolgusu",
-        "padding_top": "Üst dolgu",
-        "padding_bottom": "Alt dolgu"
-      },
-      "spacing": "Boşluk",
-      "colors": {
-        "accent_1": {
-          "label": "1. Vurgu"
-        },
-        "accent_2": {
-          "label": "2. Vurgu"
-        },
-        "background_1": {
-          "label": "1. Arka plan"
-        },
-        "background_2": {
-          "label": "2. Arka plan"
-        },
-        "inverse": {
-          "label": "Ters"
-        },
-        "label": "Renk şeması",
-        "has_cards_info": "Kart renk şemasını değiştirmek için tema ayarlarınızı güncelleyin."
-      }
-    },
     "announcement-bar": {
       "name": "Duyuru çubuğu",
       "blocks": {
@@ -420,8 +285,27 @@
               "label": "Görsel"
             },
             "image_padding": {
-              "label": "Orijinal görsel oranını kullan",
-              "info": "Görselinizin kırpılmasını istemiyorsanız bu seçeneği belirleyin."
+              "label": "Görsel dolgusu ekle",
+              "info": "Görselinizin kırpılmasını istemiyorsanız görsel dolgusunu seçin."
+            },
+            "color_scheme": {
+              "options__1": {
+                "label": "1. Vurgu"
+              },
+              "options__2": {
+                "label": "2. Vurgu"
+              },
+              "options__3": {
+                "label": "1. Arka plan"
+              },
+              "options__4": {
+                "label": "2. Arka plan"
+              },
+              "options__5": {
+                "label": "Ters"
+              },
+              "label": "Renk şeması",
+              "info": "Rengi görünür yapmak için görsel dolgusunu seçin."
             }
           }
         },
@@ -436,6 +320,10 @@
             },
             "second_image": {
               "label": "Üstüne gelindiğinde ikinci görseli göster"
+            },
+            "image_padding": {
+              "label": "Görsel dolgusu ekle",
+              "info": "Görsellerinizin kırpılmasını istemiyorsanız görsel dolgusunu seçin."
             }
           }
         },
@@ -444,6 +332,28 @@
           "settings": {
             "collection": {
               "label": "Koleksiyon"
+            },
+            "image_padding": {
+              "label": "Görsel dolgusu ekle",
+              "info": "Görselinizin kırpılmasını istemiyorsanız görsel dolgusunu seçin."
+            },
+            "color_scheme": {
+              "options__1": {
+                "label": "1. Vurgu"
+              },
+              "options__2": {
+                "label": "2. Vurgu"
+              },
+              "options__3": {
+                "label": "1. Arka plan"
+              },
+              "options__4": {
+                "label": "2. Arka plan"
+              },
+              "options__5": {
+                "label": "Ters"
+              },
+              "label": "Renk şeması"
             }
           }
         },
@@ -459,8 +369,8 @@
               "placeholder": "YouTube veya Vimeo URL'si kullanın"
             },
             "image_padding": {
-              "label": "Orijinal görsel oranını kullan",
-              "info": "Görselinizin kırpılmasını istemiyorsanız bu seçeneği belirleyin."
+              "label": "Görsel dolgusu ekle",
+              "info": "Kapak görselinizin kırpılmasını istemiyorsanız görsel dolgusunu seçin."
             },
             "description": {
               "label": "Video alternatif metni",
@@ -492,8 +402,29 @@
           },
           "info": "Koleksiyonlarınızı düzenleyerek görsel ekleyin. [Daha fazla bilgi edinin](https://help.shopify.com/en/manual/products/collections)"
         },
+        "color_scheme": {
+          "options__1": {
+            "label": "1. Vurgu"
+          },
+          "options__2": {
+            "label": "2. Vurgu"
+          },
+          "options__3": {
+            "label": "1. Arka plan"
+          },
+          "options__4": {
+            "label": "2. Arka plan"
+          },
+          "options__5": {
+            "label": "Ters"
+          },
+          "label": "Renk şeması"
+        },
         "swipe_on_mobile": {
           "label": "Mobil cihazda kaydırmayı etkinleştir"
+        },
+        "image_padding": {
+          "label": "Görsel dolgusu ekle"
         },
         "show_view_all": {
           "label": "Liste gösterilenden daha fazla koleksiyon içeriyorsa \"Tümünü görüntüle\" düğmesini etkinleştir"
@@ -550,6 +481,9 @@
           "label": "Öne çıkan görseli göster",
           "info": "En iyi sonuçlar için 3:2 en-boy oranına sahip bir görsel kullanın. [Daha fazla bilgi edinin](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
         },
+        "soft_background": {
+          "label": "İkincil arka planı göster"
+        },
         "show_date": {
           "label": "Tarihi göster"
         },
@@ -597,8 +531,14 @@
         "show_secondary_image": {
           "label": "Üstüne gelindiğinde ikinci görseli göster"
         },
+        "add_image_padding": {
+          "label": "Görsel dolgusu ekle"
+        },
         "show_vendor": {
           "label": "Satıcıyı göster"
+        },
+        "show_image_outline": {
+          "label": "Görsel kenarlığını göster"
         },
         "show_rating": {
           "label": "Ürün puanlarını göster",
@@ -696,9 +636,6 @@
         },
         "payment_enable": {
           "label": "Ödeme simgelerini göster"
-        },
-        "margin_top": {
-          "label": "Üst kenar boşluğu"
         }
       }
     },
@@ -752,9 +689,6 @@
             "label": "Ters"
           },
           "label": "Renk şeması"
-        },
-        "margin_bottom": {
-          "label": "Alt kenar boşluğu"
         }
       }
     },
@@ -957,7 +891,8 @@
           "options__3": {
             "label": "Büyük"
           },
-          "label": "Görsel yüksekliği"
+          "label": "Görsel yüksekliği",
+          "info": "Bölüm yüksekliğini belirler."
         },
         "color_scheme": {
           "options__1": {
@@ -1080,6 +1015,9 @@
               },
               "options__2": {
                 "label": "Alt yazı"
+              },
+              "options__3": {
+                "label": "Büyük harf"
               }
             }
           }
@@ -1297,6 +1235,9 @@
         "show_secondary_image": {
           "label": "Üstüne gelindiğinde ikinci görseli göster"
         },
+        "add_image_padding": {
+          "label": "Görsel dolgusu ekle"
+        },
         "show_vendor": {
           "label": "Satıcıyı göster"
         },
@@ -1309,6 +1250,9 @@
         "enable_tags": {
           "label": "Filtrelemeyi etkinleştir",
           "info": "[Filtreleri özelleştirin](/admin/menus)"
+        },
+        "show_image_outline": {
+          "label": "Görsel kenarlığını göster"
         },
         "collapse_on_larger_devices": {
           "label": "Masaüstünde daralt"
@@ -1358,6 +1302,27 @@
             "label": "Kare"
           },
           "info": "Koleksiyonlarınızı düzenleyerek görsel ekleyin. [Daha fazla bilgi edinin](https://help.shopify.com/en/manual/products/collections)"
+        },
+        "color_scheme": {
+          "options__1": {
+            "label": "1. Vurgu"
+          },
+          "options__2": {
+            "label": "2. Vurgu"
+          },
+          "options__3": {
+            "label": "1. Arka plan"
+          },
+          "options__4": {
+            "label": "2. Arka plan"
+          },
+          "options__5": {
+            "label": "Ters"
+          },
+          "label": "Renk şeması"
+        },
+        "image_padding": {
+          "label": "Görsel dolgusu ekle"
         }
       }
     },
@@ -1457,7 +1422,7 @@
                 "label": "Açılır liste"
               },
               "options__2": {
-                "label": "Haplar"
+                "label": "Düğme"
               }
             }
           }
@@ -1492,152 +1457,92 @@
           }
         },
         "collapsible_tab": {
-          "name": "Daraltılabilir satır",
+          "name": "Daraltılabilen sekme",
           "settings": {
             "heading": {
               "info": "İçeriği açıklayan bir başlık ekleyin.",
               "label": "Başlık"
             },
             "content": {
-              "label": "Satır içeriği"
+              "label": "Sekme içeriği"
             },
             "page": {
-              "label": "Sayfadan alınan satır içeriği"
+              "label": "Sayfadan alınan sekme içeriği"
             },
             "icon": {
               "options__1": {
                 "label": "Hiçbiri"
               },
               "options__2": {
-                "label": "Elma"
+                "label": "kutusu eklenemez"
               },
               "options__3": {
-                "label": "Muz"
-              },
-              "options__4": {
-                "label": "Şişe"
-              },
-              "options__5": {
-                "label": "Kutu"
-              },
-              "options__6": {
-                "label": "Havuç"
-              },
-              "options__7": {
                 "label": "Sohbet balonu"
               },
-              "options__8": {
+              "options__4": {
                 "label": "Onay işareti"
               },
-              "options__9": {
-                "label": "Pano"
-              },
-              "options__10": {
-                "label": "Süt ürünü"
-              },
-              "options__11": {
-                "label": "Süt ürünü içermez"
-              },
-              "options__12": {
+              "options__5": {
                 "label": "Kurutucu"
               },
-              "options__13": {
+              "options__6": {
                 "label": "Göz"
               },
-              "options__14": {
-                "label": "Ateş"
-              },
-              "options__15": {
-                "label": "Glütensiz"
-              },
-              "options__16": {
+              "options__7": {
                 "label": "Kalp"
               },
-              "options__17": {
+              "options__8": {
                 "label": "Ütü"
               },
-              "options__18": {
+              "options__9": {
                 "label": "Yaprak"
               },
-              "options__19": {
+              "options__10": {
                 "label": "Deri"
               },
-              "options__20": {
-                "label": "Şimşek"
-              },
-              "options__21": {
-                "label": "Ruj"
-              },
-              "options__22": {
+              "options__11": {
                 "label": "Kilit"
               },
-              "options__23": {
+              "options__12": {
                 "label": "Harita pini"
               },
-              "options__24": {
-                "label": "Kabuklu yemişsiz"
+              "options__13": {
+                "label": "Pantolonlar"
               },
-              "label": "Simge",
-              "options__25": {
-                "label": "Pantolon"
-              },
-              "options__26": {
-                "label": "Pati izi"
-              },
-              "options__27": {
-                "label": "Biber"
-              },
-              "options__28": {
-                "label": "Parfüm"
-              },
-              "options__29": {
+              "options__14": {
                 "label": "Uçak"
               },
-              "options__30": {
-                "label": "Bitki"
-              },
-              "options__31": {
+              "options__15": {
                 "label": "Fiyat etiketi"
               },
-              "options__32": {
+              "options__16": {
                 "label": "Soru işareti"
               },
-              "options__33": {
-                "label": "Geri dönüşüm"
-              },
-              "options__34": {
+              "options__17": {
                 "label": "İade"
               },
-              "options__35": {
+              "options__18": {
                 "label": "Cetvel"
               },
-              "options__36": {
-                "label": "Servis tabağı"
-              },
-              "options__37": {
+              "options__19": {
                 "label": "Gömlek"
               },
-              "options__38": {
+              "options__20": {
                 "label": "Ayakkabı"
               },
-              "options__39": {
+              "options__21": {
                 "label": "Silüet"
               },
-              "options__40": {
-                "label": "Kar tanesi"
-              },
-              "options__41": {
+              "options__22": {
                 "label": "Yıldız"
               },
-              "options__42": {
-                "label": "Kronometre"
-              },
-              "options__43": {
+              "options__23": {
                 "label": "Kamyon"
               },
-              "options__44": {
+              "options__24": {
                 "label": "Yıkama"
-              }
+              },
+              "label": "Simge"
             }
           }
         },
@@ -1739,6 +1644,9 @@
         "show_secondary_image": {
           "label": "Üstüne gelindiğinde ikinci görseli göster"
         },
+        "add_image_padding": {
+          "label": "Görsel dolgusu ekle"
+        },
         "show_vendor": {
           "label": "Satıcıyı göster"
         },
@@ -1753,6 +1661,9 @@
         },
         "article_show_author": {
           "label": "Yazarı göster"
+        },
+        "show_image_outline": {
+          "label": "Görsel kenarlığını göster"
         },
         "show_rating": {
           "label": "Ürün puanlarını göster",
@@ -1809,6 +1720,9 @@
           },
           "options__2": {
             "label": "Sütun arka planı olarak göster"
+          },
+          "options__3": {
+            "label": "Bölüm arka planı olarak göster"
           }
         },
         "button_label": {
@@ -1935,11 +1849,17 @@
         "show_secondary_image": {
           "label": "Üstüne gelindiğinde ikinci görseli göster"
         },
+        "add_image_padding": {
+          "label": "Görsel dolgusu ekle"
+        },
         "show_vendor": {
           "label": "Satıcıyı göster"
         },
         "paragraph__1": {
           "content": "Dinamik önerilerinin zamanla değişmesi ve gelişmesi için sipariş ve ürün bilgileri kullanılır. [Daha fazla bilgi edinin](https://help.shopify.com/en/themes/development/recommended-products)"
+        },
+        "show_image_outline": {
+          "label": "Görsel kenarlığını göster"
         },
         "show_rating": {
           "label": "Ürün puanlarını göster",
@@ -2102,7 +2022,7 @@
                 "label": "Açılır menü"
               },
               "options__2": {
-                "label": "Haplar"
+                "label": "Düğme"
               }
             }
           }
@@ -2498,264 +2418,6 @@
       },
       "presets": {
         "name": "Slayt gösterisi"
-      }
-    },
-    "collapsible_content": {
-      "name": "Daraltılabilir içerik",
-      "settings": {
-        "caption": {
-          "label": "Alt yazı"
-        },
-        "heading": {
-          "label": "Başlık"
-        },
-        "heading_alignment": {
-          "label": "Başlık hizalaması",
-          "options__1": {
-            "label": "Sol"
-          },
-          "options__2": {
-            "label": "Orta"
-          },
-          "options__3": {
-            "label": "Sağ"
-          }
-        },
-        "layout": {
-          "label": "Düzen",
-          "options__1": {
-            "label": "Kapsayıcı yok"
-          },
-          "options__2": {
-            "label": "Satır kapsayıcı"
-          },
-          "options__3": {
-            "label": "Bölüm kapsayıcı"
-          }
-        },
-        "color_scheme": {
-          "label": "Renk şeması",
-          "options__1": {
-            "label": "1. Arka plan"
-          },
-          "options__2": {
-            "label": "2. Arka plan"
-          },
-          "options__3": {
-            "label": "Ters"
-          },
-          "options__4": {
-            "label": "1. Vurgu"
-          },
-          "options__5": {
-            "label": "2. Vurgu"
-          }
-        },
-        "container_color_scheme": {
-          "label": "Kapsayıcı renk şeması",
-          "options__1": {
-            "label": "1. Arka plan"
-          },
-          "options__2": {
-            "label": "2. Arka plan"
-          },
-          "options__3": {
-            "label": "Ters"
-          },
-          "options__4": {
-            "label": "1. Vurgu"
-          },
-          "options__5": {
-            "label": "2. Vurgu"
-          },
-          "info": "Düzen; satır veya bölüm kapsayıcısına ayarlandığında görünür."
-        },
-        "open_first_collapsible_row": {
-          "label": "İlk daraltılabilir satırı aç"
-        },
-        "header": {
-          "content": "Görsel düzeni"
-        },
-        "image": {
-          "label": "Görsel"
-        },
-        "image_ratio": {
-          "label": "Görsel oranı",
-          "options__1": {
-            "label": "Görsele uyarla"
-          },
-          "options__2": {
-            "label": "Küçük"
-          },
-          "options__3": {
-            "label": "Büyük"
-          }
-        },
-        "desktop_layout": {
-          "label": "Masaüstü düzeni",
-          "options__1": {
-            "label": "Önce görsel"
-          },
-          "options__2": {
-            "label": "İkinci olarak görsel"
-          },
-          "info": "Mobilde her zaman önce görsel görünür."
-        }
-      },
-      "blocks": {
-        "collapsible_row": {
-          "name": "Daraltılabilir satır",
-          "settings": {
-            "heading": {
-              "info": "İçeriği açıklayan bir başlık ekleyin.",
-              "label": "Başlık"
-            },
-            "row_content": {
-              "label": "Satır içeriği"
-            },
-            "page": {
-              "label": "Sayfadan alınan satır içeriği"
-            },
-            "icon": {
-              "label": "Simge",
-              "options__1": {
-                "label": "Hiçbiri"
-              },
-              "options__2": {
-                "label": "Elma"
-              },
-              "options__3": {
-                "label": "Muz"
-              },
-              "options__4": {
-                "label": "Şişe"
-              },
-              "options__5": {
-                "label": "Kutu"
-              },
-              "options__6": {
-                "label": "Havuç"
-              },
-              "options__7": {
-                "label": "Sohbet balonu"
-              },
-              "options__8": {
-                "label": "Onay işareti"
-              },
-              "options__9": {
-                "label": "Pano"
-              },
-              "options__10": {
-                "label": "Süt ürünü"
-              },
-              "options__11": {
-                "label": "Süt ürünü içermez"
-              },
-              "options__12": {
-                "label": "Kurutucu"
-              },
-              "options__13": {
-                "label": "Göz"
-              },
-              "options__14": {
-                "label": "Ateş"
-              },
-              "options__15": {
-                "label": "Glütensiz"
-              },
-              "options__16": {
-                "label": "Kalp"
-              },
-              "options__17": {
-                "label": "Ütü"
-              },
-              "options__18": {
-                "label": "Yaprak"
-              },
-              "options__19": {
-                "label": "Deri"
-              },
-              "options__20": {
-                "label": "Şimşek"
-              },
-              "options__21": {
-                "label": "Ruj"
-              },
-              "options__22": {
-                "label": "Kilit"
-              },
-              "options__23": {
-                "label": "Harita pini"
-              },
-              "options__24": {
-                "label": "Kabuklu yemişsiz"
-              },
-              "options__25": {
-                "label": "Pantolon"
-              },
-              "options__26": {
-                "label": "Pati izi"
-              },
-              "options__27": {
-                "label": "Biber"
-              },
-              "options__28": {
-                "label": "Parfüm"
-              },
-              "options__29": {
-                "label": "Uçak"
-              },
-              "options__30": {
-                "label": "Bitki"
-              },
-              "options__31": {
-                "label": "Fiyat etiketi"
-              },
-              "options__32": {
-                "label": "Soru işareti"
-              },
-              "options__33": {
-                "label": "Geri dönüşüm"
-              },
-              "options__34": {
-                "label": "İade"
-              },
-              "options__35": {
-                "label": "Cetvel"
-              },
-              "options__36": {
-                "label": "Servis tabağı"
-              },
-              "options__37": {
-                "label": "Gömlek"
-              },
-              "options__38": {
-                "label": "Ayakkabı"
-              },
-              "options__39": {
-                "label": "Silüet"
-              },
-              "options__40": {
-                "label": "Kar tanesi"
-              },
-              "options__41": {
-                "label": "Yıldız"
-              },
-              "options__42": {
-                "label": "Kronometre"
-              },
-              "options__43": {
-                "label": "Kamyon"
-              },
-              "options__44": {
-                "label": "Yıkama"
-              }
-            }
-          }
-        }
-      },
-      "presets": {
-        "name": "Daraltılabilir içerik"
       }
     }
   }

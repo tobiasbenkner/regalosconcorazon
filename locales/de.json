@@ -73,8 +73,7 @@
     "loading": "Wird geladen ...",
     "skip_to_product_info": "Zu Produktinformationen springen",
     "total_reviews": "Bewertungen insgesamt",
-    "star_reviews_info": "{{ rating_value }} von {{ rating_max }} Sternen",
-    "collapsible_content_title": "Einklappbarer Inhalt"
+    "star_reviews_info": "{{ rating_value }} von {{ rating_max }} Sternen"
   },
   "blogs": {
     "article": {
