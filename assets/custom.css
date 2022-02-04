@@ -1,3 +1,7 @@
+:root {
+  --gray: #b3b3b3;
+}
+
 .shadow {
 	text-shadow: 2px 2px 4px #000000;
 }
