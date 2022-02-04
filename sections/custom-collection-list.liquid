@@ -1,5 +1,9 @@
 <style>
 
+    .image-grid-title {
+        margin-bottom: 50px;
+        border-bottom: 1px solid var(--gray);
+    }
     .image-grid-container {
         display: grid;
         gap: 50px;
@@ -14,8 +18,7 @@
     }
 
     .image-grid-item > h4 {
-        margin-bottom: 50px;
-        border-bottom: 1px solid var(--gray);
+        font-weight: bold;
     }
 
     .image-grid-item > img {
@@ -32,7 +35,7 @@
 
     {% for block in section.blocks %}
         {%- assign collection = collections[block.settings.collection] -%}
-        <h1>{{block.settings.title}}</h1>
+        <h1 class="image-grid-title">{{block.settings.title}}</h1>
 
         <div class="image-grid-container">
             {% for product in collections[collection.handle].products %}
