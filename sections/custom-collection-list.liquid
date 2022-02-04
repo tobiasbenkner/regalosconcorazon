@@ -3,7 +3,7 @@
     .image-grid-container {
         display: grid;
         gap: 50px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         /*grid-auto-rows: 300px;*/
     }
 
@@ -16,7 +16,7 @@
         object-fit: cover;
         border: 1px solid black;
         width: 100%;
-        height: 200px;
+        height: 300px;
     }
 
 </style>
@@ -33,7 +33,7 @@
                     <img src="{{ product.images[0].src | image_url: width: 500 }}"
                          alt="{{ product.title }}"
                     />
-                    <div>{{ product.title }}</div>
+                    <div><b>{{ product.title }}</b></div>
                     {% if section.settings.price %}
                         <div>{{ product.variants[0].price | money }}</div>
                     {% endif %}
