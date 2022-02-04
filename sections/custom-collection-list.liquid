@@ -14,9 +14,10 @@
 
     .image-grid-item > img {
         object-fit: cover;
-        border: 1px solid black;
+        border: 1px solid #b3b3b3;
         width: 100%;
         height: 300px;
+        border-radius: 20px;
     }
 
 </style>
@@ -33,7 +34,7 @@
                     <img src="{{ product.images[0].src | image_url: width: 500 }}"
                          alt="{{ product.title }}"
                     />
-                    <h4 class="center">{{ product.title }}</h4>
+                    <h4 class="center" style="margin-bottom: 0; margin-top: 10px">{{ product.title }}</h4>
                     {% if section.settings.price %}
                         <div class="center">{{ product.variants[0].price | money }}</div>
                     {% endif %}
