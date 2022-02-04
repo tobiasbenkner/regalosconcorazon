@@ -1,57 +1,54 @@
 <style>
-  .list-image {
-  	object-fit: fit;
-    border: 1px solid black;
-  }
-  
-  .list-no-style {
-    list-style: none;
-  }
-  
-  .li-center {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .mb-10 {
-    margin-bottom: 10px;
-  }
-  
+
+    .image-grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 100px 100px 100px;
+        /*grid-auto-rows: 300px;*/
+    }
+
+    .image-grid-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-grid-item > img {
+        object-fit: cover;
+        border: 1px solid black;
+    }
+
 </style>
 
 <div class="page-width">
-    
-  <ul class="list-no-style">
-    {% for block in section.blocks %}
-      {%- assign collection = collections[block.settings.collection] -%}
 
-    <li>
-      <div class="mb-10"><h1>{{block.settings.title}}</h1></div>
-      
-          <ul class="list-no-style mb-10">
+    {% for block in section.blocks %}
+        {%- assign collection = collections[block.settings.collection] -%}
+        <h1>{{block.settings.title}}</h1>
+
+        <div class="image-grid-container">
             {% for product in collections[collection.handle].products %}
-              <li class="li-center mb-10">
-                <img src="{{ product.images[0].src | image_url: width: 500 }}" width="150" height="150" class="list-image" />
-                &nbsp; {{ product.title }}
-                {% if section.settings.price %}
-                	<br />
-                	&nbsp; {{ product.variants[0].price | money }}
-                {% endif %}
-              </li>
+                <div class="image-grid-item">
+                    <img src="{{ product.images[0].src | image_url: width: 500 }}"
+                         width="150"
+                         height="150"
+                         alt="{{ product.title }}"
+                    />
+                    <div>{{ product.title }}</div>
+                    {% if section.settings.price %}
+                        <div>{{ product.variants[0].price | money }}</div>
+                    {% endif %}
+                </div>
             {% endfor %}
-          </ul>
-      <br />
-        </li>
+        </div>
 
     {%- endfor -%}
-  </ul>
-  
+</div>
+
 
 {% schema %}
   {
     "name": "custom-collection-list",
-    "settings": [    
+    "settings": [
     {
       "type": "checkbox",
       "id": "price",
