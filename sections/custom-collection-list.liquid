@@ -33,9 +33,9 @@
                     <img src="{{ product.images[0].src | image_url: width: 500 }}"
                          alt="{{ product.title }}"
                     />
-                    <div><b>{{ product.title }}</b></div>
+                    <h4 class="center">{{ product.title }}</h4>
                     {% if section.settings.price %}
-                        <div>{{ product.variants[0].price | money }}</div>
+                        <div class="center">{{ product.variants[0].price | money }}</div>
                     {% endif %}
                 </div>
             {% endfor %}
