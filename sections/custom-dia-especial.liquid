@@ -39,6 +39,12 @@
 <script src="{{ 'moment.min.js' | asset_url }}"></script>
 <script>
 
+    function pad(num, size) {
+        num = num.toString();
+        while (num.length < size) num = "0" + num;
+        return num;
+    }
+
     function getFirstWeekDay(dateString, dayOfWeek) {
         if(dayOfWeek === -1) {
             return dateString;
@@ -47,7 +53,7 @@
         const date = moment(dateString, "YYYY-MM-DD");
 
         const day = date.day();
-        let diffDays = 0;
+        let diffDays;
 
         if (day > dayOfWeek) {
             diffDays = 7 - (day - dayOfWeek);
@@ -73,18 +79,27 @@
                 year: year,
                 first_date: "{{ block.settings.first_day }}",
                 index: "{{ index }}",
-                day_before: daysBefore,
+                days_before: daysBefore,
             });
             {%- assign index = 0 | plus: 1 -%}
         {%- endfor -%}
 
-        // const finish = entries.map(it => {
-        //     return {
-        //         ...it,
-        //         start_date: moment(it.start_date).add(daysBefore, "days").format("YYYY-MM-DD")
-        //     }
-        // })
         console.log(entries);
+
+        const finish = entries.map(it => {
+            const date = `${it.year}-${pad(it.month, 2)}-${pad(it.day, 2)}`;
+            const endDate = getFirstWeekDay(date, it.first_date);
+            const startDate = moment(endDate).add(it.days_before, "days").format("YYYY-MM-DD");
+
+            return {
+                index: it.index,
+                end_date: endDate,
+                start_date: startDate,
+            }
+        })
+
+        console.log(finish);
+
         //
         // const currentDate = new Date().toISOString().substring(0, 10);
         // const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
