@@ -63,12 +63,14 @@
         {%- assign index = 0 -%}
 
         {%- for block in section.blocks -%}
-        entries.push({
-            start_date: "{{ block.settings.start_date }}",
-            end_date: "{{ block.settings.end_date }}",
-            index: "{{ index }}",
-        });
-        {%- assign index = 0 | plus: 1 -%}
+
+            console.log("{{ block.settings.first_day }}");
+            entries.push({
+                start_date: "{{ block.settings.start_date }}",
+                end_date: "{{ block.settings.end_date }}",
+                index: "{{ index }}",
+            });
+            {%- assign index = 0 | plus: 1 -%}
         {%- endfor -%}
 
 
