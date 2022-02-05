@@ -40,6 +40,10 @@
 <script>
 
     function getFirstWeekDay(dateString, dayOfWeek) {
+        if(dayOfWeek === -1) {
+            return dateString;
+        }
+
         const date = moment(dateString, "YYYY-MM-DD");
 
         const day = date.day();
@@ -64,40 +68,26 @@
         const year = moment().format("YYYY");
 
         {%- for block in section.blocks -%}
-
-            console.log("{{ block.settings.title }}");
-
-            // calculate days
-            const end_date_{{ index }} = +"{{ block.settings.first_day }}" !== -1 ?
-                `${year}-{{ block.settings.start_month }}-{{ block.settings.start_day }}` :
-                getFirstWeekDay(`${year}-{{ block.settings.start_month }}-{{ block.settings.start_day }}`);
-            console.log(end_date_{{ index }});
-
-            const start_date_{{ index }} = moment(end_date_{{ index }})
-                .subtract(daysBefore, 'days')
-                .format("YYYY-MM-DD");
-
             entries.push({
-                start_date: start_date_{{ index }},
-                end_date: end_date_{{ index }},
+                end_date: getFirstWeekDay(`${year}-{{ block.settings.start_month }}-{{ block.settings.start_day }}`, {{ block.settings.first_day }}),
                 index: "{{ index }}",
             });
             {%- assign index = 0 | plus: 1 -%}
         {%- endfor -%}
 
         console.log(entries);
-
-        const currentDate = new Date().toISOString().substring(0, 10);
-        const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
-
-
-        if (dias.length === 0) {
-            return;
-        }
-
-        const dia = dias[0];
-        const element = document.getElementById("dia-" + dia.index);
-        element.classList.remove("invisible");
+        //
+        // const currentDate = new Date().toISOString().substring(0, 10);
+        // const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
+        //
+        //
+        // if (dias.length === 0) {
+        //     return;
+        // }
+        //
+        // const dia = dias[0];
+        // const element = document.getElementById("dia-" + dia.index);
+        // element.classList.remove("invisible");
     }
 
     displayDia();
