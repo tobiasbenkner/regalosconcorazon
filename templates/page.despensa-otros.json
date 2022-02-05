@@ -1,1 +1,50 @@
-{"sections":{"1643906866ad7d3ab5":{"type":"custom-banner","settings":{"background_image":"shopify:\/\/shop_images\/IMG_1747.jpg","title":"Otros","description":"","height":"300px"}},"1642858422a9672f4c":{"type":"custom-collection-list","blocks":{"5146c5df-6c7f-4ce0-9a20-880e896d4673":{"type":"collection","settings":{"title":"","collection":"despensa-otros"}}},"block_order":["5146c5df-6c7f-4ce0-9a20-880e896d4673"],"settings":{"price":true}},"main":{"type":"main-page","disabled":true,"settings":{}}},"order":["1643906866ad7d3ab5","1642858422a9672f4c","main"]}
+{
+  "sections": {
+    "1643906866ad7d3ab5": {
+      "type": "custom-banner",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/IMG_1747.jpg",
+        "title": "Otros",
+        "description": "",
+        "height": "300px"
+      }
+    },
+    "1644070700704100b3": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "1642858422a9672f4c": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "5146c5df-6c7f-4ce0-9a20-880e896d4673": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "despensa-otros"
+          }
+        }
+      },
+      "block_order": [
+        "5146c5df-6c7f-4ce0-9a20-880e896d4673"
+      ],
+      "settings": {
+        "price": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "1643906866ad7d3ab5",
+    "1644070700704100b3",
+    "1642858422a9672f4c",
+    "main"
+  ]
+}

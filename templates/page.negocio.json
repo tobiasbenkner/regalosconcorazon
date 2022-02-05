@@ -1,1 +1,81 @@
-{"sections":{"1643908010946b3acb":{"type":"custom-banner","settings":{"background_image":"shopify:\/\/shop_images\/classic-cup-of-coffee.jpg","title":"Detalles Corporativos Empresas","description":"<p>Creemos que regalar e incentivar van de la mano. Creamos esos detalles de agradecimiento.No crees que te los puedes ganar ademas por el estomago? Tenemos una variedad especial para regalos corporativos con un formato \"mini\" para que puedan viajar en avionServicio de personalizacion tanto en packaging como etiquetado ,estamos aqui para asesorarte y crear ese detalle que mas se adecue a tus necesidades y asi llegar a conseguir lo buscado.Pidenos asesoramiento y presupuesto y veras como no tendras la menor duda.<\/p>","height":"300px"}},"164294062297c6d597":{"type":"custom-collection-list","blocks":{"392bdfe1-7ff4-4673-834b-833f29d19d62":{"type":"collection","settings":{"title":"","collection":"detalles-corporativos-empresas"}}},"block_order":["392bdfe1-7ff4-4673-834b-833f29d19d62"],"settings":{"price":false}},"main":{"type":"main-page","disabled":true,"settings":{}}},"order":["1643908010946b3acb","164294062297c6d597","main"]}
+{
+  "sections": {
+    "1643908010946b3acb": {
+      "type": "custom-banner",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/classic-cup-of-coffee.jpg",
+        "title": "Detalles Corporativos Empresas",
+        "description": "<p>Creemos que regalar e incentivar van de la mano. Creamos esos detalles de agradecimiento.No crees que te los puedes ganar ademas por el estomago? Tenemos una variedad especial para regalos corporativos con un formato \"mini\" para que puedan viajar en avionServicio de personalizacion tanto en packaging como etiquetado ,estamos aqui para asesorarte y crear ese detalle que mas se adecue a tus necesidades y asi llegar a conseguir lo buscado.Pidenos asesoramiento y presupuesto y veras como no tendras la menor duda.<\/p>",
+        "height": "300px"
+      }
+    },
+    "1644001059d919e121": {
+      "type": "rich-text",
+      "blocks": {
+        "164400105923f3dd74-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "164400105923f3dd74-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "164400105923f3dd74-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "164400105923f3dd74-0",
+        "164400105923f3dd74-1",
+        "164400105923f3dd74-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "164294062297c6d597": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "392bdfe1-7ff4-4673-834b-833f29d19d62": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "detalles-corporativos-empresas"
+          }
+        }
+      },
+      "block_order": [
+        "392bdfe1-7ff4-4673-834b-833f29d19d62"
+      ],
+      "settings": {
+        "price": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "1643908010946b3acb",
+    "1644001059d919e121",
+    "164294062297c6d597",
+    "main"
+  ]
+}
