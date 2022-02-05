@@ -73,7 +73,9 @@
                 getFirstWeekDay(`${year}-{{ block.settings.start_month }}-{{ block.settings.start_day }}`);
             console.log(end_date_{{ index }});
 
-            const start_date_{{ index }} = moment(end_date_{{ index }}).subtract(daysBefore, 'days');
+            const start_date_{{ index }} = moment(end_date_{{ index }})
+                .subtract(daysBefore, 'days')
+                .format("YYYY-MM-DD");
 
             entries.push({
                 start_date: start_date_{{ index }},
