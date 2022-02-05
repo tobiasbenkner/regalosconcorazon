@@ -134,37 +134,45 @@
                 "step": 1,
                 "default": 27
             },
-			{
-              "type": "text",
-              "id": "start_date",
-              "label": "Start Date",
-			  "default": "2022-01-01"
-            },
-			{
-              "type": "text",
-              "id": "end_date",
-              "label": "End Date",
-			  "default": "2022-06-01"
-            },
-			{
-              "type": "image_picker",
-              "id": "photo_1",
-              "label": "Photo 1"
-            },
-			{
-              "type": "image_picker",
-              "id": "photo_2",
-              "label": "Photo 2"
-            },
-			{
-              "type": "image_picker",
-              "id": "photo_3",
-              "label": "Photo 3"
-            },
-			{
-              "type": "image_picker",
-              "id": "photo_4",
-              "label": "Photo 4"
+            {
+                "type": "select",
+                "id": "first_day",
+                "default": "-1",
+                "label": "First day",
+                "options": [
+                    {
+                        "value": "-1",
+                        "label": "None"
+                    },
+                    {
+                        "value": "0",
+                        "label": "Sunday"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Monday"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Tuesday"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Wednesday"
+                    },
+                    {
+                        "value": "Thursday",
+                        "label": "4"
+                    },
+                    {
+                        "value": "Friday",
+                        "label": "5"
+                    },
+                    {
+                    "value": "Saturday",
+                    "label": "6"
+                    }
+                ]
             }
           ]
     	}
