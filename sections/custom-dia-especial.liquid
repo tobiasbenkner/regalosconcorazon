@@ -64,12 +64,13 @@
         const year = moment().format("YYYY");
 
         {%- for block in section.blocks -%}
-            const first_day = +"{{ block.settings.first_day }}";
+            const firstDay = +"{{ block.settings.first_day }}";
+
 
             console.log("{{ block.settings.title }}");
 
             // calculate days
-            const end_date = first_day !== -1 ?
+            const end_date = firstDay !== -1 ?
                 `${year}-{{ block.settings.start_month }}-{{ block.settings.start_day }}` :
                 getFirstWeekDay(`${year}-{{ block.settings.start_month }}-{{ block.settings.start_day }}`);
             console.log(end_date);
