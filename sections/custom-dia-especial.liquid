@@ -75,7 +75,13 @@
             {%- assign index = 0 | plus: 1 -%}
         {%- endfor -%}
 
-        console.log(entries);
+        const finish = entries.map(it => {
+            return {
+                ...it,
+                start_date: moment(it.start_date).substract(daysBefore, "days").format("YYYY-MM-DD")
+            }
+        })
+        console.log(finish);
         //
         // const currentDate = new Date().toISOString().substring(0, 10);
         // const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
