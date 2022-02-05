@@ -78,7 +78,7 @@
         const finish = entries.map(it => {
             return {
                 ...it,
-                start_date: moment(it.start_date).substract(daysBefore, "days").format("YYYY-MM-DD")
+                start_date: moment(it.start_date).subtract(daysBefore, "days").format("YYYY-MM-DD")
             }
         })
         console.log(finish);
