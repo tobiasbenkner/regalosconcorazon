@@ -180,6 +180,7 @@
         "e04949de-7b63-4277-9608-beeedb3f7f65": {
           "type": "day",
           "settings": {
+            "background_image": "shopify:\/\/shop_images\/classic-cup-of-coffee.jpg",
             "title": "Día de Canarias",
             "description": "<p>Text...<\/p>",
             "start_month": 5,
