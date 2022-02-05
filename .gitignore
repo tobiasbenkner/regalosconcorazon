@@ -1,6 +1,7 @@
 # OS generated files #
 ######################
 .idea
+.vscode
 .DS_Store
 .DS_Store?
 ._*
