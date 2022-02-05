@@ -176,12 +176,23 @@
             "start_day": 19,
             "first_day": "-1"
           }
+        },
+        "e04949de-7b63-4277-9608-beeedb3f7f65": {
+          "type": "day",
+          "settings": {
+            "title": "Día de Canarias",
+            "description": "<p>Text...<\/p>",
+            "start_month": 5,
+            "start_day": 30,
+            "first_day": "-1"
+          }
         }
       },
       "block_order": [
         "ff9235cc-7a07-4e57-9c4d-4941e2434c97",
         "d2419ca5-ceb0-4c2c-a7f3-8e627155cdea",
-        "0dd01c69-c2f6-407d-b856-2f56f87c91ce"
+        "0dd01c69-c2f6-407d-b856-2f56f87c91ce",
+        "e04949de-7b63-4277-9608-beeedb3f7f65"
       ],
       "settings": {
         "days_before": "15"
