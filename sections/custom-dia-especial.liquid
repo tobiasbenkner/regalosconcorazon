@@ -61,14 +61,12 @@
     function displayDia() {
 
         const entries = [];
-        const daysBefore = -"{{ section.settings.days_before }}";
-        console.log("daysBefore", daysBefore);
-
         {%- assign index = 0 -%}
         const year = moment().format("YYYY");
 
         {%- for block in section.blocks -%}
             entries.push({
+                daysBefore: daysBefore,
                 day: "{{ block.settings.start_day }}",
                 month: "{{ block.settings.start_month }}",
                 year: year,
