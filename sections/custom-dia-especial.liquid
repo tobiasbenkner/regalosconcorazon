@@ -84,8 +84,6 @@
             {%- assign index = 0 | plus: 1 -%}
         {%- endfor -%}
 
-        console.log(entries);
-
         const finish = entries.map(it => {
             const date = `${it.year}-${pad(it.month, 2)}-${pad(it.day, 2)}`;
             const endDate = getFirstWeekDay(date, it.first_date);
@@ -96,22 +94,20 @@
                 end_date: endDate,
                 start_date: startDate,
             }
-        })
+        });
 
-        console.log(finish);
 
-        //
-        // const currentDate = new Date().toISOString().substring(0, 10);
-        // const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
-        //
-        //
-        // if (dias.length === 0) {
-        //     return;
-        // }
-        //
-        // const dia = dias[0];
-        // const element = document.getElementById("dia-" + dia.index);
-        // element.classList.remove("invisible");
+        const currentDate = moment().format("YYYY-MM-DD");
+        const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
+
+        if (dias.length === 0) {
+            return;
+        }
+
+        for(let dia of dias) {
+            const element = document.getElementById("dia-" + dia.index);
+            element.classList.remove("invisible");
+        }
     }
 
     displayDia();
