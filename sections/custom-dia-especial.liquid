@@ -57,6 +57,9 @@
     function displayDia() {
 
         const entries = [];
+        const daysBefore = +"{{ section.settings.id }}";
+        console.log("daysBefore", daysBefore);
+
         {%- assign index = 0 -%}
 
         {%- for block in section.blocks -%}
