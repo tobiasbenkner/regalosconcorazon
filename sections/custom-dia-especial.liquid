@@ -12,24 +12,12 @@
             {{ block.settings.description }}
         </div>
 
-        {% comment %}<div class="cde-grid-container">{% endcomment %}
-        {% comment %}{% endcomment %}
-        {% comment %}<div class="cde-grid-item">{% endcomment %}
-        {% comment %}<img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_1 | img_url: '400x400' }}" width="100%" />{% endcomment %}
-        {% comment %}</div>{% endcomment %}
-        {% comment %}{% endcomment %}
-        {% comment %}<div class="cde-grid-item">{% endcomment %}
-        {% comment %}<img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_2 | img_url: '400x400' }}" width="100%" />{% endcomment %}
-        {% comment %}</div>{% endcomment %}
-        {% comment %}{% endcomment %}
-        {% comment %}<div class="cde-grid-item">{% endcomment %}
-        {% comment %}<img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_3 | img_url: '400x400' }}" width="100%" />{% endcomment %}
-        {% comment %}</div>{% endcomment %}
-        {% comment %}{% endcomment %}
-        {% comment %}<div class="cde-grid-item">{% endcomment %}
-        {% comment %}<img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_4 | img_url: '400x400' }}" width="100%" />{% endcomment %}
-        {% comment %}</div>{% endcomment %}
-        {% comment %}</div>  {% endcomment %}
+        <div>
+            <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+                {{ block.settings.button_label | escape }}
+            </a>
+        </div>
+
     </div>
 
     {%- assign index = 0 | plus: 1 -%}
@@ -201,6 +189,17 @@
                         "label": "Sunday"
                     }
                 ]
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "default": "Button label",
+                "label": "Button Label"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button Link"
             }
           ]
     	}
