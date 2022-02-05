@@ -69,19 +69,22 @@
 
         {%- for block in section.blocks -%}
             entries.push({
-                end_date: getFirstWeekDay(`${year}-{{ block.settings.start_month }}-{{ block.settings.start_day }}`, {{ block.settings.first_day }}),
+                day: "{{ block.settings.start_day }}",
+                month: "{{ block.settings.start_month }}",
+                year: year,
+                first_date: "{{ block.settings.first_day }}",
                 index: "{{ index }}",
             });
             {%- assign index = 0 | plus: 1 -%}
         {%- endfor -%}
 
-        const finish = entries.map(it => {
-            return {
-                ...it,
-                start_date: moment(it.start_date).add(daysBefore, "days").format("YYYY-MM-DD")
-            }
-        })
-        console.log(finish);
+        // const finish = entries.map(it => {
+        //     return {
+        //         ...it,
+        //         start_date: moment(it.start_date).add(daysBefore, "days").format("YYYY-MM-DD")
+        //     }
+        // })
+        console.log(entries);
         //
         // const currentDate = new Date().toISOString().substring(0, 10);
         // const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
