@@ -84,7 +84,7 @@
             {%- assign index = 0 | plus: 1 -%}
         {%- endfor -%}
 
-        const finish = entries.map(it => {
+        const specialDays = entries.map(it => {
             const date = `${it.year}-${pad(it.month, 2)}-${pad(it.day, 2)}`;
             const endDate = getFirstWeekDay(date, it.first_date);
             const startDate = moment(endDate).add(it.days_before, "days").format("YYYY-MM-DD");
@@ -98,7 +98,7 @@
 
 
         const currentDate = moment().format("YYYY-MM-DD");
-        const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
+        const dias = specialDays.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
 
         if (dias.length === 0) {
             return;
