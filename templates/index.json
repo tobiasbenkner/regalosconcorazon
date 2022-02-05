@@ -152,7 +152,9 @@
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
             "start_month": 2,
             "start_day": 14,
-            "first_day": "-1"
+            "first_day": "-1",
+            "button_label": "Button label",
+            "button_link": ""
           }
         },
         "d2419ca5-ceb0-4c2c-a7f3-8e627155cdea": {
@@ -163,7 +165,9 @@
             "description": "<p>Text...<\/p>",
             "start_month": 5,
             "start_day": 1,
-            "first_day": "0"
+            "first_day": "0",
+            "button_label": "Button label",
+            "button_link": "shopify:\/\/pages\/despensa"
           }
         },
         "0dd01c69-c2f6-407d-b856-2f56f87c91ce": {
@@ -174,7 +178,9 @@
             "description": "<p>Text...<\/p>",
             "start_month": 3,
             "start_day": 19,
-            "first_day": "-1"
+            "first_day": "-1",
+            "button_label": "Button label",
+            "button_link": ""
           }
         },
         "e04949de-7b63-4277-9608-beeedb3f7f65": {
@@ -185,7 +191,9 @@
             "description": "<p>Text...<\/p>",
             "start_month": 5,
             "start_day": 30,
-            "first_day": "-1"
+            "first_day": "-1",
+            "button_label": "Button label",
+            "button_link": ""
           }
         },
         "39f46138-379a-4d29-bba3-ae41a173bf7f": {
@@ -196,7 +204,9 @@
             "description": "<p>Text...<\/p>",
             "start_month": 12,
             "start_day": 24,
-            "first_day": "-1"
+            "first_day": "-1",
+            "button_label": "Button label",
+            "button_link": ""
           }
         },
         "6f275463-0ae3-4a83-b300-0fcb34a5ea7b": {
@@ -207,7 +217,9 @@
             "description": "<p>Text...<\/p>",
             "start_month": 1,
             "start_day": 6,
-            "first_day": "-1"
+            "first_day": "-1",
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
