@@ -64,28 +64,26 @@
         const year = moment().format("YYYY");
 
         {%- for block in section.blocks -%}
-            const firstDay = +"{{ block.settings.first_day }}";
-
 
             console.log("{{ block.settings.title }}");
 
             // calculate days
-            const end_date = firstDay !== -1 ?
+            const end_date_{{ index }} = +"{{ block.settings.first_day }}" !== -1 ?
                 `${year}-{{ block.settings.start_month }}-{{ block.settings.start_day }}` :
                 getFirstWeekDay(`${year}-{{ block.settings.start_month }}-{{ block.settings.start_day }}`);
-            console.log(end_date);
+            console.log(end_date_{{ index }});
 
-            const start_date = "";
-            console.log(start_date);
+            const start_date_{{ index }} = moment(end_date_{{ index }}).subtract(daysBefore, 'days');
 
             entries.push({
-                start_date: "{{ block.settings.start_date }}",
-                end_date: end_date,
+                start_date: start_date_{{ index }},
+                end_date: end_date_{{ index }},
                 index: "{{ index }}",
             });
             {%- assign index = 0 | plus: 1 -%}
         {%- endfor -%}
 
+        console.log(entries);
 
         const currentDate = new Date().toISOString().substring(0, 10);
         const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
