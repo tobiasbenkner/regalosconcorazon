@@ -61,13 +61,25 @@
         console.log("daysBefore", daysBefore);
 
         {%- assign index = 0 -%}
+        const year = moment().format("YYYY");
 
         {%- for block in section.blocks -%}
+            const first_day = +"{{ block.settings.first_day }}";
 
-            console.log("{{ block.settings.first_day }}");
+            console.log("{{ block.settings.title }}");
+
+            // calculate days
+            const end_date = first_day !== -1 ?
+                `${year}-{{ block.settings.start_month }}-{{ block.settings.start_day }}` :
+                getFirstWeekDay(`${year}-{{ block.settings.start_month }}-{{ block.settings.start_day }}`);
+            console.log(end_date);
+
+            const start_date = "";
+            console.log(start_date);
+
             entries.push({
                 start_date: "{{ block.settings.start_date }}",
-                end_date: "{{ block.settings.end_date }}",
+                end_date: end_date,
                 index: "{{ index }}",
             });
             {%- assign index = 0 | plus: 1 -%}
