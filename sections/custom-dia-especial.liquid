@@ -1,76 +1,100 @@
 {%- assign index = 0 -%}
 {%- for block in section.blocks -%}
 
-<div id="dia-{{index}}" class="page-width invisible">
-  
-  <div class="custom-center border-radius background-image" style='margin-top: 60px; height: 300px; background-image: url("{{ block.settings.background_image | img_url: '1200x1200' }}");'>
-    <h1 class="shadow" style="color: white">{{ block.settings.title }}</h1>
-  </div>
-  
-  <div class="cde-grid-container">
+    <div id="dia-{{ index }}" class="page-width invisible">
 
-    <div class="cde-grid-item">
-      <img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_1 | img_url: '400x400' }}" width="100%" />
-    </div>
-	
-    <div class="cde-grid-item">
-      <img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_2 | img_url: '400x400' }}" width="100%" />
-    </div>
-    
-    <div class="cde-grid-item">
-      <img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_3 | img_url: '400x400' }}" width="100%" />
-    </div>
-    
-    <div class="cde-grid-item">
-      <img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_4 | img_url: '400x400' }}" width="100%" />
-    </div>
-  </div>  
-</div>
+        <div class="custom-center border-radius background-image"
+             style='margin-top: 60px; height: 300px; background-image: url("{{ block.settings.background_image | img_url: '1200x1200' }}");'>
+            <h1 class="shadow" style="color: white">{{ block.settings.title }}</h1>
+        </div>
 
-{%- assign index = 0 | plus: 1 -%}
+        <div>
+            {{ block.settings.description }}
+        </div>
+
+        {% comment %}<div class="cde-grid-container">{% endcomment %}
+        {% comment %}{% endcomment %}
+        {% comment %}<div class="cde-grid-item">{% endcomment %}
+        {% comment %}<img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_1 | img_url: '400x400' }}" width="100%" />{% endcomment %}
+        {% comment %}</div>{% endcomment %}
+        {% comment %}{% endcomment %}
+        {% comment %}<div class="cde-grid-item">{% endcomment %}
+        {% comment %}<img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_2 | img_url: '400x400' }}" width="100%" />{% endcomment %}
+        {% comment %}</div>{% endcomment %}
+        {% comment %}{% endcomment %}
+        {% comment %}<div class="cde-grid-item">{% endcomment %}
+        {% comment %}<img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_3 | img_url: '400x400' }}" width="100%" />{% endcomment %}
+        {% comment %}</div>{% endcomment %}
+        {% comment %}{% endcomment %}
+        {% comment %}<div class="cde-grid-item">{% endcomment %}
+        {% comment %}<img style="object-fit: cover; border-radius: 10px" src="{{ block.settings.photo_4 | img_url: '400x400' }}" width="100%" />{% endcomment %}
+        {% comment %}</div>{% endcomment %}
+        {% comment %}</div>  {% endcomment %}
+    </div>
+
+    {%- assign index = 0 | plus: 1 -%}
 {%- endfor -%}
 
 
 <script src="{{ 'moment.min.js' | asset_url }}"></script>
 <script>
-    console.log("moment", moment().format());
 
+    function getFirstWeekDay(dateString, dayOfWeek) {
+        const date = moment(dateString, "YYYY-MM-DD");
 
-  function displayDia() {
-    
-    const entries = [];
-  	{%- assign index = 0 -%}
-    
-  	{%- for block in section.blocks -%}
-        entries.push({
-          start_date: "{{block.settings.start_date}}",
-          end_date: "{{block.settings.end_date}}",
-          index: "{{index}}",
-        });
-  		{%- assign index = 0 | plus: 1 -%}
-    {%- endfor -%}
-  
-  	
-  	const currentDate = new Date().toISOString().substring(0, 10);
-  	const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
+        const day = date.day();
+        let diffDays = 0;
 
-  	
-    if(dias.length === 0) {
-      return;
+        if (day > dayOfWeek) {
+            diffDays = 7 - (day - dayOfWeek);
+        } else {
+            diffDays = dayOfWeek - day
+        }
+
+        return date.add(diffDays, 'day').format("YYYY-MM-DD");
     }
-    
-    const dia = dias[0];
-    const element = document.getElementById("dia-" + dia.index);
-  	element.classList.remove("invisible");
-  }
 
-  displayDia();
+    function displayDia() {
+
+        const entries = [];
+        {%- assign index = 0 -%}
+
+        {%- for block in section.blocks -%}
+        entries.push({
+            start_date: "{{ block.settings.start_date }}",
+            end_date: "{{ block.settings.end_date }}",
+            index: "{{ index }}",
+        });
+        {%- assign index = 0 | plus: 1 -%}
+        {%- endfor -%}
+
+
+        const currentDate = new Date().toISOString().substring(0, 10);
+        const dias = entries.filter(it => it.start_date <= currentDate && it.end_date >= currentDate);
+
+
+        if (dias.length === 0) {
+            return;
+        }
+
+        const dia = dias[0];
+        const element = document.getElementById("dia-" + dia.index);
+        element.classList.remove("invisible");
+    }
+
+    displayDia();
   	
 </script>
 
 {% schema %}
   {
     "name": "custom-dia-especial",
+    "settings": [{
+        "type": "text",
+        "id": "days_before",
+        "label": "Days before",
+        "default": "15"
+    }],
 	"blocks": [
 	    {
           "type": "day",
@@ -85,6 +109,30 @@
               "type": "text",
               "id": "title",
               "label": "Title"
+            },
+            {
+                "type": "richtext",
+                "id": "description",
+                "default": "<p>Text...</p>",
+                "label": "Description"
+            },
+            {
+                "type": "range",
+                "id": "start_month",
+                "label": "Month",
+                "min": 1,
+                "max": 12,
+                "step": 1,
+                "default": 11
+            },
+            {
+                "type": "range",
+                "id": "start_day",
+                "label": "Day",
+                "min": 1,
+                "max": 31,
+                "step": 1,
+                "default": 27
             },
 			{
               "type": "text",
