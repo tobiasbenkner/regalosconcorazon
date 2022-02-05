@@ -149,7 +149,7 @@
           "settings": {
             "background_image": "shopify:\/\/shop_images\/a-pink-rose-closes-its-petals-against-the-greying-light.jpg",
             "title": "Día de San Valentín",
-            "description": "<p>Text...<\/p>",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
             "start_month": 2,
             "start_day": 14,
             "start_date": "2022-02-01",
