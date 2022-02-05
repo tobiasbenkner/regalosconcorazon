@@ -36,33 +36,36 @@
 </style>
 
 
-
 <div class="cmm-background">
-  <div class="page-width">
-    <div class="cmm-grid-container">
-      
-      {%- for block in section.blocks -%}
-        <div class="cmm-grid-container-item">
-          <img style="object-fit: cover; border-radius: 10px; height: {{section.settings.image_height}};" src="{{ block.settings.image | img_url: '400x400' }}" width="100%" />
-        {% if block.settings.title %} 
-          <h2>{{block.settings.title}}</h2>
-        {% endif %}
-          
-          {% if block.settings.link %} 
-          
-          <a href="{{ block.settings.link }}" style="margin-top: 20px; margin-bottom: 20px;" class="button button--secondary" {{ block.shopify_attributes }}>
-              {{ block.settings.link_label | escape }}
-          </a>
-          {% endif %}
-          
-      </div>
-      
-      
-      
-      {%- endfor -%}
-      
+    <div class="page-width">
+        <div class="cmm-grid-container">
+            {%- for block in section.blocks -%}
+                <div class="cmm-grid-container-item">
+                    <img style="object-fit: cover; border-radius: 10px; height: {{ section.settings.image_height }};"
+                         src="{{ block.settings.image | img_url: '400x400' }}" width="100%"
+                         alt="{{ block.settings.title }}"
+                         {% if block.settings.link %}
+                            onclick="location.href='{{ block.settings.link }}'"
+                         {% endif %}
+                    />
+                    {% if block.settings.title %}
+                        <h2>{{ block.settings.title }}</h2>
+                    {% endif %}
+
+                    {% if block.settings.link %}
+
+                        <a href="{{ block.settings.link }}" style="margin-top: 20px; margin-bottom: 20px;"
+                           class="button button--secondary" {{ block.shopify_attributes }}>
+                            {{ block.settings.link_label | escape }}
+                        </a>
+                    {% endif %}
+
+                </div>
+
+            {%- endfor -%}
+
+        </div>
     </div>
-  </div>
 </div>
 
 {% schema %}
