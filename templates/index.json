@@ -1,1 +1,197 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Regalos con Corazon","heading_size":"medium"}},"218148a1-20ff-4b41-b410-4f8043dfef2c":{"type":"buttons","settings":{"button_label_1":"Regalos","button_link_1":"shopify:\/\/pages\/regalos-general","button_style_secondary_1":false,"button_label_2":"Personaliza Tu Regalo","button_link_2":"shopify:\/\/pages\/personaliza-tu-regalo","button_style_secondary_2":false}}},"block_order":["heading","218148a1-20ff-4b41-b410-4f8043dfef2c"],"settings":{"image_2":"shopify:\/\/shop_images\/265668804_487957076023812_5407824488742590208_n.jpg","image_overlay_opacity":20,"image_height":"medium","adapt_height_first_image":false,"desktop_content_position":"middle-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"background-1","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"1643632313bde2bc4d":{"type":"custom-image","settings":{"background_image":"shopify:\/\/shop_images\/leaf.png","position":"end"}},"164363238010341703":{"type":"custom-rich-text","blocks":{"7c09acc1-0707-4ef1-abfa-41ed25f19b12":{"type":"heading","settings":{"heading":"Quienes somos","heading_size":"h1","heading_position":"center"}},"1ca75f44-ad1b-495e-a2ee-dfa1c0627888":{"type":"text","settings":{"text":"<p>Lasdejosito nace fruto de un sueno , del amor incondicional que siente un joven emprendedor Canario por su tierra y que junto con la pasion por la gastronomia, y la fusi6n de ambas, crea su pequeno taller donde intenta dar al producto Canario el nivel que se merece. Ama el producto de cercania, artesano , de producciones pequenas y trato directo con el productor. Enamorado de los mercados de abastos de las ciudades que visita, tiene claro que esta aficion le llevara algun dia a realizar su Sueno.<\/p><p>Dedicado durante anos a trabajar entre fogones, tuvo la oportunidad de probar y degustar gran variedad de producto local ,llevandose algunpremio a sus espaldas del cual después hablaremos, entendio que algun dia le daria a esos productos y a sus productores el lugar que se merecian y que por su parte haria todo lo posible para elevarlos al nivel <strong>GOURMET<\/strong>. Es por ello que en su andadura profesional ,le lleva a estar casi 2 anos trabajando en Madrid y en ese tiempo lo proponen para un concurso detapas que se celebra en la capital y como no podia ser de otra manera , para la tapa que presenta utiliza productos 100% de su tierra, porque sabia que eso seria \"caballo ganador\" y dicho y hecho,asi sucedio fue elegida la mejortapa de Madrid 2013 con un queso Originariamente canario,una mermelada casera y un mojo de la tierra...y de esta manera hace su pequeno homenaje a su tierra de nacimiento. Ademas cree que los productos canarios tenian que conocerse en cualquier parte y que quien quisiera probarlos tuviera la oportunidad de poder adquirirlos y no privarles de esos aromas y sabores .Y por qué no? <\/p><p><\/p><p>Que podian ser un regalo perfecto y por eso surgio la idea de crear nuestro taller donde poder elaborar esas cajas de regalos y hacerlas llegar a sus destinatarios con todo el carino.Tenemos la suerte que todo lo que produce nuestra tierra es de una calidad excelente y aprovechando ésto, parte de nuestra filosofia se basa en ayudar al pequeno productor local que se esmera dia a dia para que su producto sea de la mayor calidad y sabiendo el cariho con el que lo hacen ya merecen nuestro respeto y aceptacion.Sabores y aromas,Canarias en casa.<\/p><p><\/p><p><\/p>","position":"center"}}},"block_order":["7c09acc1-0707-4ef1-abfa-41ed25f19b12","1ca75f44-ad1b-495e-a2ee-dfa1c0627888"],"settings":{"margin_top":"-80px","margin_top_mobil":"0"}},"16436323456bc5ccb4":{"type":"custom-image","settings":{"background_image":"shopify:\/\/shop_images\/leaf_rotated.png","position":"start"}},"164362482326d9b4ca":{"type":"custom-multicolumn","blocks":{"1643624823b20cb3cb-0":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-31.jpg","title":"","text":"","link_label":"","link":""}},"1643624823b20cb3cb-1":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-39.jpg","title":"","text":"","link_label":"","link":""}},"1643624823b20cb3cb-2":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-34.jpg","title":"","text":"","link_label":"","link":""}},"ab61bafb-69a5-4185-a5ba-6e4ceecca135":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-40.jpg","title":"","text":"","link_label":"","link":""}}},"block_order":["1643624823b20cb3cb-0","1643624823b20cb3cb-1","1643624823b20cb3cb-2","ab61bafb-69a5-4185-a5ba-6e4ceecca135"],"settings":{"background_image":"shopify:\/\/shop_images\/paper.gif","image_height":"275px","grid_template_columns":"1fr 1fr 1fr 1fr","grid_template_columns_mobile":"1fr 1fr","grid_gap":"20px","has_border":false}},"16437096474140a4a7":{"type":"custom-dia-especial","blocks":{"ff9235cc-7a07-4e57-9c4d-4941e2434c97":{"type":"day","settings":{"background_image":"shopify:\/\/shop_images\/a-pink-rose-closes-its-petals-against-the-greying-light.jpg","title":"Día de San Valentín","start_date":"2022-02-01","end_date":"2022-02-14","photo_1":"shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-31.jpg","photo_2":"shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-39.jpg","photo_3":"shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-34.jpg","photo_4":"shopify:\/\/shop_images\/halloween-puppy.jpg"}},"0dd01c69-c2f6-407d-b856-2f56f87c91ce":{"type":"day","settings":{"background_image":"shopify:\/\/shop_images\/father-playing-with-his-kids.jpg","title":"Día de Padre","start_date":"2022-05-04","end_date":"2022-05-26","photo_1":"shopify:\/\/shop_images\/halloween-puppy.jpg","photo_2":"shopify:\/\/shop_images\/flowers-for-mother.jpg","photo_3":"shopify:\/\/shop_images\/a-sleeping-cat-in-the-sun.jpg","photo_4":"shopify:\/\/shop_images\/red-rose-on-bush.jpg"}}},"block_order":["ff9235cc-7a07-4e57-9c4d-4941e2434c97","0dd01c69-c2f6-407d-b856-2f56f87c91ce"],"settings":{}}},"order":["image_banner","1643632313bde2bc4d","164363238010341703","16436323456bc5ccb4","164362482326d9b4ca","16437096474140a4a7"]}
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Regalos con Corazon",
+            "heading_size": "medium"
+          }
+        },
+        "218148a1-20ff-4b41-b410-4f8043dfef2c": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Regalos",
+            "button_link_1": "shopify:\/\/pages\/regalos-general",
+            "button_style_secondary_1": false,
+            "button_label_2": "Personaliza Tu Regalo",
+            "button_link_2": "shopify:\/\/pages\/personaliza-tu-regalo",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "218148a1-20ff-4b41-b410-4f8043dfef2c"
+      ],
+      "settings": {
+        "image_2": "shopify:\/\/shop_images\/265668804_487957076023812_5407824488742590208_n.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "1643632313bde2bc4d": {
+      "type": "custom-image",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/leaf.png",
+        "position": "end"
+      }
+    },
+    "164363238010341703": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "7c09acc1-0707-4ef1-abfa-41ed25f19b12": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quienes somos",
+            "heading_size": "h1",
+            "heading_position": "center"
+          }
+        },
+        "1ca75f44-ad1b-495e-a2ee-dfa1c0627888": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lasdejosito nace fruto de un sueno , del amor incondicional que siente un joven emprendedor Canario por su tierra y que junto con la pasion por la gastronomia, y la fusi6n de ambas, crea su pequeno taller donde intenta dar al producto Canario el nivel que se merece. Ama el producto de cercania, artesano , de producciones pequenas y trato directo con el productor. Enamorado de los mercados de abastos de las ciudades que visita, tiene claro que esta aficion le llevara algun dia a realizar su Sueno.<\/p><p>Dedicado durante anos a trabajar entre fogones, tuvo la oportunidad de probar y degustar gran variedad de producto local ,llevandose algunpremio a sus espaldas del cual después hablaremos, entendio que algun dia le daria a esos productos y a sus productores el lugar que se merecian y que por su parte haria todo lo posible para elevarlos al nivel <strong>GOURMET<\/strong>. Es por ello que en su andadura profesional ,le lleva a estar casi 2 anos trabajando en Madrid y en ese tiempo lo proponen para un concurso detapas que se celebra en la capital y como no podia ser de otra manera , para la tapa que presenta utiliza productos 100% de su tierra, porque sabia que eso seria \"caballo ganador\" y dicho y hecho,asi sucedio fue elegida la mejortapa de Madrid 2013 con un queso Originariamente canario,una mermelada casera y un mojo de la tierra...y de esta manera hace su pequeno homenaje a su tierra de nacimiento. Ademas cree que los productos canarios tenian que conocerse en cualquier parte y que quien quisiera probarlos tuviera la oportunidad de poder adquirirlos y no privarles de esos aromas y sabores .Y por qué no? <\/p><p><\/p><p>Que podian ser un regalo perfecto y por eso surgio la idea de crear nuestro taller donde poder elaborar esas cajas de regalos y hacerlas llegar a sus destinatarios con todo el carino.Tenemos la suerte que todo lo que produce nuestra tierra es de una calidad excelente y aprovechando ésto, parte de nuestra filosofia se basa en ayudar al pequeno productor local que se esmera dia a dia para que su producto sea de la mayor calidad y sabiendo el cariho con el que lo hacen ya merecen nuestro respeto y aceptacion.Sabores y aromas,Canarias en casa.<\/p><p><\/p><p><\/p>",
+            "position": "center"
+          }
+        }
+      },
+      "block_order": [
+        "7c09acc1-0707-4ef1-abfa-41ed25f19b12",
+        "1ca75f44-ad1b-495e-a2ee-dfa1c0627888"
+      ],
+      "settings": {
+        "margin_top": "-80px",
+        "margin_top_mobil": "0"
+      }
+    },
+    "16436323456bc5ccb4": {
+      "type": "custom-image",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/leaf_rotated.png",
+        "position": "start"
+      }
+    },
+    "164362482326d9b4ca": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "1643624823b20cb3cb-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-31.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1643624823b20cb3cb-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-39.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1643624823b20cb3cb-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-34.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "ab61bafb-69a5-4185-a5ba-6e4ceecca135": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-40.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1643624823b20cb3cb-0",
+        "1643624823b20cb3cb-1",
+        "1643624823b20cb3cb-2",
+        "ab61bafb-69a5-4185-a5ba-6e4ceecca135"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/paper.gif",
+        "image_height": "275px",
+        "grid_template_columns": "1fr 1fr 1fr 1fr",
+        "grid_template_columns_mobile": "1fr 1fr",
+        "grid_gap": "20px",
+        "has_border": false
+      }
+    },
+    "16437096474140a4a7": {
+      "type": "custom-dia-especial",
+      "blocks": {
+        "ff9235cc-7a07-4e57-9c4d-4941e2434c97": {
+          "type": "day",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/a-pink-rose-closes-its-petals-against-the-greying-light.jpg",
+            "title": "Día de San Valentín",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+            "start_month": 2,
+            "start_day": 14,
+            "start_date": "2022-02-01",
+            "end_date": "2022-02-14",
+            "photo_1": "shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-31.jpg",
+            "photo_2": "shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-39.jpg",
+            "photo_3": "shopify:\/\/shop_images\/PHOTO-2022-01-31-08-56-34.jpg",
+            "photo_4": "shopify:\/\/shop_images\/halloween-puppy.jpg"
+          }
+        },
+        "0dd01c69-c2f6-407d-b856-2f56f87c91ce": {
+          "type": "day",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/father-playing-with-his-kids.jpg",
+            "title": "Día de Padre",
+            "description": "<p>Text...<\/p>",
+            "start_month": 11,
+            "start_day": 27,
+            "start_date": "2022-05-04",
+            "end_date": "2022-05-26",
+            "photo_1": "shopify:\/\/shop_images\/halloween-puppy.jpg",
+            "photo_2": "shopify:\/\/shop_images\/flowers-for-mother.jpg",
+            "photo_3": "shopify:\/\/shop_images\/a-sleeping-cat-in-the-sun.jpg",
+            "photo_4": "shopify:\/\/shop_images\/red-rose-on-bush.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "ff9235cc-7a07-4e57-9c4d-4941e2434c97",
+        "0dd01c69-c2f6-407d-b856-2f56f87c91ce"
+      ],
+      "settings": {
+        "days_before": "15"
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "1643632313bde2bc4d",
+    "164363238010341703",
+    "16436323456bc5ccb4",
+    "164362482326d9b4ca",
+    "16437096474140a4a7"
+  ]
+}
