@@ -61,7 +61,7 @@
     function displayDia() {
 
         const entries = [];
-        const daysBefore = +"{{ section.settings.days_before }}";
+        const daysBefore = -"{{ section.settings.days_before }}";
         console.log("daysBefore", daysBefore);
 
         {%- assign index = 0 -%}
@@ -78,7 +78,7 @@
         const finish = entries.map(it => {
             return {
                 ...it,
-                start_date: moment(it.start_date).subtract(daysBefore, "days").format("YYYY-MM-DD")
+                start_date: moment(it.start_date).add(daysBefore, "days").format("YYYY-MM-DD")
             }
         })
         console.log(finish);
