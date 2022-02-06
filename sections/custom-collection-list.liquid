@@ -58,8 +58,11 @@
                         {% if section.settings.price %}
                             <div class="center">{{ product.variants[0].price | money }}</div>
                         {% endif %}
+
+                        {% if section.settings.chart %}
+                            <button id="buy-{{ product.variants.first.id }}" onclick="addToChart('{{ product.variants.first.id }}', '{{ product.title }}')">Add to cart</button>
+                        {% endif %}
                     </div>
-                    <button id="buy-{{ product.variants.first.id }}" onclick="addToChart('{{ product.variants.first.id }}', '{{ product.title }}')">Add to cart</button>
                 {% endfor %}
             </div>
         {% endif %}
@@ -108,6 +111,12 @@
       "id": "price",
       "label": "Show price",
       "default": true
+    },
+    {
+        "type": "checkbox",
+        "id": "chart",
+        "label": "Show cart",
+        "default": false
     }
   	],
 	"blocks": [
