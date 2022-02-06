@@ -154,7 +154,7 @@
             "start_day": 14,
             "first_day": "-1",
             "button_label": "San Valintín",
-            "button_link": "shopify:\/\/pages\/despensa"
+            "button_link": "shopify:\/\/pages\/regalos-dias-especiales-valentin"
           }
         },
         "d2419ca5-ceb0-4c2c-a7f3-8e627155cdea": {
@@ -166,8 +166,8 @@
             "start_month": 5,
             "start_day": 1,
             "first_day": "0",
-            "button_label": "Button label",
-            "button_link": "shopify:\/\/pages\/despensa"
+            "button_label": "Día de Madre",
+            "button_link": "shopify:\/\/pages\/regalos-dias-especiales-madre"
           }
         },
         "0dd01c69-c2f6-407d-b856-2f56f87c91ce": {
@@ -179,8 +179,8 @@
             "start_month": 3,
             "start_day": 19,
             "first_day": "-1",
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Día de Padre",
+            "button_link": "shopify:\/\/pages\/regalos-dias-especiales-padre"
           }
         },
         "e04949de-7b63-4277-9608-beeedb3f7f65": {
@@ -192,8 +192,8 @@
             "start_month": 5,
             "start_day": 30,
             "first_day": "-1",
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Día de Canarias",
+            "button_link": "shopify:\/\/pages\/regalos-dias-especiales-grancanaria"
           }
         },
         "39f46138-379a-4d29-bba3-ae41a173bf7f": {
@@ -205,8 +205,8 @@
             "start_month": 12,
             "start_day": 24,
             "first_day": "-1",
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Navidad",
+            "button_link": "shopify:\/\/pages\/regalos-dias-especiales-navidad"
           }
         },
         "6f275463-0ae3-4a83-b300-0fcb34a5ea7b": {
@@ -218,8 +218,8 @@
             "start_month": 1,
             "start_day": 6,
             "first_day": "-1",
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Reyes magos",
+            "button_link": "shopify:\/\/pages\/regalos-dias-especiales-reyes"
           }
         }
       },
