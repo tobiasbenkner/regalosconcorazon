@@ -3,8 +3,8 @@
     "164390755697ea509e": {
       "type": "custom-banner",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/be-my-valentine-with-roses.jpg",
-        "title": "San Valentin",
+        "background_image": "shopify:\/\/shop_images\/dark-island.jpg",
+        "title": "Día de Canarias",
         "description": "",
         "height": "300px"
       }
@@ -23,7 +23,7 @@
           "type": "collection",
           "settings": {
             "title": "",
-            "collection": "dias-valentin"
+            "collection": "dias-canarias"
           }
         }
       },
