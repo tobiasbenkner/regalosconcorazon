@@ -59,12 +59,7 @@
                             <div class="center">{{ product.variants[0].price | money }}</div>
                         {% endif %}
                     </div>
-                    <button onclick="addToChart('{{ product.variants.first.id }}', '{{ product.title }}')">Add to cart</button>
-                    {% comment %}<form method="post" action="/cart/add">{% endcomment %}
-                        {% comment %}<input type="hidden" name="id" value="{{ product.variants.first.id }}" />{% endcomment %}
-                        {% comment %}<input min="1" type="number" id="quantity" name="quantity" value="1"/>{% endcomment %}
-                        {% comment %}<input type="submit" value="Add to cart" class="btn" />{% endcomment %}
-                    {% comment %}</form>{% endcomment %}
+                    <button id="buy-{{ product.variants.first.id }}" onclick="addToChart('{{ product.variants.first.id }}', '{{ product.title }}')">Add to cart</button>
                 {% endfor %}
             </div>
         {% endif %}
@@ -73,24 +68,34 @@
 
 <script>
     const addToChart = async (productId, title) => {
-        const payload = {
-            items: [{
-                id: productId,
-                quantity: 1,
-            }]
-        };
+        const buyButton = document.getElementById(`buy-${productId}`);
+        buyButton.disabled = true;
 
-        const rawResponse = await fetch('/cart/add.js', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(payload),
-        });
+        try {
+            const payload = {
+                items: [{
+                    id: productId,
+                    quantity: 1,
+                }]
+            };
 
-        const content = await rawResponse.json();
-        showSnackbar(`${title} ha sido añadido al carrito.`);
-        console.log(content);
+            const rawResponse = await fetch('/cart/add.js', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload),
+            });
+
+            const content = await rawResponse.json();
+            showSnackbar(`${title} ha sido añadido al carrito.`);
+            console.log(content);
+
+        } catch (e) {
+            showSnackbar(`Error`);
+        } finally {
+            buyButton.disabled = false;
+        }
     };
 </script>
 
