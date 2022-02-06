@@ -55,18 +55,38 @@
                             <div class="center">{{ product.variants[0].price | money }}</div>
                         {% endif %}
                     </div>
-
-                    <form method="post" action="/cart/add">
-                        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                        <input min="1" type="number" id="quantity" name="quantity" value="1"/>
-                        <input type="submit" value="Add to cart" class="btn" />
-                    </form>
+                    <button onclick="addToChart.bind(this, '{{ product.variants.first.id }}')"></button>
+                    {% comment %}<form method="post" action="/cart/add">{% endcomment %}
+                        {% comment %}<input type="hidden" name="id" value="{{ product.variants.first.id }}" />{% endcomment %}
+                        {% comment %}<input min="1" type="number" id="quantity" name="quantity" value="1"/>{% endcomment %}
+                        {% comment %}<input type="submit" value="Add to cart" class="btn" />{% endcomment %}
+                    {% comment %}</form>{% endcomment %}
                 {% endfor %}
             </div>
         {% endif %}
     {%- endfor -%}
 </div>
 
+<script>
+    const addToChart = async (productId) => {
+
+        let formData = new FormData();
+        formData.append('id', productId);
+        formData.append('quantity', 1);
+
+        const rawResponse = await fetch('/cart/add', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: formData
+        });
+        const content = await rawResponse.json();
+
+        console.log(content);
+    };
+</script>
 
 {% schema %}
   {
