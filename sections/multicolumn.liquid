@@ -62,12 +62,14 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
-                {%- if block.settings.link_label != blank -%}
+              </div>
+              {%- if block.settings.link_label != blank -%}
+                <div style="margin-bottom: 20px">
                   <a href="{{ block.settings.link }}" class="button button--secondary" {{ block.shopify_attributes }}>
                     {{ block.settings.link_label | escape }}
                   </a>
-                {%- endif -%}
-              </div>
+                </div>
+              {%- endif -%}
             </div>
           </li>
         {%- endfor -%}
