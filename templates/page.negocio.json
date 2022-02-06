@@ -65,6 +65,38 @@
         "price": false
       }
     },
+    "1644164177535f03e1": {
+      "type": "rich-text",
+      "blocks": {
+        "16441641773cb689ed-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Presupuesto",
+            "heading_size": "h1"
+          }
+        },
+        "16441641773cb689ed-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Escríbanos su solicitud. Le proporcionaremos un presupuesto.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16441641773cb689ed-0",
+        "16441641773cb689ed-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "164416416086b707dc": {
+      "type": "contact-form",
+      "settings": {
+        "heading": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -76,6 +108,8 @@
     "1643908010946b3acb",
     "1644001059d919e121",
     "164294062297c6d597",
+    "1644164177535f03e1",
+    "164416416086b707dc",
     "main"
   ]
 }
