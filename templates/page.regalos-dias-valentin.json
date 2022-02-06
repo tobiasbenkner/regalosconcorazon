@@ -37,7 +37,8 @@
         "36b05728-6ddb-4ff9-86f0-251d966eed59"
       ],
       "settings": {
-        "price": true
+        "price": true,
+        "chart": true
       }
     }
   },
