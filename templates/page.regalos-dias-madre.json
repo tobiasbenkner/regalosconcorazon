@@ -4,7 +4,7 @@
       "type": "custom-banner",
       "settings": {
         "background_image": "shopify:\/\/shop_images\/be-my-valentine-with-roses.jpg",
-        "title": "San Valentin",
+        "title": "Día de la Madre",
         "description": "",
         "height": "300px"
       }
@@ -23,7 +23,7 @@
           "type": "collection",
           "settings": {
             "title": "",
-            "collection": "dias-valentin"
+            "collection": "dias-madre"
           }
         }
       },
