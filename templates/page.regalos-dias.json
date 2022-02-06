@@ -89,7 +89,10 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "main": {
@@ -138,8 +141,8 @@
       ],
       "settings": {
         "image_height": "400px",
-        "grid_template_columns": "auto auto auto",
-        "grid_template_columns_mobile": "auto auto",
+        "grid_template_columns": "1fr 1fr",
+        "grid_template_columns_mobile": "1fr",
         "grid_gap": "20px",
         "has_border": false
       }
