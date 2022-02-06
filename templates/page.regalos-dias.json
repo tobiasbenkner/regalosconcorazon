@@ -16,9 +16,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/be-my-valentine-with-roses.jpg",
-            "title": "Día de San Valentín",
+            "title": "",
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
-            "link_label": "San Valentin",
+            "link_label": "Día de San Valentín",
             "link": "shopify:\/\/pages\/regalos-dias-especiales-valentin"
           }
         },
@@ -26,7 +26,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/father-and-daughter-having-fun.jpg",
-            "title": "Día del Padre",
+            "title": "",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "Día del Padre",
             "link": "shopify:\/\/pages\/regalos-dias-especiales-padre"
@@ -36,7 +36,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/flowers-for-mother.jpg",
-            "title": "Día de la Madre",
+            "title": "",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "Día de la Madre",
             "link": "shopify:\/\/pages\/regalos-dias-especiales-madre"
@@ -46,7 +46,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/dark-island.jpg",
-            "title": "Día de Canarias",
+            "title": "",
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
             "link_label": "Día de Canarias",
             "link": "shopify:\/\/pages\/regalos-dias-especiales-grancanaria"
@@ -56,7 +56,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/ornaments-on-christmas-tree.jpg",
-            "title": "Navidad",
+            "title": "",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "Navidad",
             "link": "shopify:\/\/pages\/regalos-dias-especiales-navidad"
@@ -66,9 +66,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/holiday-cards-gift-wrap.jpg",
-            "title": "Día de Reyes Magos",
+            "title": "",
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
-            "link_label": "Reyes Magos",
+            "link_label": "Día de Reyes Magos",
             "link": "shopify:\/\/pages\/regalos-dias-especiales-reyes"
           }
         }
