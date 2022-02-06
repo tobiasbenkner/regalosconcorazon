@@ -15,26 +15,36 @@
       "settings": {
       }
     },
-    "164417065855d91674": {
-      "type": "featured-collection",
+    "1644173882d96df95b": {
+      "type": "rich-text",
       "settings": {
-        "title": "",
-        "collection": "dias-valentin",
-        "products_to_show": 12,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "164417384157cd3baf": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "36b05728-6ddb-4ff9-86f0-251d966eed59": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "dias-valentin"
+          }
+        }
+      },
+      "block_order": [
+        "36b05728-6ddb-4ff9-86f0-251d966eed59"
+      ],
+      "settings": {
+        "price": true
       }
     }
   },
   "order": [
     "164390755697ea509e",
     "main",
-    "164417065855d91674"
+    "1644173882d96df95b",
+    "164417384157cd3baf"
   ]
 }
