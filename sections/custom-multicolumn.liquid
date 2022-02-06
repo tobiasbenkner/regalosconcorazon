@@ -53,11 +53,16 @@
                     {% endif %}
 
                     {% if block.settings.link %}
-
                         <a href="{{ block.settings.link }}" style="margin-top: 20px; margin-bottom: 20px;"
                            class="button button--secondary" {{ block.shopify_attributes }}>
                             {{ block.settings.link_label | escape }}
                         </a>
+                    {% endif %}
+
+                    {% if block.settings.text %}
+                        <div>
+                            {{ block.settings.text | escape }}
+                        </div>
                     {% endif %}
 
                 </div>
