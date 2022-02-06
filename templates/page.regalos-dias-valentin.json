@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "164390755697ea509e": {
+      "type": "custom-banner",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/be-my-valentine-with-roses.jpg",
+        "title": "San Valentin",
+        "description": "",
+        "height": "300px"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "164417065855d91674": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "collection": "dias-valentin",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    }
+  },
+  "order": [
+    "164390755697ea509e",
+    "main",
+    "164417065855d91674"
+  ]
+}
