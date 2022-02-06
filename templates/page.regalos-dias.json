@@ -97,11 +97,58 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "164416870036e04832": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "1644168700384c40ef-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/be-my-valentine-with-roses.jpg",
+            "title": "",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+            "link_label": "Día de San Valentín",
+            "link": "shopify:\/\/pages\/regalos-dias-especiales-valentin"
+          }
+        },
+        "1644168700384c40ef-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/father-and-daughter-having-fun.jpg",
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "Día del Padre",
+            "link": "shopify:\/\/pages\/regalos-dias-especiales-padre"
+          }
+        },
+        "1644168700384c40ef-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1644168700384c40ef-0",
+        "1644168700384c40ef-1",
+        "1644168700384c40ef-2"
+      ],
+      "settings": {
+        "image_height": "400px",
+        "grid_template_columns": "auto auto auto",
+        "grid_template_columns_mobile": "auto auto",
+        "grid_gap": "20px",
+        "has_border": false
+      }
     }
   },
   "order": [
     "16439071009c270ba7",
     "16430557592e7638cd",
-    "main"
+    "main",
+    "164416870036e04832"
   ]
 }
