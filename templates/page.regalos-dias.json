@@ -141,7 +141,7 @@
       ],
       "settings": {
         "image_height": "400px",
-        "grid_template_columns": "1fr 1fr 1fr",
+        "grid_template_columns": "1fr 1fr",
         "grid_template_columns_mobile": "1fr",
         "grid_gap": "20px",
         "has_border": false
