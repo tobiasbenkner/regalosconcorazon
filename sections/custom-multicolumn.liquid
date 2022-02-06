@@ -14,15 +14,15 @@
   }
   
   .cmm-grid-container-item {
-    background-color: rgba(255, 255, 255, 1);
+    /*background-color: rgba(255, 255, 255, 1);*/
     
     {% if section.settings.has_border %} 
     border: 1px solid gray;
     {% endif %}
-    
+
+    background: rgba(var(--color-foreground),.04)
     text-align: center;
-    font-size: 30px;
-    padding: 10px;
+    padding: 30px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
