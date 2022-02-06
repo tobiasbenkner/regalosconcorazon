@@ -127,17 +127,29 @@
         "1644168700384c40ef-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "image": "shopify:\/\/shop_images\/flowers-for-mother.jpg",
+            "title": "",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "Día de la Madre",
+            "link": "shopify:\/\/pages\/regalos-dias-especiales-madre"
+          }
+        },
+        "aaeb5021-8ae5-4573-8f9a-1a4a0e998afa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dark-island.jpg",
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "Día de Canarias",
+            "link": "shopify:\/\/pages\/regalos-dias-especiales-grancanaria"
           }
         }
       },
       "block_order": [
         "1644168700384c40ef-0",
         "1644168700384c40ef-1",
-        "1644168700384c40ef-2"
+        "1644168700384c40ef-2",
+        "aaeb5021-8ae5-4573-8f9a-1a4a0e998afa"
       ],
       "settings": {
         "image_height": "400px",
