@@ -69,15 +69,21 @@
 
 <script>
     const addToChart = async (productId) => {
-
-        let formData = new FormData();
-        formData.append('id', productId);
-        formData.append('quantity', 1);
+        const payload = {
+            items: [{
+                id: productId,
+                quantity: 1,
+            }]
+        };
 
         const rawResponse = await fetch('/cart/add', {
             method: 'POST',
-            body: formData
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload),
         });
+
         const content = await rawResponse.json();
 
         console.log(content);
