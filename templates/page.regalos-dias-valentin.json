@@ -14,10 +14,27 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "164417065855d91674": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
     "164390755697ea509e",
-    "main"
+    "main",
+    "164417065855d91674"
   ]
 }
