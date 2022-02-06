@@ -40,6 +40,10 @@
 
 <div class="page-width">
 
+    {%- liquid
+        render 'snackbar'
+    -%}
+
     {% for block in section.blocks %}
         {%- assign collection = collections[block.settings.collection] -%}
         {% if collections[collection.handle].products.size > 0 %}
