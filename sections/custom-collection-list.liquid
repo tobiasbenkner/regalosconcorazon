@@ -59,7 +59,7 @@
                             <div class="center">{{ product.variants[0].price | money }}</div>
                         {% endif %}
                     </div>
-                    <button onclick="addToChart('{{ product.variants.first.id }}')">Add to cart</button>
+                    <button onclick="addToChart('{{ product.variants.first.id }}', '{{ product.title }}')">Add to cart</button>
                     {% comment %}<form method="post" action="/cart/add">{% endcomment %}
                         {% comment %}<input type="hidden" name="id" value="{{ product.variants.first.id }}" />{% endcomment %}
                         {% comment %}<input min="1" type="number" id="quantity" name="quantity" value="1"/>{% endcomment %}
@@ -72,7 +72,7 @@
 </div>
 
 <script>
-    const addToChart = async (productId) => {
+    const addToChart = async (productId, title) => {
         const payload = {
             items: [{
                 id: productId,
@@ -89,7 +89,7 @@
         });
 
         const content = await rawResponse.json();
-        showSnackbar("wuhu");
+        showSnackbar(`${title} ha sido añadido al carrito.`);
         console.log(content);
     };
 </script>
