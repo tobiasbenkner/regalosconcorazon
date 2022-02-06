@@ -153,6 +153,16 @@
             "link_label": "Navidad",
             "link": "shopify:\/\/pages\/regalos-dias-especiales-navidad"
           }
+        },
+        "54309158-5e34-42d3-9bf3-39d92c10fbb0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dog-in-birthday-hat.jpg",
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "Día de Reyes Magos",
+            "link": "shopify:\/\/pages\/regalos-dias-especiales-reyes"
+          }
         }
       },
       "block_order": [
@@ -160,7 +170,8 @@
         "1644168700384c40ef-1",
         "1644168700384c40ef-2",
         "aaeb5021-8ae5-4573-8f9a-1a4a0e998afa",
-        "9426493c-e71a-4ef0-a87a-dfc3f501355f"
+        "9426493c-e71a-4ef0-a87a-dfc3f501355f",
+        "54309158-5e34-42d3-9bf3-39d92c10fbb0"
       ],
       "settings": {
         "image_height": "400px",
