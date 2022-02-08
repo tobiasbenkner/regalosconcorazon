@@ -1,0 +1,51 @@
+{
+  "sections": {
+    "1643906921de9511b0": {
+      "type": "custom-banner",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/gift-wrapped-with-bow.jpg",
+        "title": "Experiencias Gourmet",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "height": "300px"
+      }
+    },
+    "1644307404949dfd50": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "1644307285be8a9f5e": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "ae91b6a0-eef9-44e6-8092-4887779213d9": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "regalos-gourmet"
+          }
+        }
+      },
+      "block_order": [
+        "ae91b6a0-eef9-44e6-8092-4887779213d9"
+      ],
+      "settings": {
+        "price": true,
+        "chart": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "1643906921de9511b0",
+    "1644307404949dfd50",
+    "1644307285be8a9f5e",
+    "main"
+  ]
+}
