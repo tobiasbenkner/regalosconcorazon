@@ -36,6 +36,11 @@
         border-radius: 20px;
     }
 
+    .button--cart > svg {
+        width: 50px;
+        height: 50px;
+    }
+
 </style>
 
 <div class="page-width">
@@ -61,8 +66,8 @@
 
                         {% if section.settings.chart %}
                             <button id="buy-{{ product.variants.first.id }}"
-                                    class="button button--secondary"
-                                    style="display: flex; justify-content: center"
+                                    class="button button--secondary button--cart"
+                                    style="display: flex; padding: 0"
                                     onclick="addToChart('{{ product.variants.first.id }}', '{{ product.title }}')"
                             >
                                 {% render 'icon-cart' %}
