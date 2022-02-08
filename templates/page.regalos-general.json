@@ -9,62 +9,27 @@
         "height": "300px"
       }
     },
-    "16430557592e7638cd": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "1643055759d7123ab7-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/portrait-of-boxes-and-packages.jpg",
-            "title": "Cajas",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "1643055759d7123ab7-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/blue-yellow-gift-wrap.jpg",
-            "title": "Bolzas",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "1643055759d7123ab7-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/holiday-gift-wrapping.jpg",
-            "title": "Otros",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1643055759d7123ab7-0",
-        "1643055759d7123ab7-1",
-        "1643055759d7123ab7-2"
-      ],
+    "1644307404949dfd50": {
+      "type": "rich-text",
       "settings": {
-        "title": "Multicolumn",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "full_width": true
       }
     },
     "1644307285be8a9f5e": {
       "type": "custom-collection-list",
+      "blocks": {
+        "ae91b6a0-eef9-44e6-8092-4887779213d9": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "regalos-general"
+          }
+        }
+      },
+      "block_order": [
+        "ae91b6a0-eef9-44e6-8092-4887779213d9"
+      ],
       "settings": {
         "price": true,
         "chart": true
@@ -79,7 +44,7 @@
   },
   "order": [
     "1643906921de9511b0",
-    "16430557592e7638cd",
+    "1644307404949dfd50",
     "1644307285be8a9f5e",
     "main"
   ]
