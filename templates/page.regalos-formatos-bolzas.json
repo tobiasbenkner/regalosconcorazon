@@ -9,6 +9,51 @@
         "height": "300px"
       }
     },
+    "164430992001d5475d": {
+      "type": "rich-text",
+      "blocks": {
+        "16443099204ff96eb0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "16443099204ff96eb0-1": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "16443099204ff96eb0-0",
+        "16443099204ff96eb0-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "16443099464a15e030": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "78863867-e5af-4325-9169-3e6fd2d36bb6": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "regalos-formatos-bolzas-1"
+          }
+        }
+      },
+      "block_order": [
+        "78863867-e5af-4325-9169-3e6fd2d36bb6"
+      ],
+      "settings": {
+        "price": true,
+        "chart": true
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -18,6 +63,8 @@
   },
   "order": [
     "164390755697ea509e",
+    "164430992001d5475d",
+    "16443099464a15e030",
     "main"
   ]
 }
