@@ -61,10 +61,12 @@
 
                         {% if section.settings.chart %}
                             <button id="buy-{{ product.variants.first.id }}"
+                                    class="button button--secondary"
+                                    style="display: flex; justify-content: center"
                                     onclick="addToChart('{{ product.variants.first.id }}', '{{ product.title }}')"
                             >
                                 {% render 'icon-cart' %}
-                                Add to cart
+                                Añadir
                             </button>
                         {% endif %}
                     </div>
