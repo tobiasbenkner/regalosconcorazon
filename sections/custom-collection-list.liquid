@@ -60,11 +60,12 @@
                         {% endif %}
 
                         {% if section.settings.chart %}
-                            <div>
-                                <span class="price">{% render 'icon-caret' %}</span>
-
-                                <button id="buy-{{ product.variants.first.id }}" onclick="addToChart('{{ product.variants.first.id }}', '{{ product.title }}')">Add to cart</button>
-                            </div>
+                            <button id="buy-{{ product.variants.first.id }}"
+                                    onclick="addToChart('{{ product.variants.first.id }}', '{{ product.title }}')"
+                            >
+                                {% render 'icon-cart' %}
+                                Add to cart
+                            </button>
                         {% endif %}
                     </div>
                 {% endfor %}
