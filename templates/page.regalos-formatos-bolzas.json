@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "164390755697ea509e": {
+      "type": "custom-banner",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/gift-wrapped-with-bow.jpg",
+        "title": "Experiencias Gourmet",
+        "description": "",
+        "height": "300px"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "164390755697ea509e",
+    "main"
+  ]
+}
