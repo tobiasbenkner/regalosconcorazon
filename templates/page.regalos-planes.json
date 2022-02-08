@@ -9,6 +9,13 @@
         "height": "300px"
       }
     },
+    "1644307952c1766fc0": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "164430785773159999": {
       "type": "custom-collection-list",
       "blocks": {
@@ -37,6 +44,7 @@
   },
   "order": [
     "1643907429a1c88395",
+    "1644307952c1766fc0",
     "164430785773159999",
     "main"
   ]
