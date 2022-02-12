@@ -3,8 +3,8 @@
     "164390755697ea509e": {
       "type": "custom-banner",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/assorted-korean-foods-in-restaurant.jpg",
-        "title": "Gastronomes",
+        "background_image": "shopify:\/\/shop_images\/roadtrip-through-desert.jpg",
+        "title": "Excursiones",
         "description": "",
         "height": "300px"
       }
@@ -23,7 +23,7 @@
           "type": "collection",
           "settings": {
             "title": "",
-            "collection": "regalos-gourmet"
+            "collection": "regalos-gourmet-excusiones"
           }
         }
       },
