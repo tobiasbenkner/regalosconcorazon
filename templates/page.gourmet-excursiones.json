@@ -1,0 +1,51 @@
+{
+  "sections": {
+    "164390755697ea509e": {
+      "type": "custom-banner",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/assorted-korean-foods-in-restaurant.jpg",
+        "title": "Gastronomes",
+        "description": "",
+        "height": "300px"
+      }
+    },
+    "1644173882d96df95b": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "164417384157cd3baf": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "36b05728-6ddb-4ff9-86f0-251d966eed59": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "regalos-gourmet"
+          }
+        }
+      },
+      "block_order": [
+        "36b05728-6ddb-4ff9-86f0-251d966eed59"
+      ],
+      "settings": {
+        "price": true,
+        "chart": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "164390755697ea509e",
+    "1644173882d96df95b",
+    "164417384157cd3baf",
+    "main"
+  ]
+}
