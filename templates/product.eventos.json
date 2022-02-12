@@ -20,6 +20,12 @@
           "settings": {
           }
         },
+        "1a737c11-2477-49e2-b7b9-e4ef1140c819": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<ul>\n<li>50% de pago por adelantado\n<\/li>\n<li>Plazo de entrega de 1 mes<\/li>\n<\/ul>"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -53,6 +59,7 @@
         "vendor",
         "title",
         "description",
+        "1a737c11-2477-49e2-b7b9-e4ef1140c819",
         "price",
         "variant_picker",
         "quantity_selector",
@@ -80,10 +87,46 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "164470049650c8c80d": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "9d4f2ad9-cff6-4d6b-aa26-d94f5c3d8f4e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Propuesto",
+            "heading_size": "h1",
+            "heading_position": "center"
+          }
+        },
+        "00c8155b-a834-45cc-9b40-c115507830f7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>▻ 1 monat mindestens vorlaufzeit<br\/>▻ 50% bezahlug<\/p>",
+            "position": "left"
+          }
+        }
+      },
+      "block_order": [
+        "9d4f2ad9-cff6-4d6b-aa26-d94f5c3d8f4e",
+        "00c8155b-a834-45cc-9b40-c115507830f7"
+      ],
+      "settings": {
+        "margin_top": "0",
+        "margin_top_mobil": "0"
+      }
+    },
+    "16447004768522f48b": {
+      "type": "contact-form",
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "164470049650c8c80d",
+    "16447004768522f48b"
   ]
 }
