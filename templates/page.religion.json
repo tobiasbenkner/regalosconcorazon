@@ -9,6 +9,25 @@
         "height": "300px"
       }
     },
+    "1642940206b28e1077": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "150eedd3-08de-43dc-9143-525691bc1fb5": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "eventos-bodas"
+          }
+        }
+      },
+      "block_order": [
+        "150eedd3-08de-43dc-9143-525691bc1fb5"
+      ],
+      "settings": {
+        "price": false,
+        "chart": false
+      }
+    },
     "1644000882c50bbc8d": {
       "type": "rich-text",
       "blocks": {
@@ -47,69 +66,25 @@
         "full_width": true
       }
     },
-    "1642940206b28e1077": {
-      "type": "custom-collection-list",
-      "blocks": {
-        "150eedd3-08de-43dc-9143-525691bc1fb5": {
-          "type": "collection",
-          "settings": {
-            "title": "",
-            "collection": "bautizos-bodas-communiones"
-          }
-        }
-      },
-      "block_order": [
-        "150eedd3-08de-43dc-9143-525691bc1fb5"
-      ],
-      "settings": {
-        "price": false
-      }
-    },
-    "1644155635ccfc7ff1": {
-      "type": "rich-text",
-      "blocks": {
-        "164415563508581f13-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Presupuesto",
-            "heading_size": "h1"
-          }
-        },
-        "164415563508581f13-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Escríbanos su solicitud. Le proporcionaremos un presupuesto.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "164415563508581f13-0",
-        "164415563508581f13-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
       "settings": {
       }
     },
-    "1644155602e6ec4a99": {
-      "type": "contact-form",
+    "16446993128581d511": {
+      "type": "custom-collection-list",
       "settings": {
-        "heading": ""
+        "price": true,
+        "chart": false
       }
     }
   },
   "order": [
     "1643907914ed00ddca",
-    "1644000882c50bbc8d",
     "1642940206b28e1077",
-    "1644155635ccfc7ff1",
+    "1644000882c50bbc8d",
     "main",
-    "1644155602e6ec4a99"
+    "16446993128581d511"
   ]
 }
