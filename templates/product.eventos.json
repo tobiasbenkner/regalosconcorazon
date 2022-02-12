@@ -30,12 +30,6 @@
           "type": "price",
           "settings": {
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Compatir"
-          }
         }
       },
       "block_order": [
@@ -43,8 +37,7 @@
         "title",
         "description",
         "1a737c11-2477-49e2-b7b9-e4ef1140c819",
-        "price",
-        "share"
+        "price"
       ],
       "settings": {
         "enable_sticky_info": true,
