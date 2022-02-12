@@ -77,6 +77,14 @@
                                 {% render 'icon-cart' %}
                                 Añadir
                             </button>
+
+                            <a href="/products/{{product.handle}}"
+                                    class="button button--secondary button--cart"
+                                    style="display: flex; padding: 0"
+                            >
+                                {% render 'icon-cart' %}
+                                Details
+                            </a>
                         {% endif %}
                     </div>
                 {% endfor %}
