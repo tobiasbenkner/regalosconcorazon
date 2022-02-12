@@ -63,6 +63,7 @@
   .product--small:not(.product--no-media) .product__media-wrapper {
     max-width: 30%;
     width: calc(30% - 1rem / 2);
+    max-height: 400px;
   }
 }
 
