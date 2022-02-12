@@ -3,8 +3,8 @@
     "1643907914ed00ddca": {
       "type": "custom-banner",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/sunlit-outdoor-wedding-reception.jpg",
-        "title": "Bautizos",
+        "background_image": "shopify:\/\/shop_images\/classic-cup-of-coffee.jpg",
+        "title": "Empresas",
         "description": "<p>text..<\/p><p><\/p><p><\/p>",
         "height": "300px"
       }
@@ -54,7 +54,7 @@
           "type": "collection",
           "settings": {
             "title": "",
-            "collection": "eventos-bautizos"
+            "collection": "eventos-empresas"
           }
         }
       },
