@@ -31,8 +31,8 @@
         "ae91b6a0-eef9-44e6-8092-4887779213d9"
       ],
       "settings": {
-        "price": true,
-        "chart": true
+        "price": false,
+        "chart": false
       }
     },
     "main": {
