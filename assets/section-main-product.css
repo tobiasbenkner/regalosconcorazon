@@ -978,10 +978,12 @@ a.product__text {
 @media screen and (min-width: 900px) {
   .product--small .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
     width: calc(25% - 0.8rem);
+    height: 400px;
   }
 
   .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
     width: calc(20% - 0.8rem);
+    height: 400px;
   }
 }
 
