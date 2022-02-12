@@ -3,8 +3,8 @@
     "164390755697ea509e": {
       "type": "custom-banner",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/dog-in-birthday-hat.jpg",
-        "title": "Día de Reyes Mago",
+        "background_image": "shopify:\/\/shop_images\/assorted-korean-foods-in-restaurant.jpg",
+        "title": "Gastronomes",
         "description": "",
         "height": "300px"
       }
@@ -23,7 +23,7 @@
           "type": "collection",
           "settings": {
             "title": "",
-            "collection": "dias-reyes"
+            "collection": "regalos-gourmet"
           }
         }
       },
