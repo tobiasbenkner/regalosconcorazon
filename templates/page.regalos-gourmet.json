@@ -16,6 +16,53 @@
         "full_width": true
       }
     },
+    "16447072048c34bf94": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "1644707204d33dc2ab-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/classic-german-foods-in-restaurant.jpg",
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "Gastronomes",
+            "link": "shopify:\/\/pages\/regalos-experiencias-gourmet-gastronomes"
+          }
+        },
+        "1644707204d33dc2ab-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/roadtrip-through-desert.jpg",
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "Excursiones",
+            "link": "shopify:\/\/pages\/regalos-experiencias-gourmet-excursiones"
+          }
+        },
+        "1644707204d33dc2ab-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/filling-wine-glasses.jpg",
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "Catas",
+            "link": "shopify:\/\/pages\/regalos-experiencias-gourmet-catas"
+          }
+        }
+      },
+      "block_order": [
+        "1644707204d33dc2ab-0",
+        "1644707204d33dc2ab-1",
+        "1644707204d33dc2ab-2"
+      ],
+      "settings": {
+        "image_height": "400px",
+        "grid_template_columns": "auto auto auto",
+        "grid_template_columns_mobile": "auto auto",
+        "grid_gap": "20px",
+        "has_border": false
+      }
+    },
     "1644307285be8a9f5e": {
       "type": "custom-collection-list",
       "blocks": {
@@ -45,6 +92,7 @@
   "order": [
     "1643906921de9511b0",
     "1644307404949dfd50",
+    "16447072048c34bf94",
     "1644307285be8a9f5e",
     "main"
   ]
