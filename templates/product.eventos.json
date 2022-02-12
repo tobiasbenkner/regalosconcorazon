@@ -23,7 +23,7 @@
         "1a737c11-2477-49e2-b7b9-e4ef1140c819": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<ul>\n<li>50% de pago por adelantado\n<\/li>\n<li>Plazo de entrega de 1 mes<\/li>\n<\/ul>"
+            "custom_liquid": "<br\/>\n* Notas\n<ul>\n<li>50% de pago por adelantado\n<\/li>\n<li>Plazo de entrega de 1 mes<\/li>\n<\/ul>"
           }
         },
         "price": {
