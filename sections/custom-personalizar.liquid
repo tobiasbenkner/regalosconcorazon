@@ -66,12 +66,12 @@
 
     <script>
         {% for product in collections.all.products %}
-        {% if product.handle == "{{section.settings.servicio}}" %}
+        {% if product.handle == "{{section.settings.servicio.handle}}" %}
         {% assign shopifyProduct = product %}
         {% endif %}
         {% endfor %}
 
-        {% assign product = all_products["servicio"] %}
+        {% assign product = all_products["{{section.settings.servicio.handle}}"] %}
         console.log("{{ product.title }}");
         console.log("{{ shopifyProduct.title }}");
         console.log("{{ section.settings.servicio | strip }}");
