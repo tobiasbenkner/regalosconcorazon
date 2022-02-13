@@ -70,7 +70,7 @@
             {% for product in collections.all.products %}
                 {% if product.handle == "{{ section.settings.servicio }}" %}
                     {% assign shopifyProduct = product %}
-                    {{shopifyProduct.title}}
+                    <h2>{{shopifyProduct.title}}</h2>
                 {% endif %}
             {% endfor %}
 
