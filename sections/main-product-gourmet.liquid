@@ -562,11 +562,6 @@
 
   customElements.define('product-modal', ProductModal);
 
-
-  var d = new Date();
-  d.setDate(d.getDate()+parseInt(7));
-  var minDate = d.toISOString().substring(0, 10);
-  document.getElementById("fetcha").min = minDate;
 {% endjavascript %}
 
 {% if product.media.size > 0 %}
@@ -647,6 +642,15 @@
       {%- endfor -%}
     ]
   }
+</script>
+
+<script>
+  (function() {
+    const d = new Date();
+    d.setDate(d.getDate()+parseInt(7));
+    const minDate = d.toISOString().substring(0, 10);
+    document.getElementById("fetcha").min = minDate;
+  })();
 </script>
 
 {% schema %}
