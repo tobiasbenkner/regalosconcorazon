@@ -551,7 +551,9 @@
 
   customElements.define('product-modal', ProductModal);
 
-  document.getElementById("fetcha").min="2023-01-01";
+  var d = new Date();
+  d.setDate(d.getDate()+parseInt(7));
+  document.getElementById("fetcha").min = d.toISOString();
 {% endjavascript %}
 
 {% if product.media.size > 0 %}
