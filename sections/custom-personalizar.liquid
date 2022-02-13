@@ -65,8 +65,15 @@
 
 
     <script>
-        {% assign product = all_products["{{ section.settings.servicio | strip }}"] %}
+        {% for product in collections.all.products %}
+        {% if product.handle == "{{section.settings.servicio}}" %}
+        {% assign shopifyProduct = product %}
+        {% endif %}
+        {% endfor %}
+
+        {% assign product = all_products["servicio"] %}
         console.log("{{ product.title }}");
+        console.log("{{ shopifyProduct.title }}");
         console.log("{{ section.settings.servicio | strip }}");
     </script>
 
