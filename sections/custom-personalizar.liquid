@@ -66,7 +66,11 @@
         <!-- One "tab" for each step in the form: -->
         <div class="tab">
             <h2>Elija su empaque</h2>
-            {{ all_products["{{ section.settings.servicio }}"].variants | json}}
+
+            {% for variant in all_products['{{ section.settings.servicio }}'].variants %}
+                {{variant.title}}
+            {% endfor %}
+
 
             <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
             <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
