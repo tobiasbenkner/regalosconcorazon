@@ -69,7 +69,7 @@
         console.log("{{section.settings.servicio.title}}");
 
         {%  for variant in section.settings.servicio.variants %}
-            console.log("{{section.settings.servicio.variants}}");
+            console.log("{{ variant | json }}");
         {% endfor %}
 
     </script>
