@@ -67,7 +67,7 @@
     {% assign product = all_products["{{section.settings.servicio}}"] %}
     <div>{{ product.title }}</div>
     <script>
-        console.log( {{ all_products | json }} );
+        console.log( {{ collections.all.products | json }} );
     </script>
 
     <form id="regForm" action="/action_page.php">
