@@ -69,9 +69,8 @@
     <script>
         {% for product in collections.all.products %}
         {% assign shopifyProduct = product %}
-        console.log( "{{ shopifyProduct.id }}" );
+        console.log( "{{ shopifyProduct.title }}" );
         {% endfor %}
-
     </script>
 
     <form id="regForm" action="/action_page.php">
