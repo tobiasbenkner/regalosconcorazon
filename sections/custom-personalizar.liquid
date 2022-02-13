@@ -65,7 +65,7 @@
 
 
     <script>
-        {% assign product = all_products['{{ section.settings.settings | strip }}'] %}
+        {% assign product = all_products['{{ section.settings.servicio }}'] %}
         console.log("{{ product.title }}");
         console.log("{{ section.settings.servicio | strip }}");
     </script>
