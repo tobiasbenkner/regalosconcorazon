@@ -393,6 +393,17 @@
                     <label for="fetcha">Fetcha</label><br/>
                     <input required class="required" id="fetcha" type="date" name="properties[Fetcha]" style="width: 100%; line-height: 3; padding: 0 10px;">
                   </p>
+
+                  <p class="line-item-property__field">
+                    <label for="personas">Personas</label><br/>
+                    <input required class="required" id="personas" type="number" name="properties[Personas]" style="width: 100%; line-height: 3; padding: 0 10px;">
+                  </p>
+
+                  <p class="line-item-property__field">
+                    <label for="nota">Nota</label><br/>
+                    <textarea id="nota" name="properties[Nota]"></textarea>
+                  </p>
+
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                   <div class="product-form__buttons">
                     <button
