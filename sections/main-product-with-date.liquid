@@ -390,8 +390,8 @@
 
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <p class="line-item-property__field">
-                    <label for="fetcha">Fetcha</label>
-                    <input required class="required" id="fetcha" type="text" name="properties[Fetcha]">
+                    <label for="fetcha">Fetcha</label><br/>
+                    <input required class="required" id="fetcha" type="date" name="properties[Fetcha]" style="width: 100%; line-height: 2">
                   </p>
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                   <div class="product-form__buttons">
