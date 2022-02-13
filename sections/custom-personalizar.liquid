@@ -66,9 +66,11 @@
 
     <script>
 
-        {% comment %}{% assign product = all_products["{{section.settings.servicio.handle}}"] %}{% endcomment %}
         console.log("{{section.settings.servicio.title}}");
-        console.log("{{section.settings.servicio.variants}}");
+
+        {%  for variant in section.settings.servicio.variants %}
+            console.log("{{section.settings.servicio.variants}}");
+        {% endfor %}
 
     </script>
 
