@@ -67,7 +67,11 @@
     {% assign product = all_products["{{section.settings.servicio}}"] %}
     <div>{{ product.title }}</div>
     <script>
-        console.log( {{ collections.all.products | json }} );
+        {% for product in collections.all.products %}
+        {% assign shopifyProduct = product %}
+        console.log( {{ shopifyProduct }} );
+        {% endfor %}
+
     </script>
 
     <form id="regForm" action="/action_page.php">
