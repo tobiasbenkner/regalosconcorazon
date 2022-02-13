@@ -65,6 +65,9 @@
 
     {% assign product = all_products["{{section.settings.servicio}}"] %}
     <div>{{ product | json }}</div>
+    <script>
+        console.log( {{ product | json }} );
+    </script>
 
     <form id="regForm" action="/action_page.php">
         <!-- One "tab" for each step in the form: -->
