@@ -62,19 +62,20 @@
 </style>
 
 <div class="page-width">
+
+    {% for product in collections.all.products %}
+        {% if product.handle == "{{ section.settings.servicio }}" %}
+            {% assign shopifyProduct = product %}
+            <h2>{{shopifyProduct.title}}</h2>
+        {% endif %}
+    {% endfor %}
+
     <form id="regForm" action="/action_page.php">
         <!-- One "tab" for each step in the form: -->
         <div class="tab">
             <h2>Elija su empaque</h2>
 
-            {% for product in collections.all.products %}
-                {% if product.handle == "{{ section.settings.servicio }}" %}
-                    {% assign shopifyProduct = product %}
-                    <h2>{{shopifyProduct.title}}</h2>
-                {% endif %}
-            {% endfor %}
-
-            was ist da los?
+            <p>was ist da los?</p>
 
             {% comment %}{% for variant in all_products['{{ section.settings.servicio }}'].variants %}{% endcomment %}
                 {% comment %}{{variant.title}}{% endcomment %}
