@@ -69,6 +69,7 @@
         console.log("{{section.settings.servicio.title}}");
 
         {%  for variant in section.settings.servicio.variants %}
+            console.log("{{variant.id}}");
             console.log("{{variant.title}}");
             console.log('{{variant.metafields.my_fields.volumen}}');
         {% endfor %}
