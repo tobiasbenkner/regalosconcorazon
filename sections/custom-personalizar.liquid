@@ -69,7 +69,7 @@
     <script>
         {% for product in collections.all.products %}
         {% assign shopifyProduct = product %}
-        console.log( {{ shopifyProduct }} );
+        console.log( "{{ shopifyProduct.id }}" );
         {% endfor %}
 
     </script>
