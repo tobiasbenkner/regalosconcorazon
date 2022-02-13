@@ -25,7 +25,7 @@
         "full_width": true
       }
     },
-    "164475326751da3a1f": {
+    "1644792296eef31188": {
       "type": "custom-personalizar",
       "settings": {
         "servicio": "servicio"
@@ -35,6 +35,6 @@
   "order": [
     "main",
     "1642937671069eb876",
-    "164475326751da3a1f"
+    "1644792296eef31188"
   ]
 }
