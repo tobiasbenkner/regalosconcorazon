@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product-with-date",
+      "type": "main-product-gourmet",
       "blocks": {
         "vendor": {
           "type": "text",
