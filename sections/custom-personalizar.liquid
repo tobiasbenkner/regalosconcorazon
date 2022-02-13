@@ -65,7 +65,7 @@
 
     <h2>{{section.settings.servicio}}</h2>
     {% assign product = all_products["{{section.settings.servicio}}"] %}
-    <div>{{ product.title }}</div>
+    <div>{{ product.id }}</div>
     <script>
         {% for product in collections.all.products %}
         {% assign shopifyProduct = product %}
