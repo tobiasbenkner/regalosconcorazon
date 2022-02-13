@@ -70,7 +70,7 @@
 
         {%  for variant in section.settings.servicio.variants %}
             console.log("{{variant.title}}");
-            console.log("{{variant.metafields.my_fields.volumen | json }}");
+            console.log('{{variant.metafields.my_fields.volumen}}');
         {% endfor %}
 
     </script>
