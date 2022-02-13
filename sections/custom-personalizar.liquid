@@ -67,9 +67,16 @@
         <div class="tab">
             <h2>Elija su empaque</h2>
 
-            {% for variant in all_products['{{ section.settings.servicio }}'].variants %}
-                {{variant.title}}
+            {% for product in collections.all.products %}
+                {% if product.handle == "{{ section.settings.servicio }}" %}
+                    {% assign shopifyProduct = product %}
+                    {{shopifyProduct.title}}
+                {% endif %}
             {% endfor %}
+
+            {% comment %}{% for variant in all_products['{{ section.settings.servicio }}'].variants %}{% endcomment %}
+                {% comment %}{{variant.title}}{% endcomment %}
+            {% comment %}{% endfor %}{% endcomment %}
 
 
             <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
