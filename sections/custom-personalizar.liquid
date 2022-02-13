@@ -64,9 +64,9 @@
 <div class="page-width">
 
     {% assign product = all_products["{{section.settings.servicio}}"] %}
-    <div>{{ product | json }}</div>
+    <div>{{ product.title }}</div>
     <script>
-        console.log( {{ product | json }} );
+        console.log( {{ product }} );
     </script>
 
     <form id="regForm" action="/action_page.php">
