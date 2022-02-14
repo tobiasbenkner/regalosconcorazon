@@ -217,7 +217,7 @@
         const searchInput = document.getElementById("searchInput")
         const filter = (searchInput.value || "").trim().toLowerCase();
 
-        const prodcuts = despensa.filter(it => it.toLowerCase() === filter);
+        const prodcuts = filter ? despensa.filter(it => it.title.toLowerCase() === filter) : despensa;
 
         const rows = [];
         for(let product of prodcuts) {
