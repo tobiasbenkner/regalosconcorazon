@@ -131,7 +131,16 @@
     });
     {% endfor %}
 
-    console.log(boxes);
+
+    const despensa = [];
+    {%  for product in section.settings.despensa.products %}
+    despensa.push({
+        id: "{{ product.id }}",
+        title: "{{ product.title }}",
+    });
+    {% endfor %}
+    console.log(despensa);
+
 
     (function() {
 
