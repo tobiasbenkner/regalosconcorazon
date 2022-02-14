@@ -148,7 +148,7 @@
             return;
         }
 
-        console.log(myBox);
+        console.log("stored box", JSON.parse(myBox));
     })();
 
     function changeBox() {
@@ -161,7 +161,7 @@
         const boxImage = document.getElementById("boxImage");
         boxImage.src = found.image;
 
-        console.log("box Id", id, found);
+        localStorage.setItem('my-box', JSON.stringify(found));
     }
 
 </script>
