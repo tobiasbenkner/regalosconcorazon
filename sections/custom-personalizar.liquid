@@ -135,6 +135,7 @@
 
     (function() {
 
+        // genereate boxes
         const selectBox = document.getElementById("selectBox")
         for (let box of boxes) {
             const option = document.createElement('option');
@@ -143,12 +144,21 @@
             selectBox.appendChild(option);
         }
 
-        const myBox = localStorage.getItem('my-box');
+        // get stored box
+        let myBox = localStorage.getItem('my-box');
         if(!myBox){
             return;
         }
 
-        console.log("stored box", JSON.parse(myBox));
+        try {
+            myBox = JSON.parse(myBox)
+        } catch (e) {
+            localStorage.removeItem('my-box');
+            return;
+        }
+
+        // select stored box
+        console.log("stored box", myBox);
     })();
 
     function changeBox() {
