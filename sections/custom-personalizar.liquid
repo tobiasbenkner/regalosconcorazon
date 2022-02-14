@@ -12,6 +12,13 @@
         border: 1px solid #aaaaaa;
     }
 
+    select {
+        padding: 10px;
+        width: 100%;
+        font-size: 17px;
+        border: 1px solid #aaaaaa;
+    }
+
     /* Mark input boxes that gets an error on validation: */
     input.invalid {
         background-color: #ffdddd;
@@ -77,8 +84,8 @@
         <!-- One "tab" for each step in the form: -->
         <div class="tab">
             <h2>Elija su empaque</h2>
+
             <p>
-                <label for="package">Empaque</label>
                 <select name="package" id="package">
                     {%  for variant in section.settings.servicio.variants %}
                         <option value="{{variant.id}}">{{variant.title}}</option>
