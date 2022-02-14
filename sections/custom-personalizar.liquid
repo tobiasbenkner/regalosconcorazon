@@ -1,5 +1,11 @@
 <style>
 
+    .product-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
     #regForm {
         padding: 40px;
         width: 100%;
@@ -91,7 +97,7 @@
                    onkeyup="search()"
                    placeholder="Buscar"
             />
-            <br/>
+            <div id="product-container" class="product-container"></div>
             <table id="product-table">
                 <tbody id="product-table-body">
                 </tbody>
@@ -225,6 +231,17 @@
 
         const productTableBody = document.getElementById("product-table-body");
         productTableBody.innerHTML = rows.join("");
+
+
+        const items = prodcuts.map(product => {
+           return `<div style="display: flex">
+                    <img src="${product.image}" />
+                    <span>${product.title}</span>
+                </div>`;
+        });
+        const container = document.getElementById("product-container");
+        container.innerHTML = items.join("");
+
     }
 
 </script>
