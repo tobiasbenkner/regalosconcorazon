@@ -157,7 +157,15 @@
             return;
         }
 
-        selectBox.value = myBox.id;
+        const found = boxes.find(it => it.id === myBox.id);
+        if(!found) {
+            localStorage.removeItem('my-box');
+            return;
+        }
+
+        selectBox.value = found.id;
+        const boxImage = document.getElementById("boxImage");
+        boxImage.src = found.image;
     })();
 
     function changeBox() {
