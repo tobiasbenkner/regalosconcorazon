@@ -128,7 +128,7 @@
     {%  for variant in section.settings.servicio.variants %}
     boxes.push({
         id: "{{ variant.id }}",
-        image: "{{ variant.featured_image.src | img_url }}",
+        image: "{{ variant.featured_image.src | img_url: '400x400' }}",
         title: "{{ variant.title }}",
     });
     {% endfor %}
