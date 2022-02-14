@@ -236,7 +236,7 @@
         const items = prodcuts.map(product => {
            return `<div style="display: flex; flex-direction: column">
                     <img width="100%" height="150" style="object-fit: contain" src="${product.image}" />
-                    <span>${product.title}</span>
+                    <span style="text-align: center">${product.title}</span>
                 </div>`;
         });
         const container = document.getElementById("product-container");
