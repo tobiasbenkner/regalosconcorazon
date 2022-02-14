@@ -6,23 +6,13 @@
       "settings": {
       }
     },
-    "1642937671069eb876": {
-      "type": "rich-text",
-      "blocks": {
-        "1642937671e21463be-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Personaliza tu regalos",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "1642937671e21463be-0"
-      ],
+    "1644828795b3acac76": {
+      "type": "custom-banner",
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
+        "background_image": "shopify:\/\/shop_images\/scissors-cutting-fabric.jpg",
+        "title": "Personalizar tu regalo",
+        "description": "",
+        "height": "300px"
       }
     },
     "1644792296eef31188": {
@@ -34,7 +24,7 @@
   },
   "order": [
     "main",
-    "1642937671069eb876",
+    "1644828795b3acac76",
     "1644792296eef31188"
   ]
 }
