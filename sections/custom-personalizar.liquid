@@ -78,7 +78,7 @@
                 <img id="boxImage" style="object-fit: contain" alt="Empaque" height="250" width="100%" src="https://cdn.shopify.com/s/files/1/0625/1970/5823/products/presents-g01acb60ae_640.jpg?v=1644770211" />
             </p>
             <p>
-                <select name="box" id="box" onchange="changeBox()">
+                <select name="selectBox" id="selectBox" onchange="changeBox()">
                 </select>
             </p>
         </div>
@@ -135,12 +135,12 @@
 
     (function() {
 
+        const selectBox = document.getElementById("selectBox")
         for (let box of boxes) {
-            console.log(box);
-            // var opt = document.createElement('option');
-            // opt.value = i;
-            // opt.innerHTML = i;
-            // select.appendChild(opt);
+            const option = document.createElement('option');
+            option.value = box.id;
+            option.innerText = box.title;
+            selectBox.appendChild(option);
         }
 
         const myBox = localStorage.getItem('my-box');
