@@ -147,6 +147,13 @@
     function changeBox() {
         const id = document.getElementById("box").value;
         const found = boxes.find(it => it.id === id);
+        if(!found) {
+            return;
+        }
+
+        const boxImage = document.getElementById("boxImage");
+        boxImage.src = found.image;
+
         console.log("box Id", id, found);
     }
 
