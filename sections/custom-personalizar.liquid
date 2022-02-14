@@ -79,9 +79,6 @@
             </p>
             <p>
                 <select name="box" id="box" onchange="changeBox()">
-                    {%  for variant in section.settings.servicio.variants %}
-                        <option value="{{variant.id}}">{{variant.title}}</option>
-                    {% endfor %}
                 </select>
             </p>
         </div>
@@ -130,12 +127,22 @@
         id: "{{ variant.id }}",
         image: "{{ variant.featured_image.src | img_url: '400x400' }}",
         title: "{{ variant.title }}",
+        volume: JSON.parse("{{variant.metafields.my_fields.volumen}}"),
     });
     {% endfor %}
 
     console.log(boxes);
 
     (function() {
+
+        for (let box of boxes) {
+            console.log(box);
+            // var opt = document.createElement('option');
+            // opt.value = i;
+            // opt.innerHTML = i;
+            // select.appendChild(opt);
+        }
+
         const myBox = localStorage.getItem('my-box');
         if(!myBox){
             return;
@@ -156,13 +163,6 @@
 
         console.log("box Id", id, found);
     }
-
-    console.log("{{section.settings.servicio.title}}");
-    {%  for variant in section.settings.servicio.variants %}
-    console.log("{{variant.id}}");
-    console.log("{{variant.title}}");
-    console.log('{{variant.metafields.my_fields.volumen}}');
-    {% endfor %}
 
 </script>
 
