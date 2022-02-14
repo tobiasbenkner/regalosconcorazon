@@ -146,7 +146,8 @@
 
     function changeBox() {
         const id = document.getElementById("box").value;
-        console.log("box Id", id);
+        const found = boxes.find(it => it.id === id);
+        console.log("box Id", id, found);
     }
 
     console.log("{{section.settings.servicio.title}}");
