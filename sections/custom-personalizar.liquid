@@ -70,25 +70,15 @@
 
 <div class="page-width">
 
-    <script>
-        console.log("{{section.settings.servicio.title}}");
-        {%  for variant in section.settings.servicio.variants %}
-            console.log("{{variant.id}}");
-            console.log("{{variant.title}}");
-            console.log('{{variant.metafields.my_fields.volumen}}');
-        {% endfor %}
-
-    </script>
-
     <form id="regForm">
         <!-- One "tab" for each step in the form: -->
         <div class="tab">
             <h2 style="text-align: center">Elija su empaque</h2>
             <p>
-                <img style="object-fit: contain" alt="Empaque" height="250" width="100%" src="https://cdn.shopify.com/s/files/1/0625/1970/5823/products/presents-g01acb60ae_640.jpg?v=1644770211" />
+                <img id="boxImage" style="object-fit: contain" alt="Empaque" height="250" width="100%" src="https://cdn.shopify.com/s/files/1/0625/1970/5823/products/presents-g01acb60ae_640.jpg?v=1644770211" />
             </p>
             <p>
-                <select name="package" id="package">
+                <select name="box" id="box" onchange="changeBox()">
                     {%  for variant in section.settings.servicio.variants %}
                         <option value="{{variant.id}}">{{variant.title}}</option>
                     {% endfor %}
@@ -131,6 +121,43 @@
         </div>
     </form>
 </div>
+
+<script>
+
+    const boxes = [];
+    {%  for variant in section.settings.servicio.variants %}
+    boxes.push({
+        id: "{{ variant.id }}",
+        image: "{{ variant.featured_image.src }}",
+        title: "{{ variant.title }}",
+    });
+    {% endfor %}
+
+    console.log(boxes);
+
+    (function() {
+        const myBox = localStorage.getItem('my-box');
+        if(!myBox){
+            return;
+        }
+
+        console.log(myBox);
+    })();
+
+    function changeBox() {
+        const id = document.getElementById("box").value;
+        console.log("box Id", id);
+    }
+
+    console.log("{{section.settings.servicio.title}}");
+    {%  for variant in section.settings.servicio.variants %}
+    console.log("{{variant.id}}");
+    console.log("{{variant.title}}");
+    console.log('{{variant.metafields.my_fields.volumen}}');
+    {% endfor %}
+
+</script>
+
 
 <script>
     var currentTab = 0; // Current tab is set to be the first tab (0)
