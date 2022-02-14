@@ -86,27 +86,15 @@
         <div class="tab">
             <h2 style="text-align: center">Elija sus productos</h2>
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-            <table id="myTable">
-                <tr class="header">
-                    <th style="width:60%;">Name</th>
-                    <th style="width:40%;">Country</th>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Berglunds snabbkop</td>
-                    <td>Sweden</td>
-                </tr>
-                <tr>
-                    <td>Island Trading</td>
-                    <td>UK</td>
-                </tr>
-                <tr>
-                    <td>Koniglich Essen</td>
-                    <td>Germany</td>
-                </tr>
+            <table id="product-table">
+                <thead>
+                    <tr class="header">
+                        <th style="width:60%;">Producto</th>
+                        <th style="width:40%;">Tamaño</th>
+                    </tr>
+                </thead>
+                <tbody id="product-table-body">
+                </tbody>
             </table>
         </div>
 
@@ -158,7 +146,8 @@
     despensa.push({
         id: "{{ product.id }}",
         title: "{{ product.title }}",
-        collections: "{{ product.collections }}"
+        collections: "{{ product.collections }}",
+        image: "{{ product.images[0].src | img_url }}",
     });
     {% endfor %}
     console.log(despensa);
@@ -174,6 +163,20 @@
             option.innerText = box.title;
             selectBox.appendChild(option);
         }
+
+        // generate products
+        const rows = [];
+        for(let product of despensa) {
+            const row =
+                `<tr>
+                    <td>${product.title}</td>
+                    <td><img src="${product.image}" /></td>
+                </tr>`;
+            rows.push(row);
+        }
+
+        const productTableBody = document.getElementById("product-table-body");
+        productTableBody.innerHTML = rows.join("");
 
         // get stored box
         let myBox = localStorage.getItem('my-box');
@@ -197,6 +200,9 @@
         selectBox.value = found.id;
         const boxImage = document.getElementById("boxImage");
         boxImage.src = found.image;
+
+
+
     })();
 
     function changeBox() {
