@@ -85,7 +85,12 @@
 
         <div class="tab">
             <h2 style="text-align: center">Elija sus productos</h2>
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+            <input style="margin-bottom: 20px"
+                   type="text"
+                   id="searchInput"
+                   onkeyup="search()"
+                   placeholder="Buscar"
+            />
             <br/>
             <table id="product-table">
                 <thead>
@@ -166,18 +171,7 @@
         }
 
         // generate products
-        const rows = [];
-        for(let product of despensa) {
-            const row =
-                `<tr>
-                    <td><img src="${product.image}" /></td>
-                    <td>${product.title}</td>
-                </tr>`;
-            rows.push(row);
-        }
-
-        const productTableBody = document.getElementById("product-table-body");
-        productTableBody.innerHTML = rows.join("");
+        search();
 
         // get stored box
         let myBox = localStorage.getItem('my-box');
@@ -217,6 +211,26 @@
         boxImage.src = found.image;
 
         localStorage.setItem('my-box', JSON.stringify(found));
+    }
+
+    function search() {
+        const searchInput = document.getElementById("searchInput")
+        const filter = (searchInput.value || "").trim().toLowerCase();
+
+        const prodcuts = despensa.filter(it => it.toLowerCase() === filter);
+
+        const rows = [];
+        for(let product of prodcuts) {
+            const row =
+                `<tr>
+                    <td><img src="${product.image}" /></td>
+                    <td>${product.title}</td>
+                </tr>`;
+            rows.push(row);
+        }
+
+        const productTableBody = document.getElementById("product-table-body");
+        productTableBody.innerHTML = rows.join("");
     }
 
 </script>
