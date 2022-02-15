@@ -125,7 +125,7 @@
             <br/>
 
             <h3><strong>Mesaje</strong></h3>
-            <p>asd adsda da ad</p>
+            <p id="message-result"></p>
             <br/>
 
             <h3><strong>Serivio</strong></h3>
@@ -203,8 +203,7 @@
         search();
 
         document.getElementById("message").value = getMessage();
-
-
+        document.getElementById("message-result").value = getMessage();
     })();
 
     function changeBox() {
@@ -276,6 +275,8 @@
 
     function changeMessage() {
         const value = document.getElementById("message").value;
+        document.getElementById("message-result").value = value;
+
         addMessage(value);
     }
 
