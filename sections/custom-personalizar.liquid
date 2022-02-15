@@ -184,9 +184,9 @@
         const myBox = getBox();
         if(myBox) {
             // select item
-            selectBox.value = found.id;
+            selectBox.value = myBox.id;
             const boxImage = document.getElementById("boxImage");
-            boxImage.src = found.image;
+            boxImage.src = myBox.image;
         } else {
             // set first item as selected item
             addBox(boxes[0]);
