@@ -432,7 +432,8 @@
         const hash = window.location.hash.substring(1);
         const values = ["0","1","2","3"];
         if(values.includes(hash)) {
-            currentTab = hash;
+            currentTab = +hash;
+            console.log("asdads", currentTab);
         }
     }
 
