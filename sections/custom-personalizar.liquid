@@ -166,7 +166,7 @@
         image: "{{ variant.featured_image.src | img_url: '400x400' }}",
         title: "{{ variant.title }}",
         volume: JSON.parse('{{variant.metafields.my_fields.volumen}}'),
-        price: "{{ variant.price }}",
+        price: "{{ variant.price | money }}",
     });
     {% endfor %}
 
