@@ -203,7 +203,7 @@
         search();
 
         document.getElementById("message").value = getMessage();
-        document.getElementById("message-result").value = getMessage();
+        document.getElementById("message-result").innerText = getMessage();
     })();
 
     function changeBox() {
@@ -275,7 +275,7 @@
 
     function changeMessage() {
         const value = document.getElementById("message").value;
-        document.getElementById("message-result").value = value;
+        document.getElementById("message-result").innerText = value;
 
         addMessage(value);
     }
