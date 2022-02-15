@@ -120,7 +120,7 @@
             <h2 style="text-align: center">Finalizar</h2>
             <h3><strong>Embalaje</strong></h3>
             <div style="display: flex; flex-direction: column">
-                <img id="boxImage-result" />
+                <img id="boxImage-result" style="max-width: 200px" />
                 <div id="boxTitle-result"></div>
             </div>
             <br/>
@@ -132,8 +132,9 @@
             <p id="message-result"></p>
             <br/>
 
-            <h3><strong>Serivio</strong></h3>
+            <h3><strong>Serivico</strong></h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Price: <b id="price-result"></b></p>
         </div>
 
         <div style="overflow:auto;">
@@ -165,6 +166,7 @@
         image: "{{ variant.featured_image.src | img_url: '400x400' }}",
         title: "{{ variant.title }}",
         volume: JSON.parse('{{variant.metafields.my_fields.volumen}}'),
+        price: "{{ variant.price }}",
     });
     {% endfor %}
 
@@ -196,6 +198,7 @@
         const boxImage = document.getElementById("boxImage");
         const boxImageResult = document.getElementById("boxImage-result");
         const boxTitleResult = document.getElementById("boxTitle-result");
+        const priceResult = document.getElementById("price-result");
 
         if(myBox) {
             // select item
@@ -203,12 +206,14 @@
             boxImage.src = myBox.image;
             boxImageResult.src = myBox.image;
             boxTitleResult.innerText = myBox.title;
+            priceResult.innerText = myBox.price;
         } else {
             // set first item as selected item
             selectBox.value = boxes[0].id;
             boxImage.src = boxes[0].image;
             boxImageResult.src = boxes[0].image;
             boxTitleResult.innerText = boxes[0].title;
+            priceResult.innerText = boxes[0].price;
             addBox(boxes[0]);
         }
 
@@ -231,6 +236,7 @@
 
         document.getElementById("boxImage-result").src = found.image;
         document.getElementById("boxTitle-result").innerText = found.title;
+        document.getElementById("price-result").innerText = found.price;
 
         addBox(found);
     }
