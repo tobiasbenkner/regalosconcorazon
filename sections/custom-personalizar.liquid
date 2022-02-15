@@ -177,31 +177,20 @@
             selectBox.appendChild(option);
         }
 
+
+        const myBox = getBox();
+        if(myBox) {
+            // select item
+            selectBox.value = found.id;
+            const boxImage = document.getElementById("boxImage");
+            boxImage.src = found.image;
+        } else {
+            // set first item as selected item
+        }
+
+
         // generate products
         search();
-
-        // get stored box
-        let myBox = localStorage.getItem('my-box');
-        if(!myBox){
-            return;
-        }
-
-        try {
-            myBox = JSON.parse(myBox)
-        } catch (e) {
-            localStorage.removeItem('my-box');
-            return;
-        }
-
-        const found = boxes.find(it => it.id === myBox.id);
-        if(!found) {
-            localStorage.removeItem('my-box');
-            return;
-        }
-
-        selectBox.value = found.id;
-        const boxImage = document.getElementById("boxImage");
-        boxImage.src = found.image;
 
 
 
@@ -217,7 +206,7 @@
         const boxImage = document.getElementById("boxImage");
         boxImage.src = found.image;
 
-        localStorage.setItem('my-box', JSON.stringify(found));
+        addBox(found);
     }
 
     function search() {
@@ -241,7 +230,37 @@
         });
         const container = document.getElementById("product-container");
         container.innerHTML = items.join("");
+    }
 
+    const boxKey = "my-box";
+    function getBox() {
+        try {
+            let box = localStorage.getItem(boxKey);
+            if(!box){
+                return null;
+            }
+
+            const boxObj = JSON.parse(box);
+
+            const found = boxes.find(it => it.id === boxObj.id);
+            if(!found) {
+                deleteBox()
+                return null;
+            }
+
+            return found;
+        } catch (e) {
+            deleteBox();
+            return null;
+        }
+    }
+
+    function addBox(newBox) {
+        localStorage.setItem(boxKey, JSON.stringify(newBox));
+    }
+
+    function deleteBox() {
+        localStorage.removeItem(newBox);
     }
 
 </script>
