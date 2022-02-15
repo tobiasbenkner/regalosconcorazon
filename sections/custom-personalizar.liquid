@@ -222,6 +222,34 @@
 </script>
 
 <script>
+    function getProducts() {
+        const products = localStorage.getItem(productsKey);
+        if(!products) {
+            return [];
+        }
+        try {
+            const productsArray = JSON.parse(products);
+            if (productsArray instanceof Array) {
+                return productsArray;
+            } else {
+                localStorage.removeItem(productsKey);
+                return [];
+            }
+        } catch (e) {
+            localStorage.removeItem(productsKey)
+        }
+    }
+
+    function productCount() {
+        const products = getProducts();
+        return products.reduce(function(result, it) {
+            result[it] = (result[it] || 0) + 1;
+            return result;
+        }, {});
+    }
+</script>
+
+<script>
 
     (function() {
 
@@ -392,32 +420,6 @@
 
     function saveProducts(products) {
         localStorage.setItem(productsKey, JSON.stringify(products));
-    }
-
-    function getProducts() {
-        const products = localStorage.getItem(productsKey);
-        if(!products) {
-            return [];
-        }
-        try {
-            const productsArray = JSON.parse(products);
-            if (productsArray instanceof Array) {
-                return productsArray;
-            } else {
-                localStorage.removeItem(productsKey);
-                return [];
-            }
-        } catch (e) {
-            localStorage.removeItem(productsKey)
-        }
-    }
-
-    function productCount() {
-        const products = getProducts();
-        return products.reduce(function(result, it) {
-            result[it] = (result[it] || 0) + 1;
-            return result;
-        }, {});
     }
 
     function changeCounter(id) {
