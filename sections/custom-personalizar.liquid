@@ -3,7 +3,7 @@
     .product-container {
         display: grid;
         grid-gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
     #regForm {
@@ -104,7 +104,15 @@
             <h2 style="text-align: center">Mensaje personal</h2>
             <p style="text-align: center">imprimiremos su mensaje en una tarjeta y la incluiremos en su regalo.</p>
             <p>
-                <textarea style="width: 100%; padding: 10px" rows="5" maxlength="150"></textarea>
+                <textarea
+                        id="message"
+                        style="width: 100%;
+                        padding: 10px"
+                        rows="5"
+                        maxlength="150"
+                        onkeyup="changeMessage()"
+                        onblur="changeMessage()"
+                ></textarea>
             </p>
         </div>
 
@@ -170,8 +178,6 @@
 <script>
 
     (function() {
-
-        console.log("wuhu");
 
         // genereate boxes
         const selectBox = document.getElementById("selectBox")
@@ -267,6 +273,30 @@
     function deleteBox() {
         localStorage.removeItem(boxKey);
     }
+
+
+    function changeMessage() {
+        const value = document.getElementById("message").value;
+        console.log("change...");
+        console.log(value);
+    }
+    function getMessage() {
+        try {
+            return localStorage.getItem(messageKey) || "";
+        } catch (e) {
+            deleteMessage();
+            return null;
+        }
+    }
+
+    function addMessage(message) {
+        localStorage.setItem(messageKey, message);
+    }
+
+    function deleteMessage() {
+        localStorage.removeItem(messageKey);
+    }
+
 
 </script>
 
