@@ -427,16 +427,14 @@
 
 <script>
 
-
     let currentTab = 0;
     if(window.location.hash) {
         const hash = window.location.hash.substring(1);
-        const values = [0,1,2,3,4,5];
-        console.log(hash);
+        const values = ["0","1","2","3"];
+        if(values.includes(hash)) {
+            currentTab = hash;
+        }
     }
-
-
-
 
     // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
