@@ -263,8 +263,8 @@
         document.getElementById("message").value = getMessage();
         document.getElementById("message-result").innerText = getMessage();
 
-        const selectedProducts = getProducts();
-        Object.keys(selectedProducts).forEach(function(key) {
+        const productCount = productCount();
+        Object.keys(productCount).forEach(function(key) {
             console.log(key);
             // document.getElementById(`product-counter-${key}`).innerText = selectedProducts[key];
         });
