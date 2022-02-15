@@ -476,7 +476,11 @@
         }
         // Otherwise, display the correct tab:
         showTab(currentTab);
-        window.location.hash = currentTab;
+
+        const hash = currentTab === 0 ? "" : "#" + currentTab;
+        history.replaceState(undefined, undefined, hash);
+
+        //window.location.hash = currentTab;
     }
 
     function fixStepIndicator(n) {
