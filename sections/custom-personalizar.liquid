@@ -229,6 +229,9 @@
         const boxImage = document.getElementById("boxImage");
         boxImage.src = found.image;
 
+        document.getElementById("boxImage-result").src = found.image;
+        document.getElementById("boxTitle-result").innerText = found.title;
+
         addBox(found);
     }
 
