@@ -81,7 +81,7 @@
         <div class="tab">
             <h2 style="text-align: center">Elija su empaque</h2>
             <p>
-                <img id="boxImage" style="object-fit: contain" alt="Empaque" height="250" width="100%" src="https://cdn.shopify.com/s/files/1/0625/1970/5823/products/presents-g01acb60ae_640.jpg?v=1644770211" />
+                <img id="boxImage" style="object-fit: contain" alt="Empaque" height="250" width="100%" src="" />
             </p>
             <p>
                 <select name="selectBox" id="selectBox" onchange="changeBox()">
@@ -119,6 +119,10 @@
         <div class="tab">
             <h2 style="text-align: center">Finalizar</h2>
             <h3><strong>Embalaje</strong></h3>
+            <div style="display: flex; flex-direction: column">
+                <img id="boxImage-result" />
+                <div id="boxTitle-result"></div>
+            </div>
             <br/>
 
             <h3><strong>Productos</strong></h3>
@@ -189,13 +193,22 @@
         }
 
         const myBox = getBox();
+        const boxImage = document.getElementById("boxImage");
+        const boxImageResult = document.getElementById("boxImage-result");
+        const boxTitleResult = document.getElementById("boxTitle-result");
+
         if(myBox) {
             // select item
             selectBox.value = myBox.id;
-            const boxImage = document.getElementById("boxImage");
             boxImage.src = myBox.image;
+            boxImageResult.src = myBox.image;
+            boxTitleResult.innerText = myBox.title;
         } else {
             // set first item as selected item
+            selectBox.value = boxes[0].id;
+            boxImage.src = boxes[0].image;
+            boxImageResult.src = boxes[0].image;
+            boxTitleResult.innerText = boxes[0].title;
             addBox(boxes[0]);
         }
 
