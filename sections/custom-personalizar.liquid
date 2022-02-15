@@ -265,8 +265,10 @@
 
         const productCount = productCount();
         Object.keys(productCount).forEach(function(key) {
-            console.log(key);
-            // document.getElementById(`product-counter-${key}`).innerText = selectedProducts[key];
+            const element = document.getElementById(`product-counter-${key}`);
+            if(element) {
+                element.innerText = selectedProducts[key];
+            }
         });
 
     })();
