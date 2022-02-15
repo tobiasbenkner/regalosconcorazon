@@ -430,11 +430,15 @@
 
     let currentTab = 0;
     if(window.location.hash) {
-        const hash = window.location.hash.replace("#","");
+        const hash = window.location.hash.substring(1);
+        const values = [0,1,2,3,4,5];
         console.log(hash);
     }
 
-     // Current tab is set to be the first tab (0)
+
+
+
+    // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
 
     function showTab(n) {
@@ -442,7 +446,7 @@
         var x = document.getElementsByClassName("tab");
         x[n].style.display = "block";
         //... and fix the Previous/Next buttons:
-        if (n == 0) {
+        if (n === 0) {
             document.getElementById("prevBtn").style.display = "none";
         } else {
             document.getElementById("prevBtn").style.display = "inline";
@@ -473,6 +477,7 @@
         }
         // Otherwise, display the correct tab:
         showTab(currentTab);
+        window.location.hash = n;
     }
 
     function fixStepIndicator(n) {
