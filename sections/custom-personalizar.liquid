@@ -188,7 +188,6 @@
             selectBox.appendChild(option);
         }
 
-
         const myBox = getBox();
         if(myBox) {
             // select item
@@ -200,10 +199,10 @@
             addBox(boxes[0]);
         }
 
-
         // generate products
         search();
 
+        document.getElementById("message").value = getMessage();
 
 
     })();
@@ -277,9 +276,9 @@
 
     function changeMessage() {
         const value = document.getElementById("message").value;
-        console.log("change...");
-        console.log(value);
+        addMessage(value);
     }
+
     function getMessage() {
         try {
             return localStorage.getItem(messageKey) || "";
