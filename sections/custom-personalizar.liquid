@@ -367,7 +367,6 @@
         saveProducts(products);
 
         changeCounter(id);
-        console.log("add", "id", id);
     }
 
     function removeProduct(id) {
@@ -408,7 +407,6 @@
     function changeCounter(id) {
         const products = getProducts();
         const count = products.filter(it => it === id).length;
-        console.log("count", count);
         document.getElementById(`product-counter-${id}`).innerText = count+"";
     }
 
