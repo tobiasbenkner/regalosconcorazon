@@ -379,7 +379,6 @@
         saveProducts(products);
 
         changeCounter(id);
-        console.log("remove", "id", id);
     }
 
     function saveProducts(products) {
@@ -402,6 +401,14 @@
         } catch (e) {
             localStorage.removeItem(productsKey)
         }
+    }
+
+    function productCount() {
+        const products = getProducts();
+        return products.reduce(function(result, it) {
+            result[it] = (result[it] || 0) + 1;
+            return result;
+        }, {});
     }
 
     function changeCounter(id) {
