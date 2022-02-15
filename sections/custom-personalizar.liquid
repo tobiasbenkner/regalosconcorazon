@@ -240,7 +240,7 @@
         }
     }
 
-    function productCount() {
+    function countSelectedProducts() {
         const products = getProducts();
         return products.reduce(function(result, it) {
             result[it] = (result[it] || 0) + 1;
@@ -291,11 +291,11 @@
         document.getElementById("message").value = getMessage();
         document.getElementById("message-result").innerText = getMessage();
 
-        const productCount = productCount();
-        Object.keys(productCount).forEach(function(key) {
+        const resultSelctedProducts = countSelectedProducts();
+        Object.keys(resultSelctedProducts).forEach(function(key) {
             const element = document.getElementById(`product-counter-${key}`);
             if(element) {
-                element.innerText = selectedProducts[key];
+                element.innerText = resultSelctedProducts[key];
             }
         });
 
