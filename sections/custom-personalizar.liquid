@@ -328,7 +328,6 @@
                         <img onclick="addProduct('${product.id}')" class="product-button" src="{{ 'plus-solid.svg' | asset_url }}" alt="" height="40" width="40" loading="lazy">
                     </div>
                     <span style="text-align: center; flex: 1">${product.title}</span>
-
                 </div>`;
         });
         const container = document.getElementById("product-container");
@@ -427,6 +426,9 @@
 
 
 <script>
+
+    console.log("hash", window.location.hash);
+
     var currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
 
