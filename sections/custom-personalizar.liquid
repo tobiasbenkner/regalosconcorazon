@@ -477,7 +477,7 @@
         // Otherwise, display the correct tab:
         showTab(currentTab);
 
-        const hash = currentTab === 0 ? "" : "#" + currentTab;
+        const hash = currentTab === 0 ? "#" : undefined + currentTab;
         history.replaceState(undefined, undefined, hash);
 
         //window.location.hash = currentTab;
