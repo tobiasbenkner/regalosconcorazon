@@ -142,6 +142,9 @@
 </div>
 
 <script>
+    const boxKey = "my-box";
+    const productsKey = "my-products";
+    const messageKey = "my-message";
 
     const boxes = [];
     {%  for variant in section.settings.servicio.variants %}
@@ -153,7 +156,6 @@
     });
     {% endfor %}
 
-
     const despensa = [];
     {%  for product in section.settings.despensa.products %}
     despensa.push({
@@ -163,8 +165,9 @@
         image: "{{ product.images[0].src | img_url }}",
     });
     {% endfor %}
-    console.log(despensa);
+</script>
 
+<script>
 
     (function() {
 
@@ -233,7 +236,6 @@
         container.innerHTML = items.join("");
     }
 
-    const boxKey = "my-box";
     function getBox() {
         try {
             let box = localStorage.getItem(boxKey);
