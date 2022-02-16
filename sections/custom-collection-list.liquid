@@ -35,7 +35,7 @@
         font-weight: bold;
     }
 
-    .image-grid-item > img {
+    .image-grid-item-image {
         object-fit: cover;
         border: 1px solid var(--gray);
         width: 100%;
@@ -67,20 +67,24 @@
             <div class="image-grid-container">
                 {% for product in collections[collection.handle].products %}
                     <div class="image-grid-item">
-                        <img src="{{ product.images[0].src | image_url: width: 500 }}"
-                             alt="{{ product.title }}"
-                        />
-
-                        {% if section.settings.like %}
-                            <img
-                                 class="like-image"
-                                 src="{{ 'heart-solid.svg' | asset_url }}"
-                                 alt=""
-                                 height="40"
-                                 width="40"
-                                 loading="lazy"
+                        <div>
+                            <img class="image-grid-item-image"
+                                 src="{{ product.images[0].src | image_url: width: 500 }}"
+                                 alt="{{ product.title }}"
                             />
-                        {% endif %}
+
+                            {% if section.settings.like %}
+                                <img
+                                     class="like-image"
+                                     src="{{ 'heart-solid.svg' | asset_url }}"
+                                     alt=""
+                                     height="40"
+                                     width="40"
+                                     loading="lazy"
+                                />
+                            {% endif %}
+                        </div>
+
 
                         <h4 class="center" style="margin-bottom: 0; margin-top: 10px; font-weight: bold">{{ product.title }}</h4>
                         {% if section.settings.price %}
