@@ -129,9 +129,9 @@
 
     function toggleLike(id) {
         try {
-            const products = JSON.parse(localStorage.removeItem(key) || "[]");
+            const products = JSON.parse(localStorage.getItem(key) || "[]");
             const index = products.indexOf(id);
-            if (index > -1) {
+            if (index !== -1) {
                 products.splice(index, 1);
             } else {
                 products.push(id);
