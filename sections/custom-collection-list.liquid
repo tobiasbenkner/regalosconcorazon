@@ -88,7 +88,9 @@
                             />
 
                             {% if section.settings.like %}
-                                {% render 'icon-heart' %}
+                                <div id="heart-{{ product.id }}">
+                                    {% render 'icon-heart' %}
+                                </div>
                             {% endif %}
                         </div>
 
@@ -131,10 +133,13 @@
         try {
             const products = JSON.parse(localStorage.getItem(key) || "[]");
             const index = products.indexOf(id);
+            const element = document.getElementById("heart-" + id);
             if (index !== -1) {
                 products.splice(index, 1);
+                element.style.fill = "white";
             } else {
                 products.push(id);
+                element.style.fill = "red";
             }
             localStorage.setItem(key, JSON.stringify(products));
         } catch (e) {
