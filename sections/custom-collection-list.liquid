@@ -1,5 +1,12 @@
 <style>
 
+    .like-image {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+
+    }
+
     .image-grid-title {
         font-size: 3rem;
         margin-bottom: 50px;
@@ -60,9 +67,24 @@
             <div class="image-grid-container">
                 {% for product in collections[collection.handle].products %}
                     <div class="image-grid-item">
-                        <img src="{{ product.images[0].src | image_url: width: 500 }}"
-                             alt="{{ product.title }}"
-                        />
+                        <div>
+                            <img src="{{ product.images[0].src | image_url: width: 500 }}"
+                                 alt="{{ product.title }}"
+                            />
+
+                            {% if section.settings.like %}
+                                <img
+                                     class="like-image"
+                                     src="{{ 'heart-solid.svg' | asset_url }}"
+                                     alt=""
+                                     height="40"
+                                     width="40"
+                                     loading="lazy"
+                                />
+                            {% endif %}
+
+                        </div>
+
                         <h4 class="center" style="margin-bottom: 0; margin-top: 10px; font-weight: bold">{{ product.title }}</h4>
                         {% if section.settings.price %}
                             <div class="center">{{ product.variants[0].price | money }}</div>
@@ -86,16 +108,7 @@
                             </a>
                         {% endif %}
 
-                        {% if section.settings.like %}
-                            <img onclick="toggleLike('{{product.id}}')"
-                                 class="product-button"
-                                 src="{{ 'heart-solid.svg' | asset_url }}"
-                                 alt=""
-                                 height="40"
-                                 width="40"
-                                 loading="lazy"
-                            />
-                        {% endif %}
+
                     </div>
                 {% endfor %}
             </div>
