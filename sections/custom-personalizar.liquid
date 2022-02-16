@@ -382,13 +382,24 @@
     }
 
     function search() {
-        const checkedFavorties = document.getElementById("switch-favorites").checked;
-        console.log("checked", checkedFavorties);
-
         const searchInput = document.getElementById("searchInput")
         const filter = (searchInput.value || "").trim().toLowerCase();
 
-        const prodcuts = filter ? despensa.filter(it => it.title.toLowerCase().includes(filter)) : despensa;
+        let prodcuts = filter ? despensa.filter(it => it.title.toLowerCase().includes(filter)) : despensa;
+
+        const checkedFavorties = document.getElementById("switch-favorites").checked;
+        if(checkedFavorties) {
+            try {
+                const favProducts = JSON.parse(localStorage.getItem("favorites") || "[]");
+                console.log(favProducts);
+            } catch (e) {
+                localStorage.removeItem("favorites");
+            }
+
+        }
+
+
+
         prodcuts.sort((a, b) => a.title.localeCompare(b.title));
 
         const resultSelctedProducts = countSelectedProducts();
