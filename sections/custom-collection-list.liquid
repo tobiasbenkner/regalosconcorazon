@@ -84,11 +84,12 @@
                             />
 
                             {% if section.settings.like %}
-                                <img
-                                     class="like-image"
-                                     src="{{ 'heart-solid.svg' | asset_url }}"
-                                     alt=""
-                                />
+                                {% render 'icon-heart' %}
+                                {% comment %}<img{% endcomment %}
+                                     {% comment %}class="like-image"{% endcomment %}
+                                     {% comment %}src="{{ 'heart-solid.svg' | asset_url }}"{% endcomment %}
+                                     {% comment %}alt=""{% endcomment %}
+                                {% comment %}/>{% endcomment %}
                             {% endif %}
                         </div>
 
