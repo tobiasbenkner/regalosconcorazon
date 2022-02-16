@@ -1,5 +1,11 @@
 <style>
 
+    .image-grid-item-image-container {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
     .like-image {
         position: absolute;
         left: 50px;
@@ -41,6 +47,9 @@
         width: 100%;
         height: 300px;
         border-radius: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
     }
 
     .button--cart {
@@ -67,7 +76,7 @@
             <div class="image-grid-container">
                 {% for product in collections[collection.handle].products %}
                     <div class="image-grid-item">
-                        <div>
+                        <div class="image-grid-item-image-container">
                             <img class="image-grid-item-image"
                                  src="{{ product.images[0].src | image_url: width: 500 }}"
                                  alt="{{ product.title }}"
