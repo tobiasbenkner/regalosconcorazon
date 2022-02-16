@@ -127,6 +127,15 @@
 <script>
     const key = "favorites";
 
+    (() => {
+        JSON.parse(localStorage.getItem(key) || "[]").forEach(id => {
+            const element = document.getElementById(id);
+            if(element) {
+                element.style.fill = "red";
+            }
+        });
+    })();
+
     function toggleLike(id) {
         try {
             const products = JSON.parse(localStorage.getItem(key) || "[]");
