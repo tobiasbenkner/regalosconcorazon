@@ -192,16 +192,19 @@
 
         <div class="tab">
             <h2 style="text-align: center">Elija sus productos</h2>
+            <div style="display: flex;">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <span>Favoritos</span>
+            </div>
             <input style="margin-bottom: 20px"
                    type="text"
                    id="searchInput"
                    onkeyup="search()"
                    placeholder="Buscar"
             />
-            <label class="switch">
-                <input type="checkbox" checked>
-                <span class="slider round"></span>
-            </label>
             <div id="product-container" class="product-container"></div>
         </div>
 
