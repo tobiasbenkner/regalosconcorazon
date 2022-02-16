@@ -4,6 +4,9 @@
         position: relative;
         top: 0;
         left: 0;
+        {% if section.settings.like %}
+        cursor: pointer;
+        {% endif %}
     }
 
     .image-grid-item-image-container > svg {
@@ -78,7 +81,7 @@
             <div class="image-grid-container">
                 {% for product in collections[collection.handle].products %}
                     <div class="image-grid-item">
-                        <div class="image-grid-item-image-container">
+                        <div class="image-grid-item-image-container" {% if section.settings.like %} onclick="toggleLike('{{ product.id }}')" {% endif %}>
                             <img class="image-grid-item-image"
                                  src="{{ product.images[0].src | image_url: width: 500 }}"
                                  alt="{{ product.title }}"
@@ -86,11 +89,6 @@
 
                             {% if section.settings.like %}
                                 {% render 'icon-heart' %}
-                                {% comment %}<img{% endcomment %}
-                                     {% comment %}class="like-image"{% endcomment %}
-                                     {% comment %}src="{{ 'heart-solid.svg' | asset_url }}"{% endcomment %}
-                                     {% comment %}alt=""{% endcomment %}
-                                {% comment %}/>{% endcomment %}
                             {% endif %}
                         </div>
 
