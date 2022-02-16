@@ -88,9 +88,7 @@
                             />
 
                             {% if section.settings.like %}
-                                <div id="heart-{{ product.id }}">
-                                    {% render 'icon-heart' %}
-                                </div>
+                                {% render 'icon-heart', id: "heart-{{ product.id }}" %}
                             {% endif %}
                         </div>
 
