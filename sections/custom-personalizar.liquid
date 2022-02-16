@@ -166,6 +166,7 @@
             <br/>
 
             <h3><strong>Productos</strong></h3>
+            <div id="product-container-result" class="product-container"></div>
             <br/>
 
             <h3><strong>Mesaje</strong></h3>
@@ -287,6 +288,7 @@
 
         // generate products
         search();
+        changeProductResult();
 
         document.getElementById("message").value = getMessage();
         document.getElementById("message-result").innerText = getMessage();
@@ -397,6 +399,7 @@
         saveProducts(products);
 
         changeCounter(id);
+        changeProductResult();
     }
 
     function removeProduct(id) {
@@ -409,6 +412,7 @@
         saveProducts(products);
 
         changeCounter(id);
+        changeProductResult();
     }
 
     function saveProducts(products) {
@@ -419,6 +423,11 @@
         const products = getProducts();
         const count = products.filter(it => it === id).length;
         document.getElementById(`product-counter-${id}`).innerText = count+"";
+    }
+
+    function changeProductResult() {
+        const selectedProducts = countSelectedProducts();
+        console.log(selectedProducts);
     }
 
 
