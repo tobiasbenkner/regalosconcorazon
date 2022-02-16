@@ -125,8 +125,21 @@
 </div>
 
 <script>
+    const key = "favorites";
+
     function toggleLike(id) {
-        console.log("like", id);
+        try {
+            const products = JSON.parse(localStorage.removeItem(key) || "[]");
+            const index = products.indexOf(id);
+            if (index > -1) {
+                products.splice(index, 1);
+            } else {
+                products.push(id);
+            }
+            localStorage.setItem(key, JSON.stringify(products));
+        } catch (e) {
+            localStorage.removeItem(key);
+        }
     }
 </script>
 
