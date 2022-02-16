@@ -31,7 +31,9 @@
         "5146c5df-6c7f-4ce0-9a20-880e896d4673"
       ],
       "settings": {
-        "price": true
+        "price": true,
+        "chart": false,
+        "like": true
       }
     },
     "main": {
