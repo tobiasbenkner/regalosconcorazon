@@ -479,7 +479,7 @@
 
         const hash = currentTab === 0 ? window.location.pathname : `#${currentTab}`;
         history.replaceState(undefined, undefined, hash);
-
+        window.scrollTo();
         //window.location.hash = currentTab;
     }
 
