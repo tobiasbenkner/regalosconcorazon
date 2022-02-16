@@ -195,7 +195,7 @@
             <div style="display: flex; justify-content: end; margin-bottom: 10px;">
                 <span style="margin: 0 10px">Favoritos</span>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input id="switch-favorites" onchange="search()" type="checkbox">
                     <span class="slider round"></span>
                 </label>
 
@@ -382,6 +382,9 @@
     }
 
     function search() {
+        const checkedFavorties = document.getElementById("switch-favorites").checked;
+        console.log("checked", checkedFavorties);
+
         const searchInput = document.getElementById("searchInput")
         const filter = (searchInput.value || "").trim().toLowerCase();
 
