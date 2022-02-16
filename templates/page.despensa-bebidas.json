@@ -1,1 +1,92 @@
-{"sections":{"1643906759c395ab47":{"type":"custom-banner","settings":{"background_image":"shopify:\/\/shop_images\/IMG_1747.jpg","title":"Bebidas","description":"","height":"300px"}},"1642858422a9672f4c":{"type":"custom-collection-list","blocks":{"5146c5df-6c7f-4ce0-9a20-880e896d4673":{"type":"collection","settings":{"title":"Cervezas","collection":"despensa-bebidas-cervezas"}},"544a87da-13d4-416d-812c-74219428b843":{"type":"collection","settings":{"title":"Ginebras","collection":"despensa-bebidas-ginebras"}},"b735350c-806e-4d1c-8951-31ee37bd73db":{"type":"collection","settings":{"title":"Licores","collection":"despensa-bebidas-licores"}},"1330b067-3d7d-4be5-a333-5b183bd0cdd1":{"type":"collection","settings":{"title":"Otros","collection":"despensa-bebidas-otros"}},"628ea84d-56db-468c-9089-222904667e6a":{"type":"collection","settings":{"title":"Refrescas","collection":"despensa-bebidas-refrescas"}},"de91ee13-b5f0-4185-ada7-439bb752ec63":{"type":"collection","settings":{"title":"Vermut","collection":"despensa-bebidas-vermut"}},"fb4cdb73-7b29-44af-a317-f460db72a514":{"type":"collection","settings":{"title":"Vinos","collection":"despensa-bebidas-vinos"}}},"block_order":["5146c5df-6c7f-4ce0-9a20-880e896d4673","544a87da-13d4-416d-812c-74219428b843","b735350c-806e-4d1c-8951-31ee37bd73db","1330b067-3d7d-4be5-a333-5b183bd0cdd1","628ea84d-56db-468c-9089-222904667e6a","de91ee13-b5f0-4185-ada7-439bb752ec63","fb4cdb73-7b29-44af-a317-f460db72a514"],"settings":{"price":true}},"main":{"type":"main-page","disabled":true,"settings":{}}},"order":["1643906759c395ab47","1642858422a9672f4c","main"]}
+{
+  "sections": {
+    "1643906759c395ab47": {
+      "type": "custom-banner",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/IMG_1747.jpg",
+        "title": "Bebidas",
+        "description": "",
+        "height": "300px"
+      }
+    },
+    "1642858422a9672f4c": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "5146c5df-6c7f-4ce0-9a20-880e896d4673": {
+          "type": "collection",
+          "settings": {
+            "title": "Cervezas",
+            "collection": "despensa-bebidas-cervezas"
+          }
+        },
+        "544a87da-13d4-416d-812c-74219428b843": {
+          "type": "collection",
+          "settings": {
+            "title": "Ginebras",
+            "collection": "despensa-bebidas-ginebras"
+          }
+        },
+        "b735350c-806e-4d1c-8951-31ee37bd73db": {
+          "type": "collection",
+          "settings": {
+            "title": "Licores",
+            "collection": "despensa-bebidas-licores"
+          }
+        },
+        "1330b067-3d7d-4be5-a333-5b183bd0cdd1": {
+          "type": "collection",
+          "settings": {
+            "title": "Otros",
+            "collection": "despensa-bebidas-otros"
+          }
+        },
+        "628ea84d-56db-468c-9089-222904667e6a": {
+          "type": "collection",
+          "settings": {
+            "title": "Refrescas",
+            "collection": "despensa-bebidas-refrescas"
+          }
+        },
+        "de91ee13-b5f0-4185-ada7-439bb752ec63": {
+          "type": "collection",
+          "settings": {
+            "title": "Vermut",
+            "collection": "despensa-bebidas-vermut"
+          }
+        },
+        "fb4cdb73-7b29-44af-a317-f460db72a514": {
+          "type": "collection",
+          "settings": {
+            "title": "Vinos",
+            "collection": "despensa-bebidas-vinos"
+          }
+        }
+      },
+      "block_order": [
+        "5146c5df-6c7f-4ce0-9a20-880e896d4673",
+        "544a87da-13d4-416d-812c-74219428b843",
+        "b735350c-806e-4d1c-8951-31ee37bd73db",
+        "1330b067-3d7d-4be5-a333-5b183bd0cdd1",
+        "628ea84d-56db-468c-9089-222904667e6a",
+        "de91ee13-b5f0-4185-ada7-439bb752ec63",
+        "fb4cdb73-7b29-44af-a317-f460db72a514"
+      ],
+      "settings": {
+        "price": true,
+        "chart": false,
+        "like": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "1643906759c395ab47",
+    "1642858422a9672f4c",
+    "main"
+  ]
+}
