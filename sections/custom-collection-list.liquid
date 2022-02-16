@@ -131,7 +131,7 @@
         try {
             const products = JSON.parse(localStorage.getItem(key) || "[]");
             const index = products.indexOf(id);
-            const element = document.getElementById("heart-" + id);
+            const element = document.getElementById(id);
             if (index !== -1) {
                 products.splice(index, 1);
                 element.style.fill = "white";
