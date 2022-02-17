@@ -569,6 +569,15 @@
         fixStepIndicator(n)
     }
 
+    function create_UUID(){
+        let dt = new Date().getTime();
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+            const r = (dt + Math.random()*16)%16 | 0;
+            dt = Math.floor(dt/16);
+            return (c ==='x' ? r :(r&0x3|0x8)).toString(16);
+        });
+    }
+
     function nextPrev(n) {
 
         const x = document.getElementsByClassName("tab");
@@ -576,8 +585,25 @@
 
         const nextTab = currentTab + n;
         if (nextTab >= x.length) {
-            // ... the form gets submitted:
-            console.log("submit");
+
+            const uuid = create_UUID;
+
+            const selectedProducts = getProducts();
+            const productsToBuy = Object.keys(selectedProducts).filter(id => !!despensa.find(p => p.id === id) );
+            console.log("productsToBuy", productsToBuy);
+
+            const items = [];
+            Object.keys(selectedProducts).map(id => {
+                return {
+                    quantity: productsToBuy[id],
+                    id: id,
+                    properties: {
+                        'regalo': uuid,
+                    }
+                }
+            });
+
+            console.log(items);
             showTab(currentTab);
             // document.getElementById("regForm").submit();
         } else {
