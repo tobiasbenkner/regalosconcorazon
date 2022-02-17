@@ -586,10 +586,9 @@
         const nextTab = currentTab + n;
         if (nextTab >= x.length) {
 
-            const uuid = create_UUID;
+            const uuid = create_UUID();
 
             const selectedProducts = countSelectedProducts();
-
             const items = Object.keys(selectedProducts).map(id => {
                 return {
                     quantity: selectedProducts[id],
