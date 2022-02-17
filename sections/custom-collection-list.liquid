@@ -70,10 +70,6 @@
 
 <div class="page-width">
 
-    {%- liquid
-        render 'snackbar'
-    -%}
-
     {% for block in section.blocks %}
         {%- assign collection = collections[block.settings.collection] -%}
         {% if collections[collection.handle].products.size > 0 %}
@@ -99,15 +95,6 @@
                         {% endif %}
 
                         {% if section.settings.chart %}
-                            {% comment %}<button id="buy-{{ product.variants.first.id }}"{% endcomment %}
-                                    {% comment %}class="button button--secondary button--cart"{% endcomment %}
-                                    {% comment %}style="display: flex; padding: 0"{% endcomment %}
-                                    {% comment %}onclick="addToChart('{{ product.variants.first.id }}', '{{ product.title }}')"{% endcomment %}
-                            {% comment %}>{% endcomment %}
-                                {% comment %}{% render 'icon-cart' %}{% endcomment %}
-                                {% comment %}Añadir{% endcomment %}
-                            {% comment %}</button>{% endcomment %}
-
                             <a href="/products/{{product.handle}}"
                                     class="button button--secondary button--cart"
                                     style="display: flex; padding: 0"
@@ -153,39 +140,6 @@
             localStorage.removeItem(key);
         }
     }
-</script>
-
-<script>
-    const addToChart = async (productId, title) => {
-        const buyButton = document.getElementById(`buy-${productId}`);
-        buyButton.disabled = true;
-
-        try {
-            const payload = {
-                items: [{
-                    id: productId,
-                    quantity: 1,
-                }]
-            };
-
-            const rawResponse = await fetch('/cart/add.js', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(payload),
-            });
-
-            const content = await rawResponse.json();
-            showSnackbar(`${title} ha sido añadido al carrito.`);
-            console.log(content);
-
-        } catch (e) {
-            showSnackbar(`Error`);
-        } finally {
-            buyButton.disabled = false;
-        }
-    };
 </script>
 
 {% schema %}

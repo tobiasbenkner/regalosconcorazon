@@ -264,6 +264,8 @@
     </form>
 </div>
 
+{% render "add-to-chart" %}
+
 <script>
     const boxKey = "my-box";
     const productsKey = "my-products";
@@ -399,8 +401,6 @@
             }
 
         }
-
-
 
         products.sort((a, b) => a.title.localeCompare(b.title));
 
@@ -551,15 +551,16 @@
 
     function showTab(n) {
         // This function will display the specified tab of the form...
-        var x = document.getElementsByClassName("tab");
+        const x = document.getElementsByClassName("tab");
         x[n].style.display = "block";
         //... and fix the Previous/Next buttons:
+
         if (n === 0) {
             document.getElementById("prevBtn").style.display = "none";
         } else {
             document.getElementById("prevBtn").style.display = "inline";
         }
-        if (n == (x.length - 1)) {
+        if (n === (x.length - 1)) {
             document.getElementById("nextBtn").innerHTML = "Submit";
         } else {
             document.getElementById("nextBtn").innerHTML = "Next";
@@ -580,7 +581,8 @@
         // if you have reached the end of the form...
         if (currentTab >= x.length) {
             // ... the form gets submitted:
-            document.getElementById("regForm").submit();
+            console.log("submit");
+            // document.getElementById("regForm").submit();
             return false;
         }
         // Otherwise, display the correct tab:

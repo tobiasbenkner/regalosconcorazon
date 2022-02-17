@@ -1,0 +1,30 @@
+{%- liquid
+    render 'snackbar'
+-%}
+
+<script>
+    const addToChart = async (items, snackbarText) => {
+
+        try {
+            const payload = {
+                items: items
+            };
+
+            const rawResponse = await fetch('/cart/add.js', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload),
+            });
+
+            const content = await rawResponse.json();
+            showSnackbar(snackbarText);
+
+            return content;
+
+        } catch (e) {
+            showSnackbar(`Error`);
+        }
+    };
+</script>
