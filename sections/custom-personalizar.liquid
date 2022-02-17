@@ -289,6 +289,7 @@
         title: "{{ product.title }}",
         collections: "{{ product.collections }}",
         image: "{{ product.images[0].src | img_url }}",
+        variant_id: "{{ product.variants[0].id }}"
     });
     {% endfor %}
 </script>
@@ -476,8 +477,6 @@
         localStorage.removeItem(messageKey);
     }
 
-
-
     function addProduct(id) {
         const products = getProducts();
         products.push(id);
@@ -589,9 +588,12 @@
             const uuid = create_UUID();
             const selectedProducts = countSelectedProducts();
             const items = Object.keys(selectedProducts).map(id => {
+
+                const product = despensa.find(it => it.id === id);
+
                 return {
                     quantity: selectedProducts[id],
-                    id: id,
+                    id: product.variant_id,
                     properties: {
                         'regalo': uuid,
                     }
