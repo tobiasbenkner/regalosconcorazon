@@ -574,22 +574,23 @@
         const x = document.getElementsByClassName("tab");
         x[currentTab].style.display = "none";
 
-       const nextTab = currentTab + n;
+        const nextTab = currentTab + n;
         if (nextTab >= x.length) {
             // ... the form gets submitted:
             console.log("submit");
             // document.getElementById("regForm").submit();
-            return false;
         } else {
+            console.log("next");
+            // next
             currentTab = currentTab + n;
+
+            // Otherwise, display the correct tab:
+            showTab(currentTab);
+
+            const hash = currentTab === 0 ? window.location.pathname : `#${currentTab}`;
+            history.replaceState(undefined, undefined, hash);
+            window.scrollTo(0, 440);
         }
-
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-
-        const hash = currentTab === 0 ? window.location.pathname : `#${currentTab}`;
-        history.replaceState(undefined, undefined, hash);
-        window.scrollTo(0, 440);
     }
 
     function fixStepIndicator(n) {
