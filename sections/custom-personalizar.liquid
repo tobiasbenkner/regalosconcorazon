@@ -587,7 +587,6 @@
         if (nextTab >= x.length) {
 
             const uuid = create_UUID();
-
             const selectedProducts = countSelectedProducts();
             const items = Object.keys(selectedProducts).map(id => {
                 return {
@@ -598,6 +597,15 @@
                     }
                 }
             });
+
+            addToChart(items, "wuhu")
+                .catch(error => {
+                    // reset
+                    console.log("error");
+                }).finally(() => {
+                   console.log("reset");
+                });
+
             console.log(items);
             showTab(currentTab);
             // document.getElementById("regForm").submit();
