@@ -30,17 +30,6 @@
           "settings": {
             "picker_type": "button"
           }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
-          }
         }
       },
       "block_order": [
@@ -48,9 +37,7 @@
         "title",
         "description",
         "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons"
+        "variant_picker"
       ],
       "settings": {
         "enable_sticky_info": true,
