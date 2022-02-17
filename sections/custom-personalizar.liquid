@@ -589,20 +589,16 @@
             const uuid = create_UUID;
 
             const selectedProducts = countSelectedProducts();
-            const productsToBuy = Object.keys(selectedProducts).filter(id => !!despensa.find(p => p.id === id) );
-            console.log("productsToBuy", productsToBuy);
 
-            const items = [];
-            Object.keys(selectedProducts).map(id => {
+            const items = Object.keys(selectedProducts).map(id => {
                 return {
-                    quantity: productsToBuy,
+                    quantity: selectedProducts[id],
                     id: id,
                     properties: {
                         'regalo': uuid,
                     }
                 }
             });
-
             console.log(items);
             showTab(currentTab);
             // document.getElementById("regForm").submit();
