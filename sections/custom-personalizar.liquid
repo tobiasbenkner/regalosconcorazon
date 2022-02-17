@@ -575,14 +575,14 @@
         x[currentTab].style.display = "none";
 
         const nextTab = currentTab + n;
-        if (nextTab >= x.length) {
+        if (nextTab >= x.length - 1) {
             // ... the form gets submitted:
             console.log("submit");
             // document.getElementById("regForm").submit();
         } else {
-            console.log("next");
+            console.log("next -1");
             // next
-            currentTab = currentTab + n;
+            currentTab = nextTab;
 
             // Otherwise, display the correct tab:
             showTab(currentTab);
