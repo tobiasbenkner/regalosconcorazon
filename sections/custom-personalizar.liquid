@@ -588,14 +588,14 @@
 
             const uuid = create_UUID;
 
-            const selectedProducts = getProducts();
+            const selectedProducts = countSelectedProducts();
             const productsToBuy = Object.keys(selectedProducts).filter(id => !!despensa.find(p => p.id === id) );
             console.log("productsToBuy", productsToBuy);
 
             const items = [];
             Object.keys(selectedProducts).map(id => {
                 return {
-                    quantity: productsToBuy[id],
+                    quantity: productsToBuy,
                     id: id,
                     properties: {
                         'regalo': uuid,
