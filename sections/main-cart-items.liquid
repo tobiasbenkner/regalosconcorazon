@@ -13,7 +13,7 @@
   {% endfor %}
 
   const items = chartItems.reduce(function (result, it) {
-    const idRegalo = it.properties.regalo || "";
+    const idRegalo = it.properties?.regalo || "";
     if(!idRegalo) {
       result.push(it);
       return result;
