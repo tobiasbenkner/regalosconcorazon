@@ -23,6 +23,7 @@
     if(!found) {
       result.push({
         regalo_id: idRegalo,
+        message: it.properties?.message || "",
         products: [it]
       });
       return result;
