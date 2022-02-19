@@ -311,12 +311,15 @@
 <script>
 
   const cartElemet = document.getElementById("my-chart");
+  cartElemet.innerHTML = "";
   console.log("my my my", myChart);
   exit(0);
 
   cartElemet.innerHTML = myChart
           .map((item) => {
             return `<tr class="cart-item" id="CartItem-${item.index + 1}">
+
+
     <td class="cart-item__media">
       {% if item.image %}
       {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
@@ -330,6 +333,7 @@
       >
       {% endif %}
     </td>
+
 
     <td class="cart-item__details">
       {%- if section.settings.show_vendor -%}
@@ -402,6 +406,8 @@
       </ul>
     </td>
 
+
+
     <td class="cart-item__totals right medium-hide large-up-hide">
       <div class="loading-overlay hidden">
         <div class="loading-overlay__spinner">
@@ -449,6 +455,8 @@
       </div>
     </td>
 
+
+
     <td class="cart-item__quantity">
       <div class="cart-item__quantity-wrapper">
         <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
@@ -490,6 +498,8 @@
         </svg>
       </div>
     </td>
+
+
 
     <td class="cart-item__totals right small-hide">
       <div class="loading-overlay hidden">
@@ -538,6 +548,7 @@
         {%- endif -%}
       </div>
     </td>
+
   </tr>`
           })
           .join("");
