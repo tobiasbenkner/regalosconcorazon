@@ -334,32 +334,28 @@
   }
 
   function displayDetail(item) {
-    return "<td>details</td>";
+    return `<td class="cart-item__details">details</td>`;
   }
 
-  function displayPrice(item) {
-    return "<td>price</td>";
-  }
   function displayQuantity(item) {
-    return "<td>qunatity</td>";
+    return `<td class="cart-item__quantity">Quantity</td>`;
   }
 
   function displayTotalPrice(item) {
-    return "<td>Total price</td>";
+    return `<td class="cart-item__totals right">Total price</td>`;
   }
 
   const cartElemet = document.getElementById("my-chart");
-  // cartElemet.innerHTML = myChart
-  //         .map((item) => {
-  //           return `<tr class="cart-item" id="CartItem-${item.index + 1}">
-  //             ${displayImage(item)}
-  //             ${displayDetail(item)}
-  //             ${displayPrice(item)}
-  //             ${displayQuantity(item)}
-  //             ${displayTotalPrice(item)}
-  //           </tr>`
-  //         })
-  //         .join("");
+  cartElemet.innerHTML = myChart
+          .map((item) => {
+            return `<tr class="cart-item" id="CartItem-${item.index + 1}">
+              ${displayImage(item)}
+              ${displayDetail(item)}
+              ${displayQuantity(item)}
+              ${displayTotalPrice(item)}
+            </tr>`
+          })
+          .join("");
 </script>
 
 {% schema %}
