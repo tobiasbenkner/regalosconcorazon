@@ -12,7 +12,6 @@
     chartItems.push({
       ...{{ item | json }},
       image: "{{ item.image | img_url: '300x' }}",
-      final_line_price: "{{ item.final_line_price | money }}",
     });
   {% endfor %}
 
@@ -37,7 +36,23 @@
       ...it,
     });
     return result;
-  }, []);
+  }, [])
+  .map(it => {
+    const isCustomProduct = !!it.regalo_id;
+    if(!isCustomProduct) {
+      return {
+        ...it
+      }
+    }
+
+
+    return {
+      ...it,
+      final_line_price: it.products.reduce((prev, current) => {
+        return prev + current.final_line_price;
+      }, 0),
+    }
+  });
 
   console.log(chartItems);
   console.log(myChart);
