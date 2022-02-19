@@ -349,17 +349,17 @@
   }
 
   const cartElemet = document.getElementById("my-chart");
-  cartElemet.innerHTML = myChart
-          .map((item) => {
-            return `<tr class="cart-item" id="CartItem-${item.index + 1}">
-              ${displayImage(item)}
-              ${displayDetail(item)}
-              ${displayPrice(item)}
-              ${displayQuantity(item)}
-              ${displayTotalPrice(item)}
-            </tr>`
-          })
-          .join("");
+  // cartElemet.innerHTML = myChart
+  //         .map((item) => {
+  //           return `<tr class="cart-item" id="CartItem-${item.index + 1}">
+  //             ${displayImage(item)}
+  //             ${displayDetail(item)}
+  //             ${displayPrice(item)}
+  //             ${displayQuantity(item)}
+  //             ${displayTotalPrice(item)}
+  //           </tr>`
+  //         })
+  //         .join("");
 </script>
 
 {% schema %}
