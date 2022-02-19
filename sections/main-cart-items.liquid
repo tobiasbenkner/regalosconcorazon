@@ -12,6 +12,7 @@
     chartItems.push({
       ...{{ item | json }},
       image: "{{ item.image | img_url: '300x' }}",
+      final_line_price: "{{ item.final_line_price | money }}",
     });
   {% endfor %}
 
@@ -342,7 +343,7 @@
   }
 
   function displayTotalPrice(item) {
-    return `<td class="cart-item__totals right">Total price<br/>123 €</td>`;
+    return `<td class="cart-item__totals right">${item.final_line_price}</td>`;
   }
 
   const cartElemet = document.getElementById("my-chart");
