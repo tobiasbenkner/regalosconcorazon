@@ -358,7 +358,7 @@
   }
 
   function displayTotalPrice(item) {
-    return `<td class="cart-item__totals right">${(item.final_line_price / 100).toFixed(2)}€</td>`;
+    return `<td class="cart-item__totals right">€${(item.final_line_price / 100).toFixed(2).replace(".", ",")}</td>`;
   }
 
   const cartElemet = document.getElementById("my-chart");
