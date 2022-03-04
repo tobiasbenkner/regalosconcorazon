@@ -9,22 +9,22 @@
         "height": "300px"
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "1646404399ac977163": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<div class=\"page-width\">\n<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3493.9218288160996!2d-15.434637342050706!3d28.139636565476255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40953fce1b6c59%3A0x5b869631ed11434a!2sC.%20Veintinueve%20de%20Abril%2C%2047%2C%2035007%20Las%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1sen!2ses!4v1646404382313!5m2!1sen!2ses\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"><\/iframe>\n<\/div>"
       }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
     }
   },
   "order": [
     "164390755697ea509e",
-    "main",
-    "1646404399ac977163"
+    "1646404399ac977163",
+    "main"
   ]
 }
