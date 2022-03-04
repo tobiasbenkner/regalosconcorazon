@@ -65,9 +65,9 @@
         "164640539715442355-1"
       ],
       "settings": {
-        "image_height": "400px",
-        "grid_template_columns": "auto auto auto",
-        "grid_template_columns_mobile": "auto auto",
+        "image_height": "0",
+        "grid_template_columns": "1fr 1fr",
+        "grid_template_columns_mobile": "1fr",
         "grid_gap": "20px",
         "has_border": false
       }
